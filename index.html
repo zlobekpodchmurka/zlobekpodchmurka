@@ -1,269 +1,425 @@
-<!DOCTYPE html>  
-<html lang="pl">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Żłobek Pod Chmurką | Prywatny żłobek z ogrodem ul. Kanarkowa 8</title>  
-    <meta name="description" content="Żłobek Pod Chmurką przy ul. Kanarkowa 8 to kameralna placówka łącząca domowe ciepło z codzienną edukacją i zabawą na świeżym powietrzu. Bezpieczna przestrzeń dla Twojego dziecka. Sprawdź ofertę!">  
-    <meta name="keywords" content="żłobek, żłobek prywatny, żłobek z ogrodem, opieka nad dziećmi, ul. Kanarkowa, żłobek dla dzieci">  
-      
-    <!-- Tailwind CSS CDN -->  
-    <script src="https://cdn.tailwindcss.com"></script>  
-    <script>  
-        tailwind.config = {  
-            theme: {  
-                extend: {  
-                    colors: {  
-                        primary: '#10b981', // emerald-500  
-                        secondary: '#f59e0b', // amber-500  
-                    }  
-                }  
-            }  
-        }  
-    </script>  
-      
-    <!-- Schema.org markup dla SEO i SEM (LocalBusiness / ChildCare) -->  
-    <script type="application/ld+json">  
-    {  
-      "@context": "https://schema.org",  
-      "@type": "ChildCare",  
-      "name": "Żłobek Pod Chmurką",  
-      "image": "",  
-      "@id": "",  
-      "url": "",  
-      "telephone": "+48530119251",  
-      "email": "zlobekpodchmurka@wp.pl",  
-      "address": {  
-        "@type": "PostalAddress",  
-        "streetAddress": "ul. Kanarkowa 8",  
-        "addressLocality": "Polska",  
-        "postalCode": "00-000",  
-        "addressCountry": "PL"  
-      },  
-      "openingHoursSpecification": {  
-        "@type": "OpeningHoursSpecification",  
-        "dayOfWeek": [  
-          "Monday",  
-          "Tuesday",  
-          "Wednesday",  
-          "Thursday",  
-          "Friday"  
-        ],  
-        "opens": "07:00",  
-        "closes": "17:00"  
-      },  
-      "priceRange": "$$"  
-    }  
-    </script>  
-</head>  
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">  
-  
-    <!-- Nagłówek / Nawigacja -->  
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">  
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">  
-            <div class="flex items-center space-x-2">  
-                <span class="text-2xl">🌱</span>  
-                <span class="font-bold text-xl text-slate-900">Żłobek Pod Chmurką</span>  
-            </div>  
-            <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-600">  
-                <a href="#o-nas" class="hover:text-primary transition">O nas</a>  
-                <a href="#oferta" class="hover:text-primary transition">Oferta i Dzień</a>  
-                <a href="#cennik" class="hover:text-primary transition">Cennik</a>  
-                <a href="#kontakt" class="hover:text-primary transition">Kontakt</a>  
-            </nav>  
-            <a href="tel:+48530119251" class="bg-primary hover:bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow transition">  
-                530 119 251  
-            </a>  
-        </div>  
-    </header>  
-  
-    <!-- Sekcja Hero -->  
-    <section class="relative bg-emerald-50 py-16 md:py-24 border-b border-emerald-100">  
-        <div class="max-w-6xl mx-auto px-4 text-center">  
-            <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-4">  
-                Kameralna opieka dla maluchów  
-            </span>  
-            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6">  
-                Bezpieczny żłobek blisko natury<br>przy <span class="text-primary">ul. Kanarkowej 8</span>  
-            </h1>  
-            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-8">  
-                Miejsce, gdzie Twoje dziecko rozwija skrzydła poprzez radosną zabawę, ciepłą atmosferę i codzienne odkrywanie świata na świeżym powietrzu.  
-            </p>  
-            <div class="flex flex-col sm:flex-row justify-center gap-4">  
-                <a href="#kontakt" class="bg-primary hover:bg-emerald-600 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition">  
-                    Skontaktuj się z nami  
-                </a>  
-                <a href="#cennik" class="bg-white hover:bg-slate-100 text-slate-700 font-semibold px-6 py-3 rounded-xl border border-slate-200 transition">  
-                    Zobacz cennik  
-                </a>  
-            </div>  
-        </div>  
-    </section>  
-  
-    <!-- O nas -->  
-    <section id="o-nas" class="py-16 bg-white">  
-        <div class="max-w-6xl mx-auto px-4">  
-            <div class="text-center max-w-2xl mx-auto mb-12">  
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">Dlaczego warto nam zaufać?</h2>  
-                <p class="text-slate-600">Tworzymy drugi dom, w którym każde dziecko czuje się bezpiecznie, akceptowane i ważne.</p>  
-            </div>  
-              
-            <div class="grid md:grid-cols-3 gap-8">  
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">  
-                    <div class="w-12 h-12 bg-emerald-100 text-primary rounded-xl flex items-center justify-center text-xl font-bold mb-4">🌳</div>  
-                    <h3 class="font-bold text-lg mb-2">Aktywność na świeżym powietrzu</h3>  
-                    <p class="text-slate-600 text-sm">Stawiamy na ruch, spacery i zabawy w naszym bezpiecznym ogrodzie o każdej porze roku.</p>  
-                </div>  
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">  
-                    <div class="w-12 h-12 bg-emerald-100 text-primary rounded-xl flex items-center justify-center text-xl font-bold mb-4">❤️</div>  
-                    <h3 class="font-bold text-lg mb-2">Kameralna atmosfera</h3>  
-                    <p class="text-slate-600 text-sm">Małe grupy, indywidualne podejście do każdego malucha oraz czuła i wykwalifikowana kadra.</p>  
-                </div>  
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">  
-                    <div class="w-12 h-12 bg-emerald-100 text-primary rounded-xl flex items-center justify-center text-xl font-bold mb-4">🎨</div>  
-                    <h3 class="font-bold text-lg mb-2">Rozwój i zabawa</h3>  
-                    <p class="text-slate-600 text-sm">Zajęcia sensoryczne, plastyczne i muzyczne stymulujące wszechstronny rozwój od najmłodszych lat.</p>  
-                </div>  
-            </div>  
-        </div>  
-    </section>  
-  
-    <!-- Oferta i Dzień powszedni -->  
-    <section id="oferta" class="py-16 bg-slate-50 border-t border-slate-100">  
-        <div class="max-w-6xl mx-auto px-4">  
-            <div class="grid md:grid-cols-2 gap-12 items-center">  
-                <div>  
-                    <h2 class="text-3xl font-bold text-slate-900 mb-4">Nasza oferta opiekuńcza</h2>  
-                    <p class="text-slate-600 mb-6">  
-                        Zapewniamy profesjonalną opiekę dla dzieci w wieku żłobkowym w godzinach od <strong>7:00 do 17:00</strong> od poniedziałku do piątku.  
-                    </p>  
-                    <ul class="space-y-3 text-slate-700">  
-                        <li class="flex items-center space-x-2">  
-                            <span class="text-primary font-bold">✓</span>  
-                            <span>Wyżywienie dostosowane do potrzeb najmłodszych (catering dietetyczny)</span>  
-                        </li>  
-                        <li class="flex items-center space-x-2">  
-                            <span class="text-primary font-bold">✓</span>  
-                            <span>Zajęcia z rytmiki, języka angielskiego i integracji sensorycznej</span>  
-                        </li>  
-                        <li class="flex items-center space-x-2">  
-                            <span class="text-primary font-bold">✓</span>  
-                            <span>Własna, bezpieczna strefa zabaw i ogrodzony teren rekreacyjny</span>  
-                        </li>  
-                        <li class="flex items-center space-x-2">  
-                            <span class="text-primary font-bold">✓</span>  
-                            <span>Stały kontakt z rodzicami i codzienna relacja z dnia malucha</span>  
-                        </li>  
-                    </ul>  
-                </div>  
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">  
-                    <h3 class="font-bold text-xl mb-4 text-slate-900">Dokumenty do pobrania</h3>  
-                    <p class="text-slate-600 text-sm mb-6">Planujesz zapisać dziecko? Pobierz dokumenty rekrutacyjne i zapoznaj się z naszym regulaminem.</p>  
-                    <div class="space-y-3">  
-                        <a href="#" class="flex items-center justify-between p-3 bg-slate-50 hover:bg-emerald-50 rounded-xl border border-slate-200 transition text-sm font-medium">  
-                            <span>📄 Karta Zgłoszenia Dziecka</span>  
-                            <span class="text-primary font-bold">Pobierz PDF</span>  
-                        </a>  
-                        <a href="#" class="flex items-center justify-between p-3 bg-slate-50 hover:bg-emerald-50 rounded-xl border border-slate-200 transition text-sm font-medium">  
-                            <span>📄 Regulamin Żłobka</span>  
-                            <span class="text-primary font-bold">Pobierz PDF</span>  
-                        </a>  
-                        <a href="#" class="flex items-center justify-between p-3 bg-slate-50 hover:bg-emerald-50 rounded-xl border border-slate-200 transition text-sm font-medium">  
-                            <span>📄 Przykładowy Jadłospis</span>  
-                            <span class="text-primary font-bold">Pobierz PDF</span>  
-                        </a>  
-                    </div>  
-                </div>  
-            </div>  
-        </div>  
-    </section>  
-  
-    <!-- Cennik -->  
-    <section id="cennik" class="py-16 bg-white">  
-        <div class="max-w-6xl mx-auto px-4 text-center">  
-            <h2 class="text-3xl font-bold text-slate-900 mb-4">Cennik i Opłaty</h2>  
-            <p class="text-slate-600 max-w-xl mx-auto mb-12">Przejrzyste warunki finansowe bez ukrytych kosztów. Zapytaj o aktualne dofinansowania żłobkowe.</p>  
-              
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">  
-                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 text-left">  
-                    <h3 class="font-bold text-xl text-slate-900 mb-2">Czesne Podstawowe</h3>  
-                    <p class="text-slate-500 text-sm mb-6">Opieka w godzinach 7:00 – 17:00 + zajęcia dodatkowe</p>  
-                    <div class="text-3xl font-extrabold text-primary mb-6">Zapytaj o cenę<span class="text-sm font-normal text-slate-500"> / miesiąc</span></div>  
-                    <ul class="space-y-2 text-sm text-slate-700 mb-8">  
-                        <li>• Pełny program edukacyjno-wychowawczy</li>  
-                        <li>• Zajęcia sensoryczne i językowe</li>  
-                        <li>• Codzienne wyjścia do ogrodu</li>  
-                    </ul>  
-                    <a href="#kontakt" class="block text-center bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 rounded-xl transition">Dowiedz się więcej</a>  
-                </div>  
-                  
-                <div class="bg-emerald-900 text-white p-8 rounded-2xl shadow-lg text-left relative overflow-hidden">  
-                    <div class="absolute top-0 right-0 bg-secondary text-slate-900 text-xs font-bold px-3 py-1 rounded-bl-xl">PROMOCJA</div>  
-                    <h3 class="font-bold text-xl mb-2">Wpisowe i Wyżywienie</h3>  
-                    <p class="text-emerald-200 text-sm mb-6">Jednorazowa opłata wpisowa oraz dzienna stawka żywieniowa</p>  
-                    <div class="text-3xl font-extrabold mb-6">Elastyczne warunki</div>  
-                    <ul class="space-y-2 text-sm text-emerald-100 mb-8">  
-                        <li>• Ubezpieczenie NNW w cenie wpisowego</li>  
-                        <li>• Catering zbilansowany dla dzieci</li>  
-                        <li>• Możliwość diet eliminacyjnych</li>  
-                    </ul>  
-                    <a href="#kontakt" class="block text-center bg-secondary hover:bg-amber-600 text-slate-900 font-semibold py-3 rounded-xl transition">Skontaktuj się z nami</a>  
-                </div>  
-            </div>  
-        </div>  
-    </section>  
-  
-    <!-- Kontakt -->  
-    <section id="kontakt" class="py-16 bg-slate-50 border-t border-slate-100">  
-        <div class="max-w-6xl mx-auto px-4">  
-            <div class="text-center max-w-2xl mx-auto mb-12">  
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">Odwiedź nas lub skontaktuj się</h2>  
-                <p class="text-slate-600">Chętnie odpowiemy na wszystkie pytania i oprowadzimy Cię po naszym żłobku.</p>  
-            </div>  
-              
-            <div class="max-w-xl mx-auto bg-white p-8 rounded-2xl border border-slate-200 shadow-sm text-center">  
-                <h3 class="font-bold text-2xl text-slate-900 mb-6">Dane kontaktowe</h3>  
-                <div class="space-y-6 text-slate-700">  
-                    <div class="flex flex-col items-center space-y-1">  
-                        <span class="text-2xl mb-1">📍</span>  
-                        <strong class="text-slate-900">Adres</strong>  
-                        <span>ul. Kanarkowa 8</span>  
-                    </div>  
-                    <div class="flex flex-col items-center space-y-1">  
-                        <span class="text-2xl mb-1">📞</span>  
-                        <strong class="text-slate-900">Telefon</strong>  
-                        <a href="tel:+48530119251" class="text-primary font-bold text-lg hover:underline">530 119 251</a>  
-                    </div>  
-                    <div class="flex flex-col items-center space-y-1">  
-                        <span class="text-2xl mb-1">✉️</span>  
-                        <strong class="text-slate-900">E-mail</strong>  
-                        <a href="mailto:zlobekpodchmurka@wp.pl" class="text-primary font-bold hover:underline">zlobekpodchmurka@wp.pl</a>  
-                    </div>  
-                    <div class="flex flex-col items-center space-y-1">  
-                        <span class="text-2xl mb-1">⏰</span>  
-                        <strong class="text-slate-900">Godziny otwarcia</strong>  
-                        <span>Poniedziałek – Piątek: 7:00 – 17:00</span>  
-                    </div>  
-                </div>  
-                <div class="mt-8 pt-6 border-t border-slate-100 flex flex-col sm:flex-row justify-center gap-4">  
-                    <a href="tel:+48530119251" class="bg-primary hover:bg-emerald-600 text-white font-semibold px-6 py-3 rounded-xl transition shadow">  
-                        Zadzwoń teraz  
-                    </a>  
-                    <a href="mailto:zlobekpodchmurka@wp.pl" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-6 py-3 rounded-xl transition">  
-                        Napisz e-mail  
-                    </a>  
-                </div>  
-            </div>  
-        </div>  
-    </section>  
-  
-    <!-- Stopka -->  
-    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm">  
-        <div class="max-w-6xl mx-auto px-4">  
-            <p>&copy; 2026 Żłobek Pod Chmurką (ul. Kanarkowa 8). Wszelkie prawa zastrzeżone.</p>  
-        </div>  
-    </footer>  
-  
-</body>  
-</html>  
-  
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ==================== SEO: podstawowe meta tagi ==================== -->
+<title>Żłobek Pod Chmurką Warszawa-Ursynów | ul. Kanarkowa 8</title>
+<meta name="description" content="Żłobek Pod Chmurką – kameralny żłobek na Ursynowie, ul. Kanarkowa 8 w Warszawie. Bezpieczna, ciepła opieka nad dziećmi w małych grupach. Zadzwoń: 530 119 251.">
+<meta name="keywords" content="żłobek Ursynów, żłobek Warszawa, żłobek Kanarkowa, opieka nad dziećmi Ursynów, żłobek Pod Chmurką, prywatny żłobek Warszawa">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Żłobek Pod Chmurką">
+<link rel="canonical" href="https://www.zlobekpodchmurka.pl/">
+
+<!-- ==================== SEO: Open Graph / social ==================== -->
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Żłobek Pod Chmurką – Warszawa-Ursynów, ul. Kanarkowa 8">
+<meta property="og:description" content="Kameralny żłobek na Ursynowie. Bezpieczna, ciepła opieka nad dziećmi w małych grupach. Zadzwoń: 530 119 251.">
+<meta property="og:image" content="https://www.zlobekpodchmurka.pl/logo.webp">
+<meta property="og:url" content="https://www.zlobekpodchmurka.pl/">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Żłobek Pod Chmurką">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Żłobek Pod Chmurką – Warszawa-Ursynów">
+<meta name="twitter:description" content="Kameralny żłobek na Ursynowie, ul. Kanarkowa 8. Zadzwoń: 530 119 251.">
+<meta name="twitter:image" content="https://www.zlobekpodchmurka.pl/logo.webp">
+
+<!-- ==================== SEO: dane lokalne (LocalBusiness / ChildCare) ==================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ChildCare",
+  "name": "Żłobek Pod Chmurką",
+  "image": "https://www.zlobekpodchmurka.pl/logo.webp",
+  "url": "https://www.zlobekpodchmurka.pl/",
+  "telephone": "+48530119251",
+  "email": "zlobekpodchmurka@wp.pl",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Kanarkowa 8",
+    "addressLocality": "Warszawa",
+    "addressRegion": "Ursynów",
+    "postalCode": "02-798",
+    "addressCountry": "PL"
+  },
+  "areaServed": "Warszawa-Ursynów",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "07:00",
+    "closes": "18:00"
+  }
+}
+</script>
+
+<!-- ==================== Fonty ==================== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --sky:#EEF5F8;
+    --cloud:#FFFFFF;
+    --mountain-blue:#5E86A0;
+    --mountain-blue-deep:#3F6178;
+    --mountain-gray:#A9AFB3;
+    --fox-amber:#E2A23D;
+    --fox-amber-deep:#C6842A;
+    --ink:#26333B;
+    --ink-soft:#5B6B74;
+    --line:#D8E3E8;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--sky);
+    color:var(--ink);
+    font-family:'Karla', sans-serif;
+    font-size:17px;
+    line-height:1.6;
+  }
+  h1,h2,h3{
+    font-family:'Baloo 2', sans-serif;
+    font-weight:700;
+    color:var(--mountain-blue-deep);
+    margin:0 0 .4em 0;
+  }
+  a{color:var(--mountain-blue-deep);}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:16px 24px;
+    max-width:1080px;
+    margin:0 auto;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:'Baloo 2', sans-serif;
+    font-weight:600;
+    font-size:1.15rem;
+    color:var(--mountain-blue-deep);
+    text-decoration:none;
+  }
+  .brand img{width:42px;height:42px;border-radius:50%;object-fit:cover;}
+  .topbar .call{
+    font-weight:700;
+    text-decoration:none;
+    color:var(--cloud);
+    background:var(--fox-amber);
+    padding:10px 18px;
+    border-radius:999px;
+    font-family:'Baloo 2',sans-serif;
+    white-space:nowrap;
+  }
+  .topbar .call:hover{background:var(--fox-amber-deep);}
+
+  /* ---------- hero ---------- */
+  .hero{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:40px;
+    align-items:center;
+    padding:40px 24px 70px;
+    max-width:1080px;
+    margin:0 auto;
+  }
+  .hero h1{
+    font-size:2.5rem;
+    line-height:1.18;
+  }
+  .hero p.lead{
+    font-size:1.1rem;
+    color:var(--ink-soft);
+    max-width:46ch;
+  }
+  .hero .address{
+    margin-top:22px;
+    font-family:'Baloo 2',sans-serif;
+    font-weight:600;
+    color:var(--mountain-blue-deep);
+  }
+  .hero .cta-row{
+    margin-top:26px;
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+  }
+  .btn{
+    display:inline-block;
+    font-family:'Baloo 2',sans-serif;
+    font-weight:600;
+    text-decoration:none;
+    padding:13px 24px;
+    border-radius:999px;
+    border:2px solid transparent;
+  }
+  .btn-primary{background:var(--mountain-blue-deep);color:#fff;}
+  .btn-primary:hover{background:var(--mountain-blue);}
+  .btn-secondary{border-color:var(--mountain-blue-deep);color:var(--mountain-blue-deep);}
+  .btn-secondary:hover{background:var(--cloud);}
+
+  .hero-logo{
+    background:var(--cloud);
+    border-radius:50%;
+    padding:18px;
+    box-shadow:0 18px 40px -18px rgba(63,97,120,.35);
+    justify-self:center;
+  }
+  .hero-logo img{width:100%;max-width:300px;}
+
+  /* ---------- cloud divider ---------- */
+  .cloud-divider{
+    display:block;
+    width:100%;
+    height:60px;
+  }
+  .cloud-divider svg{width:100%;height:100%;display:block;}
+
+  /* ---------- sections ---------- */
+  section{padding:64px 0;}
+  .band-white{background:var(--cloud);}
+
+  .about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:48px;
+    align-items:center;
+  }
+  .about-grid p{color:var(--ink-soft);}
+  .about-photo{
+    position:relative;
+  }
+  .about-photo img{
+    width:100%;
+    clip-path:polygon(0 12%, 30% 0, 55% 10%, 78% 0, 100% 14%, 100% 100%, 0 100%);
+    border-radius:4px;
+  }
+
+  .values{
+    list-style:none;
+    margin:28px 0 0;
+    padding:0;
+    display:grid;
+    gap:14px;
+  }
+  .values li{
+    padding-left:28px;
+    position:relative;
+    color:var(--ink-soft);
+  }
+  .values li::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:9px;
+    width:10px;
+    height:10px;
+    background:var(--fox-amber);
+    border-radius:50%;
+  }
+
+  /* ---------- gallery ---------- */
+  .gallery-grid{
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:24px;
+  }
+  .gallery-grid figure{margin:0;}
+  .gallery-grid img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:4px;
+  }
+  .gallery-grid figcaption{
+    margin-top:10px;
+    font-size:.92rem;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- contact ---------- */
+  .contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:48px;
+    align-items:start;
+  }
+  .contact-list{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:18px;}
+  .contact-list dt{
+    font-family:'Baloo 2',sans-serif;
+    font-weight:600;
+    color:var(--mountain-blue-deep);
+    font-size:.9rem;
+    margin:0;
+  }
+  .contact-list dd{margin:2px 0 0;font-size:1.08rem;}
+  .contact-list a{text-decoration:none;font-weight:700;}
+  .contact-list a:hover{text-decoration:underline;}
+  .map-frame{
+    border:0;
+    width:100%;
+    height:320px;
+    border-radius:6px;
+    box-shadow:0 18px 40px -18px rgba(63,97,120,.35);
+  }
+
+  /* ---------- footer ---------- */
+  footer{
+    background:var(--mountain-blue-deep);
+    color:#E7EFF2;
+    padding:34px 0;
+    font-size:.92rem;
+  }
+  footer .wrap{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+  footer a{color:#fff;}
+
+  @media (max-width:760px){
+    .hero{grid-template-columns:1fr;padding-top:20px;text-align:center;}
+    .hero p.lead{margin-left:auto;margin-right:auto;}
+    .hero .cta-row{justify-content:center;}
+    .hero-logo{order:-1;}
+    .hero-logo img{max-width:220px;}
+    .about-grid,.gallery-grid,.contact-grid{grid-template-columns:1fr;}
+    .about-photo img{clip-path:none;}
+    h1{font-size:2rem !important;}
+  }
+
+  :focus-visible{outline:3px solid var(--fox-amber);outline-offset:2px;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <a class="brand" href="#top">
+      <img src="logo.webp" alt="Logo żłobka Pod Chmurką – lisek na tle gór i chmur" width="42" height="42">
+      Żłobek Pod Chmurką
+    </a>
+    <a class="call" href="tel:+48530119251">530 119 251</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div>
+      <h1 id="hero-heading">Żłobek na Ursynowie, w którym dzieciństwo ma czas rosnąć</h1>
+      <p class="lead">Pod Chmurką dzieci poznają świat we własnym tempie – w małych grupach, pod okiem opiekunek, które znają każde dziecko z imienia.</p>
+      <p class="address">ul. Kanarkowa 8, Warszawa-Ursynów</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+48530119251">Zadzwoń: 530 119 251</a>
+        <a class="btn btn-secondary" href="#kontakt">Napisz do nas</a>
+      </div>
+    </div>
+    <div class="hero-logo">
+      <img src="logo.webp" alt="Logo Żłobka Pod Chmurką – lisek wśród gór pod chmurami" width="300" height="300">
+    </div>
+  </section>
+
+  <div class="cloud-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,40 C150,10 300,60 450,35 C600,10 750,55 900,30 C1050,10 1150,45 1200,30 L1200,60 L0,60 Z" fill="#FFFFFF"></path></svg>
+  </div>
+
+  <!-- ================= O NAS ================= -->
+  <section class="band-white" aria-labelledby="about-heading">
+    <div class="wrap about-grid">
+      <div class="about-photo">
+        <img src="dziecko.webp" alt="Dziecko w koszulce żłobka Pod Chmurką bawiące się w lesie na Ursynowie" width="600" height="785" loading="lazy">
+      </div>
+      <div>
+        <h2 id="about-heading">O naszym żłobku</h2>
+        <p>Żłobek Pod Chmurką mieści się przy ul. Kanarkowej 8 na warszawskim Ursynowie. Tworzymy kameralne miejsce, w którym maluchy czują się bezpiecznie, a rodzice mają pewność, że ich dziecko jest pod dobrą opieką.</p>
+        <p>Dużo czasu spędzamy na świeżym powietrzu – spacery, zabawy w ogrodzie i wycieczki po Ursynowie to stały element naszego dnia.</p>
+        <ul class="values">
+          <li>Małe grupy i indywidualne podejście do każdego dziecka</li>
+          <li>Doświadczone, ciepłe opiekunki</li>
+          <li>Codzienny czas na świeżym powietrzu</li>
+          <li>Bezpieczna, przyjazna przestrzeń na Ursynowie</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="cloud-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 C150,55 300,10 450,35 C600,60 750,15 900,40 C1050,55 1150,20 1200,35 L1200,0 L0,0 Z" fill="#FFFFFF"></path></svg>
+  </div>
+
+  <!-- ================= GALERIA ================= -->
+  <section aria-labelledby="gallery-heading">
+    <div class="wrap">
+      <h2 id="gallery-heading">Z życia żłobka</h2>
+      <div class="gallery-grid">
+        <figure>
+          <img src="zdjecie_pionowe.webp" alt="Dzieci z żłobka Pod Chmurką na zajęciach terenowych w lesie na Ursynowie" width="600" height="800" loading="lazy">
+          <figcaption>Zajęcia terenowe w pobliskim lesie</figcaption>
+        </figure>
+        <figure>
+          <img src="dziecko.webp" alt="Maluch w koszulce żłobka Pod Chmurką odpoczywający podczas zabawy na dworze" width="600" height="785" loading="lazy">
+          <figcaption>Codzienny czas na świeżym powietrzu</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= KONTAKT ================= -->
+  <section class="band-white" id="kontakt" aria-labelledby="contact-heading">
+    <div class="wrap contact-grid">
+      <div>
+        <h2 id="contact-heading">Kontakt</h2>
+        <p>Chętnie odpowiemy na pytania o wolne miejsca i zapisy. Zadzwoń, napisz lub zajrzyj do nas na ul. Kanarkową 8.</p>
+        <dl class="contact-list">
+          <div>
+            <dt>Adres</dt>
+            <dd>Żłobek Pod Chmurką<br>ul. Kanarkowa 8<br>Warszawa-Ursynów</dd>
+          </div>
+          <div>
+            <dt>Telefon</dt>
+            <dd><a href="tel:+48530119251">530 119 251</a></dd>
+          </div>
+          <div>
+            <dt>E-mail</dt>
+            <dd><a href="mailto:zlobekpodchmurka@wp.pl">zlobekpodchmurka@wp.pl</a></dd>
+          </div>
+        </dl>
+      </div>
+      <iframe class="map-frame" loading="lazy" title="Mapa – Żłobek Pod Chmurką, ul. Kanarkowa 8, Warszawa-Ursynów" src="https://www.google.com/maps?q=ul.+Kanarkowa+8,+Warszawa+Ursyn%C3%B3w&output=embed"></iframe>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Żłobek Pod Chmurką · ul. Kanarkowa 8, Warszawa-Ursynów</span>
+    <span><a href="tel:+48530119251">530 119 251</a> · <a href="mailto:zlobekpodchmurka@wp.pl">zlobekpodchmurka@wp.pl</a></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
