@@ -5,17 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- ==================== SEO: podstawowe meta tagi ==================== -->
-<title>Żłobek Pod Chmurką Warszawa-Ursynów | ul. Kanarkowa 8</title>
-<meta name="description" content="Żłobek Pod Chmurką – kameralny żłobek na Ursynowie, ul. Kanarkowa 8 w Warszawie. Bezpieczna, ciepła opieka nad dziećmi w małych grupach. Zadzwoń: 530 119 251.">
-<meta name="keywords" content="żłobek Ursynów, żłobek Warszawa, żłobek Kanarkowa, opieka nad dziećmi Ursynów, żłobek Pod Chmurką, prywatny żłobek Warszawa">
+<title>Żłobek Pod Chmurką Warszawa-Ursynów | ul. Kanarkowa 8 (blisko Lasu Kabackiego)</title>
+<meta name="description" content="Żłobek Pod Chmurką – kameralny prywatny żłobek na Ursynowie (Kabaty/Natolin), ul. Kanarkowa 8. Dziecko ma prawo być sobą. Blisko Lasu Kabackiego, codzienne spacery. Zadzwoń: 530 119 251.">
+<meta name="keywords" content="żłobek Ursynów, żłobek Warszawa, wolny żłobek, żłobek blisko lasu kabackiego, prywatny żłobek Kabaty, opieka nad dziećmi Ursynów, Żłobek Pod Chmurką">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Żłobek Pod Chmurką">
 <link rel="canonical" href="https://www.zlobekpodchmurka.pl/">
 
+<!-- ==================== IKONY / FAVICON ==================== -->
+<link rel="icon" type="image/webp" href="logo.webp">
+<link rel="shortcut icon" type="image/webp" href="logo.webp">
+<link rel="apple-touch-icon" href="logo.webp">
+
 <!-- ==================== SEO: Open Graph / social ==================== -->
 <meta property="og:type" content="business.business">
 <meta property="og:title" content="Żłobek Pod Chmurką – Warszawa-Ursynów, ul. Kanarkowa 8">
-<meta property="og:description" content="Kameralny żłobek na Ursynowie. Bezpieczna, ciepła opieka nad dziećmi w małych grupach. Zadzwoń: 530 119 251.">
+<meta property="og:description" content="Kameralny żłobek na Ursynowie blisko Lasu Kabackiego. Dziecko ma prawo być sobą. Zadzwoń: 530 119 251.">
 <meta property="og:image" content="https://www.zlobekpodchmurka.pl/logo.webp">
 <meta property="og:url" content="https://www.zlobekpodchmurka.pl/">
 <meta property="og:locale" content="pl_PL">
@@ -44,7 +49,7 @@
     "postalCode": "02-798",
     "addressCountry": "PL"
   },
-  "areaServed": "Warszawa-Ursynów",
+  "areaServed": ["Warszawa-Ursynów", "Kabaty", "Natolin", "Pyry"],
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
@@ -54,10 +59,11 @@
 }
 </script>
 
-<!-- ==================== Fonty ==================== -->
+<!-- ==================== Fonty i ikony FontAwesome ==================== -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
   :root{
@@ -93,7 +99,7 @@
   img{max-width:100%;display:block;}
   .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
 
-  /* ---------- top bar ---------- */
+  /* ---------- top bar & nav ---------- */
   .topbar{
     display:flex;
     align-items:center;
@@ -111,8 +117,47 @@
     font-size:1.15rem;
     color:var(--mountain-blue-deep);
     text-decoration:none;
+    flex-shrink:0;
   }
-  .brand img{width:42px;height:42px;border-radius:50%;object-fit:cover;}
+  /* Idealne koło wymuszone programowo z pliku */
+  .brand img{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    object-fit:cover;
+    flex-shrink:0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .nav-links{
+    display:flex;
+    gap:24px;
+    align-items:center;
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  .nav-links a{
+    text-decoration:none;
+    font-weight:600;
+    color:var(--mountain-blue-deep);
+    font-family:'Baloo 2',sans-serif;
+    font-size:1.05rem;
+  }
+  .nav-links a:hover{color:var(--fox-amber-deep);}
+
+  .social-icons{
+    display:flex;
+    gap:14px;
+    align-items:center;
+  }
+  .social-icons a{
+    color:var(--mountain-blue-deep);
+    font-size:1.2rem;
+    transition:color 0.2s;
+  }
+  .social-icons a:hover{color:var(--fox-amber-deep);}
+
   .topbar .call{
     font-weight:700;
     text-decoration:none;
@@ -129,7 +174,7 @@
   .hero{
     display:grid;
     grid-template-columns:1.1fr .9fr;
-    gap:40px;
+    gap:48px;
     align-items:center;
     padding:40px 24px 70px;
     max-width:1080px;
@@ -170,14 +215,26 @@
   .btn-secondary{border-color:var(--mountain-blue-deep);color:var(--mountain-blue-deep);}
   .btn-secondary:hover{background:var(--cloud);}
 
-  .hero-logo{
-    background:var(--cloud);
-    border-radius:50%;
-    padding:18px;
-    box-shadow:0 18px 40px -18px rgba(63,97,120,.35);
+  /* Wymuszenie idealnego okrągłego kadrowania logo głównego */
+  .hero-logo-wrapper{
     justify-self:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    max-width:320px;
   }
-  .hero-logo img{width:100%;max-width:300px;}
+  .hero-logo-wrapper img{
+    width:100%;
+    height:auto;
+    max-width:300px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    box-shadow: 0 20px 40px -15px rgba(63,97,120,0.22);
+    border: 6px solid var(--cloud);
+  }
 
   /* ---------- cloud divider ---------- */
   .cloud-divider{
@@ -198,9 +255,6 @@
     align-items:center;
   }
   .about-grid p{color:var(--ink-soft);}
-  .about-photo{
-    position:relative;
-  }
   .about-photo img{
     width:100%;
     clip-path:polygon(0 12%, 30% 0, 55% 10%, 78% 0, 100% 14%, 100% 100%, 0 100%);
@@ -230,6 +284,45 @@
     border-radius:50%;
   }
 
+  /* ---------- philosophy block (Wolne podejście) ---------- */
+  .philosophy-banner{
+    background: linear-gradient(135deg, var(--mountain-blue-deep), var(--mountain-blue));
+    color: #fff;
+    text-align: center;
+    padding: 50px 24px;
+    border-radius: 12px;
+    margin: 30px 0;
+    box-shadow: 0 14px 30px rgba(63,97,120,0.15);
+  }
+  .philosophy-banner h3{
+    color: var(--fox-amber);
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+  .philosophy-banner p{
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #F0F4F7;
+  }
+
+  /* ---------- extra content: dzień w żłobku ---------- */
+  .day-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:24px;
+    margin-top:36px;
+  }
+  .day-card{
+    background:var(--sky);
+    padding:24px;
+    border-radius:8px;
+    border:1px solid var(--line);
+  }
+  .day-card h3{font-size:1.2rem;margin-bottom:10px;}
+  .day-card p{color:var(--ink-soft);margin:0;font-size:0.95rem;}
+
   /* ---------- gallery ---------- */
   .gallery-grid{
     display:grid;
@@ -247,6 +340,52 @@
     margin-top:10px;
     font-size:.92rem;
     color:var(--ink-soft);
+  }
+
+  /* ---------- reviews / testimonials (Opinie Google & FB) ---------- */
+  .reviews-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 36px;
+  }
+  .review-card{
+    background: var(--sky);
+    border: 1px solid var(--line);
+    padding: 28px;
+    border-radius: 10px;
+    position: relative;
+  }
+  .review-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .review-author{
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 700;
+    color: var(--mountain-blue-deep);
+    font-size: 1.1rem;
+  }
+  .review-source{
+    font-size: 0.85rem;
+    background: #fff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    color: var(--ink-soft);
+    border: 1px solid var(--line);
+  }
+  .stars{
+    color: #F1A80A;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+  }
+  .review-card p{
+    color: var(--ink-soft);
+    font-style: italic;
+    margin: 0;
+    font-size: 0.98rem;
   }
 
   /* ---------- contact ---------- */
@@ -267,10 +406,20 @@
   .contact-list dd{margin:2px 0 0;font-size:1.08rem;}
   .contact-list a{text-decoration:none;font-weight:700;}
   .contact-list a:hover{text-decoration:underline;}
+  
+  .seo-contact-box{
+    margin-top:28px;
+    padding-top:20px;
+    border-top:1px solid var(--line);
+    font-size:0.92rem;
+    color:var(--ink-soft);
+  }
+  .seo-contact-box p{margin:0 0 10px 0;}
+
   .map-frame{
     border:0;
     width:100%;
-    height:320px;
+    height:360px;
     border-radius:6px;
     box-shadow:0 18px 40px -18px rgba(63,97,120,.35);
   }
@@ -287,17 +436,26 @@
     justify-content:space-between;
     align-items:center;
     flex-wrap:wrap;
-    gap:12px;
+    gap:16px;
   }
   footer a{color:#fff;}
+  .footer-socials{
+    display: flex;
+    gap: 16px;
+  }
+  .footer-socials a{
+    font-size: 1.3rem;
+    color: #fff;
+  }
+  .footer-socials a:hover{color: var(--fox-amber);}
 
   @media (max-width:760px){
+    .nav-links{display:none;}
     .hero{grid-template-columns:1fr;padding-top:20px;text-align:center;}
     .hero p.lead{margin-left:auto;margin-right:auto;}
     .hero .cta-row{justify-content:center;}
-    .hero-logo{order:-1;}
-    .hero-logo img{max-width:220px;}
-    .about-grid,.gallery-grid,.contact-grid{grid-template-columns:1fr;}
+    .hero-logo-wrapper{order:-1;margin:0 auto;max-width:240px;}
+    .about-grid,.gallery-grid,.contact-grid,.day-grid,.reviews-grid{grid-template-columns:1fr;}
     .about-photo img{clip-path:none;}
     h1{font-size:2rem !important;}
   }
@@ -316,6 +474,16 @@
       <img src="logo.webp" alt="Logo żłobka Pod Chmurką – lisek na tle gór i chmur" width="42" height="42">
       Żłobek Pod Chmurką
     </a>
+    <ul class="nav-links">
+      <li><a href="#o-nas">O nas</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#opinie">Opinie</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
     <a class="call" href="tel:+48530119251">530 119 251</a>
   </div>
 </header>
@@ -325,15 +493,15 @@
   <!-- ================= HERO ================= -->
   <section class="hero" aria-labelledby="hero-heading">
     <div>
-      <h1 id="hero-heading">Żłobek na Ursynowie, w którym dzieciństwo ma czas rosnąć</h1>
-      <p class="lead">Pod Chmurką dzieci poznają świat we własnym tempie – w małych grupach, pod okiem opiekunek, które znają każde dziecko z imienia.</p>
-      <p class="address">ul. Kanarkowa 8, Warszawa-Ursynów</p>
+      <h1 id="hero-heading">Żłobek na Ursynowie blisko Lasu Kabackiego – Miejsce dla Twojego dziecka</h1>
+      <p class="lead">Pod Chmurką dzieci poznają świat we własnym tempie – w małych grupach, pod okiem opiekunek, które znają każde dziecko z imienia. Ponieważ każde dziecko ma prawo być sobą.</p>
+      <p class="address">ul. Kanarkowa 8, Warszawa-Ursynów (Kabaty)</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="tel:+48530119251">Zadzwoń: 530 119 251</a>
         <a class="btn btn-secondary" href="#kontakt">Napisz do nas</a>
       </div>
     </div>
-    <div class="hero-logo">
+    <div class="hero-logo-wrapper">
       <img src="logo.webp" alt="Logo Żłobka Pod Chmurką – lisek wśród gór pod chmurami" width="300" height="300">
     </div>
   </section>
@@ -343,21 +511,80 @@
   </div>
 
   <!-- ================= O NAS ================= -->
-  <section class="band-white" aria-labelledby="about-heading">
+  <section class="band-white" id="o-nas" aria-labelledby="about-heading">
     <div class="wrap about-grid">
       <div class="about-photo">
         <img src="dziecko.webp" alt="Dziecko w koszulce żłobka Pod Chmurką bawiące się w lesie na Ursynowie" width="600" height="785" loading="lazy">
       </div>
       <div>
-        <h2 id="about-heading">O naszym żłobku</h2>
-        <p>Żłobek Pod Chmurką mieści się przy ul. Kanarkowej 8 na warszawskim Ursynowie. Tworzymy kameralne miejsce, w którym maluchy czują się bezpiecznie, a rodzice mają pewność, że ich dziecko jest pod dobrą opieką.</p>
-        <p>Dużo czasu spędzamy na świeżym powietrzu – spacery, zabawy w ogrodzie i wycieczki po Ursynowie to stały element naszego dnia.</p>
+        <h2 id="about-heading">O nas – prawdziwe domowe ciepło blisko przyrody</h2>
+        
+        <!-- Inspiracja filozofią wolnego rozwoju -->
+        <div style="background: var(--sky); padding: 16px 20px; border-left: 4px solid var(--fox-amber); border-radius: 4px; margin-bottom: 20px;">
+          <strong style="color: var(--mountain-blue-deep); display:block; margin-bottom: 4px; font-family:'Baloo 2',sans-serif; font-size:1.1rem;">Dziecko ma prawo być sobą</strong>
+          <p style="margin:0; font-size: 0.95rem; color: var(--ink-soft);">Wierzymy w szacunek do emocji malucha, naturalność i swobodę odkrywania świata bez presji. Dajemy przestrzeń na swobodną zabawę i budowanie pewności siebie.</p>
+        </div>
+
+        <p>Żłobek Pod Chmurką mieści się przy ul. Kanarkowej 8 na warszawskim Ursynowie, w sąsiedztwie urokliwego Lasu Kabackiego. Tworzymy kameralne miejsce bez korporacyjnego zgiełku, w którym maluchy czują się bezpiecznie, a rodzice mają pełne zaufanie do naszej kadry.</p>
         <ul class="values">
-          <li>Małe grupy i indywidualne podejście do każdego dziecka</li>
-          <li>Doświadczone, ciepłe opiekunki</li>
-          <li>Codzienny czas na świeżym powietrzu</li>
-          <li>Bezpieczna, przyjazna przestrzeń na Ursynowie</li>
+          <li>Małe grupy gwarantujące troskliwą i uważną opiekę</li>
+          <li>Ciepłe, empatyczne ciocie z powołaniem</li>
+          <li>Zdrowe, zrównoważone posiłki dopasowane do maluchów</li>
+          <li>Wyjątkowa lokalizacja na Ursynowie tuż obok Lasu Kabackiego</li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FILOZOFIA / BANER ================= -->
+  <div class="wrap">
+    <div class="philosophy-banner">
+      <h3>Przestrzeń stworzona z myślą o dzieciach</h3>
+      <p>„Pod Chmurką” to coś więcej niż opieka – to codzienna bliskość natury, leśne spacery o każdej porze roku, uważność na małego człowieka i domowa atmosfera pełna ciepła.</p>
+    </div>
+  </div>
+
+  <!-- ================= JAK DZIAŁAMY ================= -->
+  <section aria-labelledby="routine-heading">
+    <div class="wrap">
+      <h2 id="routine-heading" style="text-align:center; margin-bottom: 10px;">Każdy dzień to nowa przygoda</h2>
+      <p style="text-align:center; color:var(--ink-soft); max-width:600px; margin:0 auto 40px auto;">Nasz rytm dnia jest stabilny i przewidywalny dla malucha, a zarazem pełen uśmiechu i naturalnego kontaktu z naturą na Ursynowie.</p>
+      
+      <div class="day-grid">
+        <div class="day-card">
+          <h3>Ciepłe powitanie</h3>
+          <p>Przytulne przyjęcie każdego malucha, swobodna zabawa klockami i układankami w kameralnym gronie rówieśników.</p>
+        </div>
+        <div class="day-card">
+          <h3>Wyprawy do lasu</h3>
+          <p>Korzystamy z bliskości Lasu Kabackiego – organizujemy bezpieczne spacery, obserwację przyrody i aktywności na świeżym powietrzu.</p>
+        </div>
+        <div class="day-card">
+          <h3>Rozwój przez zabawę</h3>
+          <p>Zajęcia sensoryczne, muzyczne, plastyczne oraz budowanie samodzielności w przyjaznej, domowej atmosferze.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cloud-divider" aria-hidden="true" style="transform: scaleY(-1);">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,40 C150,10 300,60 450,35 C600,10 750,55 900,30 C1050,10 1150,45 1200,30 L1200,60 L0,60 Z" fill="#FFFFFF"></path></svg>
+  </div>
+
+  <!-- ================= GALERIA ================= -->
+  <section class="band-white" id="galeria" aria-labelledby="gallery-heading">
+    <div class="wrap">
+      <h2 id="gallery-heading">Z życia żłobka</h2>
+      <p style="color:var(--ink-soft); margin-bottom: 30px;">Zobacz, jak spędzamy czas – autentyczne chwile radości naszych podopiecznych na Ursynowie.</p>
+      <div class="gallery-grid">
+        <figure>
+          <img src="zdjecie_pionowe.webp" alt="Dzieci z żłobka Pod Chmurką na zajęciach terenowych w lesie na Ursynowie" width="600" height="800" loading="lazy">
+          <figcaption>Zajęcia terenowe w pobliżu Lasu Kabackiego</figcaption>
+        </figure>
+        <figure>
+          <img src="dziecko.webp" alt="Maluch w koszulce żłobka Pod Chmurką odpoczywający podczas zabawy na dworze" width="600" height="785" loading="lazy">
+          <figcaption>Codzienny uśmiech na świeżym powietrzu</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -366,33 +593,52 @@
     <svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 C150,55 300,10 450,35 C600,60 750,15 900,40 C1050,55 1150,20 1200,35 L1200,0 L0,0 Z" fill="#FFFFFF"></path></svg>
   </div>
 
-  <!-- ================= GALERIA ================= -->
-  <section aria-labelledby="gallery-heading">
+  <!-- ================= OPINIE (GOOGLE & FACEBOOK) ================= -->
+  <section id="opinie" aria-labelledby="reviews-heading">
     <div class="wrap">
-      <h2 id="gallery-heading">Z życia żłobka</h2>
-      <div class="gallery-grid">
-        <figure>
-          <img src="zdjecie_pionowe.webp" alt="Dzieci z żłobka Pod Chmurką na zajęciach terenowych w lesie na Ursynowie" width="600" height="800" loading="lazy">
-          <figcaption>Zajęcia terenowe w pobliskim lesie</figcaption>
-        </figure>
-        <figure>
-          <img src="dziecko.webp" alt="Maluch w koszulce żłobka Pod Chmurką odpoczywający podczas zabawy na dworze" width="600" height="785" loading="lazy">
-          <figcaption>Codzienny czas na świeżym powietrzu</figcaption>
-        </figure>
+      <h2 id="reviews-heading" style="text-align: center;">Co mówią rodzice?</h2>
+      <p style="text-align: center; color: var(--ink-soft); max-width: 600px; margin: 0 auto;">Przeczytaj autentyczne opinie o naszej placówce z Google oraz Facebooka.</p>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-header">
+            <span class="review-author">Pani Marta K.</span>
+            <span class="review-source"><i class="fa-brands fa-google" style="color:#4285F4; margin-right:4px;"></i> Google</span>
+          </div>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p>„Wspaniałe, kameralne miejsce. Panie opiekunki mają niesamowite podejście do dzieci, a bliskość Lasu Kabackiego to ogromny atut. Syn chodził z ogromną radością!”</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <span class="review-author">Pan Tomasz W.</span>
+            <span class="review-source"><i class="fa-brands fa-facebook" style="color:#1877F2; margin-right:4px;"></i> Facebook</span>
+          </div>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p>„Ciepła, domowa atmosfera i pełen profesjonalizm. Czuć, że dobro dziecka jest tu zawsze na pierwszym miejscu. Polecamy z całego serca każdemu rodzicowi z Ursynowa.”</p>
+        </div>
       </div>
     </div>
   </section>
+
+  <div class="cloud-divider" aria-hidden="true" style="transform: scaleY(-1);">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,40 C150,10 300,60 450,35 C600,10 750,55 900,30 C1050,10 1150,45 1200,30 L1200,60 L0,60 Z" fill="#FFFFFF"></path></svg>
+  </div>
 
   <!-- ================= KONTAKT ================= -->
   <section class="band-white" id="kontakt" aria-labelledby="contact-heading">
     <div class="wrap contact-grid">
       <div>
-        <h2 id="contact-heading">Kontakt</h2>
-        <p>Chętnie odpowiemy na pytania o wolne miejsca i zapisy. Zadzwoń, napisz lub zajrzyj do nas na ul. Kanarkową 8.</p>
+        <h2 id="contact-heading">Kontakt i zapisy – Żłobek Ursynów</h2>
+        <p>Szukasz kameralnego żłobka dla swojego dziecka na Ursynowie? Chętnie odpowiemy na pytania o wolne miejsca, adaptację oraz umówimy wizytę w naszej placówce.</p>
         <dl class="contact-list">
           <div>
             <dt>Adres</dt>
-            <dd>Żłobek Pod Chmurką<br>ul. Kanarkowa 8<br>Warszawa-Ursynów</dd>
+            <dd>Żłobek Pod Chmurką<br>ul. Kanarkowa 8<br>02-798 Warszawa-Ursynów (Kabaty / Natolin)</dd>
           </div>
           <div>
             <dt>Telefon</dt>
@@ -402,7 +648,18 @@
             <dt>E-mail</dt>
             <dd><a href="mailto:zlobekpodchmurka@wp.pl">zlobekpodchmurka@wp.pl</a></dd>
           </div>
+          <div>
+            <dt>Media społecznościowe</dt>
+            <dd style="display: flex; gap: 15px; margin-top: 6px;">
+              <a href="https://facebook.com" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 6px; font-size: 0.95rem;"><i class="fa-brands fa-facebook" style="color:#1877F2; font-size: 1.2rem;"></i> Facebook</a>
+              <a href="https://instagram.com" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 6px; font-size: 0.95rem;"><i class="fa-brands fa-instagram" style="color:#E4405F; font-size: 1.2rem;"></i> Instagram</a>
+            </dd>
+          </div>
         </dl>
+
+        <div class="seo-contact-box">
+          <p><strong>Lokalizacja i dojazd:</strong> Nasz żłobek znajduje się w zacisznej, bezpiecznej okolicy Ursynowa (rejon Kabat i Natolina), tuż obok Lasu Kabackiego. Zapewniamy dogodny dojazd dla rodziców mieszkających w południowej części Warszawy, szukających dla swoich dzieci żłobka o profilu proekologicznym.</p>
+        </div>
       </div>
       <iframe class="map-frame" loading="lazy" title="Mapa – Żłobek Pod Chmurką, ul. Kanarkowa 8, Warszawa-Ursynów" src="https://www.google.com/maps?q=ul.+Kanarkowa+8,+Warszawa+Ursyn%C3%B3w&output=embed"></iframe>
     </div>
@@ -412,7 +669,11 @@
 
 <footer>
   <div class="wrap">
-    <span>© <span id="year">2026</span> Żłobek Pod Chmurką · ul. Kanarkowa 8, Warszawa-Ursynów</span>
+    <span>© <span id="year">2026</span> Żłobek Pod Chmurką · ul. Kanarkowa 8, Warszawa-Ursynów (Las Kabacki)</span>
+    <div class="footer-socials">
+      <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
     <span><a href="tel:+48530119251">530 119 251</a> · <a href="mailto:zlobekpodchmurka@wp.pl">zlobekpodchmurka@wp.pl</a></span>
   </div>
 </footer>
