@@ -1,64 +1,652 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Dedykowana favicona dla Google i przeglądarek -->
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Żłobek Ursynów | Żłobek Pod Chmurką nr 208</title>
+  <!-- ==================== SEO: podstawowe meta tagi ==================== -->
+  <title>Żłobek Ursynów | Żłobek Pod Chmurką – ul. Kanarkowa 8</title>
+  <meta name="description" content="Szukasz żłobka na Ursynowie? Żłobek Pod Chmurką przy ul. Kanarkowej 8 oferuje kameralną opiekę dla dzieci blisko Lasu Kabackiego. Zadzwoń: 530 119 251.">
+  <meta name="keywords" content="żłobek Ursynów, żłobek Warszawa, prywatny żłobek Ursynów, żłobek blisko lasu kabackiego, Żłobek Pod Chmurką">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Żłobek Pod Chmurką">
+  <link rel="canonical" href="https://www.zlobekpodchmurka.pl/zlobek-ursynow.html">
 
-<meta name="description"
-content="Żłobek Ursynów. Kameralna opieka dla dzieci od 12 do 36 miesięcy. Żłobek Pod Chmurką nr 208 przy ul. Kanarkowej 8 na Ursynowie.">
+  <!-- ==================== IKONY / FAVICON ==================== -->
+  <link rel="icon" type="image/webp" href="logo.webp">
+  <link rel="shortcut icon" type="image/webp" href="logo.webp">
+  <link rel="apple-touch-icon" href="logo.webp">
 
-<link rel="canonical" href="https://zlobekpodch
+  <!-- ==================== SEO: Open Graph / social ==================== -->
+  <meta property="og:type" content="business.business">
+  <meta property="og:title" content="Żłobek Ursynów | Żłobek Pod Chmurką">
+  <meta property="og:description" content="Kameralna opieka dla dzieci na Ursynowie, blisko Lasu Kabackiego. ul. Kanarkowa 8. Zadzwoń: 530 119 251.">
+  <meta property="og:image" content="https://www.zlobekpodchmurka.pl/logo.webp">
+  <meta property="og:url" content="https://www.zlobekpodchmurka.pl/zlobek-ursynow.html">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="Żłobek Pod Chmurką">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Żłobek Ursynów | Żłobek Pod Chmurką">
+  <meta name="twitter:description" content="Kameralny żłobek na Ursynowie, ul. Kanarkowa 8. Zadzwoń: 530 119 251.">
+  <meta name="twitter:image" content="https://www.zlobekpodchmurka.pl/logo.webp">
+
+  <!-- ==================== SEO: dane lokalne (LocalBusiness / ChildCare) ==================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ChildCare",
+    "name": "Żłobek Pod Chmurką",
+    "image": "https://www.zlobekpodchmurka.pl/logo.webp",
+    "url": "https://www.zlobekpodchmurka.pl/zlobek-ursynow.html",
+    "telephone": "+48530119251",
+    "email": "zlobekpodchmurka@wp.pl",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ul. Kanarkowa 8",
+      "addressLocality": "Warszawa",
+      "addressRegion": "Ursynów",
+      "postalCode": "02-818",
+      "addressCountry": "PL"
+    },
+    "areaServed": [
+      "Warszawa-Ursynów",
+      "Kabaty",
+      "Natolin",
+      "Pyry"
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "07:00",
+      "closes": "18:00"
+    }
+  }
+  </script>
+
+  <!-- ==================== Fonty i ikony FontAwesome ==================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root{
+      --sky:#EEF5F8;
+      --cloud:#FFFFFF;
+      --mountain-blue:#5E86A0;
+      --mountain-blue-deep:#3F6178;
+      --mountain-gray:#A9AFB3;
+      --fox-amber:#E2A23D;
+      --fox-amber-deep:#C6842A;
+      --ink:#26333B;
+      --ink-soft:#5B6B74;
+      --line:#D8E3E8;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      margin:0;
+      background:var(--sky);
+      color:var(--ink);
+      font-family:'Karla', sans-serif;
+      font-size:17px;
+      line-height:1.6;
+    }
+
+    h1,h2,h3{
+      font-family:'Baloo 2', sans-serif;
+      font-weight:700;
+      color:var(--mountain-blue-deep);
+      margin:0 0 .4em 0;
+    }
+
+    a{
+      color:var(--mountain-blue-deep);
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    .wrap{
+      max-width:1080px;
+      margin:0 auto;
+      padding:0 24px;
+    }
+
+    /* ---------- top bar & nav ---------- */
+
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:16px 24px;
+      max-width:1080px;
+      margin:0 auto;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-family:'Baloo 2', sans-serif;
+      font-weight:600;
+      font-size:1.15rem;
+      color:var(--mountain-blue-deep);
+      text-decoration:none;
+      flex-shrink:0;
+    }
+
+    .brand img{
+      width:42px;
+      height:42px;
+      border-radius:50%;
+      object-fit:cover;
+      flex-shrink:0;
+      box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .nav-links{
+      display:flex;
+      gap:24px;
+      align-items:center;
+      list-style:none;
+      margin:0;
+      padding:0;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      font-weight:600;
+      color:var(--mountain-blue-deep);
+      font-family:'Baloo 2',sans-serif;
+      font-size:1.05rem;
+    }
+
+    .nav-links a:hover{
+      color:var(--fox-amber-deep);
+    }
+
+    .social-icons{
+      display:flex;
+      gap:14px;
+      align-items:center;
+    }
+
+    .social-icons a{
+      color:var(--mountain-blue-deep);
+      font-size:1.2rem;
+      transition:color 0.2s;
+    }
+
+    .social-icons a:hover{
+      color:var(--fox-amber-deep);
+    }
+
+    .topbar .call{
+      font-weight:700;
+      text-decoration:none;
+      color:var(--cloud);
+      background:var(--fox-amber);
+      padding:10px 18px;
+      border-radius:999px;
+      font-family:'Baloo 2',sans-serif;
+      white-space:nowrap;
+    }
+
+    .topbar .call:hover{
+      background:var(--fox-amber-deep);
+    }
+
+    /* ---------- hero ---------- */
+
+    .hero{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:48px;
+      align-items:center;
+      padding:40px 24px 70px;
+      max-width:1080px;
+      margin:0 auto;
+    }
+
+    .hero h1{
+      font-size:2.5rem;
+      line-height:1.18;
+    }
+
+    .hero p.lead{
+      font-size:1.1rem;
+      color:var(--ink-soft);
+      max-width:46ch;
+    }
+
+    .hero .address{
+      margin-top:22px;
+      font-family:'Baloo 2',sans-serif;
+      font-weight:600;
+      color:var(--mountain-blue-deep);
+    }
+
+    .hero .cta-row{
+      margin-top:26px;
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-block;
+      font-family:'Baloo 2',sans-serif;
+      font-weight:600;
+      text-decoration:none;
+      padding:13px 24px;
+      border-radius:999px;
+      border:2px solid transparent;
+    }
+
+    .btn-primary{
+      background:var(--mountain-blue-deep);
+      color:#fff;
+    }
+
+    .btn-primary:hover{
+      background:var(--mountain-blue);
+    }
+
+    .btn-secondary{
+      border-color:var(--mountain-blue-deep);
+      color:var(--mountain-blue-deep);
+    }
+
+    .btn-secondary:hover{
+      background:var(--cloud);
+    }
+
+    .hero-logo-wrapper{
+      justify-self:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      max-width:320px;
+    }
+
+    .hero-logo-wrapper img{
+      width:100%;
+      height:auto;
+      max-width:300px;
+      aspect-ratio:1 / 1;
+      object-fit:cover;
+      border-radius:50%;
+      display:block;
+      box-shadow:0 20px 40px -15px rgba(63,97,120,0.22);
+      border:6px solid var(--cloud);
+    }
+
+    /* ---------- cloud divider ---------- */
+
+    .cloud-divider{
+      display:block;
+      width:100%;
+      height:60px;
+    }
+
+    .cloud-divider svg{
+      width:100%;
+      height:100%;
+      display:block;
+    }
+
+    /* ---------- sections ---------- */
+
+    section{
+      padding:64px 0;
+    }
+
+    .band-white{
+      background:var(--cloud);
+    }
+
+    .content-container {
+      background: var(--cloud);
+      border-radius: 12px;
+      padding: 48px;
+      margin: 40px 0;
+      box-shadow: 0 10px 30px rgba(63,97,120,0.08);
+    }
+
+    .content-container h2 {
+      margin-top: 32px;
+      font-size: 1.6rem;
+    }
+
+    .content-container h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .content-container p {
+      color: var(--ink-soft);
+      line-height: 1.7;
+    }
+
+    .values{
+      list-style:none;
+      margin:24px 0;
+      padding:0;
+      display:grid;
+      gap:14px;
+    }
+
+    .values li{
+      padding-left:28px;
+      position:relative;
+      color:var(--ink-soft);
+      font-weight: 500;
+    }
+
+    .values li::before{
+      content:"";
+      position:absolute;
+      left:0;
+      top:9px;
+      width:10px;
+      height:10px;
+      background:var(--fox-amber);
+      border-radius:50%;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      font-family: 'Baloo 2', sans-serif;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--mountain-blue-deep);
+    }
+
+    .back-link:hover {
+      color: var(--fox-amber-deep);
+      text-decoration: underline;
+    }
+
+    /* ---------- footer ---------- */
+
+    footer{
+      background:var(--mountain-blue-deep);
+      color:#E7EFF2;
+      padding:34px 0;
+      font-size:.92rem;
+    }
+
+    footer .wrap{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:16px;
+    }
+
+    footer a{
+      color:#fff;
+    }
+
+    .footer-socials{
+      display:flex;
+      gap:16px;
+    }
+
+    .footer-socials a{
+      font-size:1.3rem;
+      color:#fff;
+    }
+
+    .footer-socials a:hover{
+      color:var(--fox-amber);
+    }
+
+    @media (max-width:760px){
+      .nav-links{
+        display:none;
+      }
+
+      .hero{
+        grid-template-columns:1fr;
+        padding-top:20px;
+        text-align:center;
+      }
+
+      .hero p.lead{
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+      .hero .cta-row{
+        justify-content:center;
+      }
+
+      .hero-logo-wrapper{
+        order:-1;
+        margin:0 auto;
+        max-width:240px;
+      }
+
+      .content-container {
+        padding: 24px;
+      }
+
+      h1{
+        font-size:2rem !important;
+      }
+    }
+
+    :focus-visible{
+      outline:3px solid var(--fox-amber);
+      outline-offset:2px;
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      html{
+        scroll-behavior:auto;
+      }
+    }
+  </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BG459L0V90"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BG459L0V90');
+  </script>
 </head>
 
 <body>
 
-<h1>Żłobek Ursynów – Żłobek Pod Chmurką nr 208</h1>
+  <header>
+    <div class="topbar">
+      <a class="brand" href="index.html">
+        <img
+          src="logo.webp"
+          alt="Logo żłobka Pod Chmurką – lisek na tle gór i chmur"
+          width="42"
+          height="42"
+        >
+        Żłobek Pod Chmurką
+      </a>
 
-<p>
-Szukasz sprawdzonego żłobka na Ursynowie?
-Żłobek Pod Chmurką nr 208 znajduje się przy ul. Kanarkowej 8
-w Warszawie i oferuje opiekę dla dzieci od 12 do 36 miesiąca życia.
-</p>
+      <ul class="nav-links">
+        <li><a href="index.html#o-nas">O nas</a></li>
+        <li><a href="index.html#galeria">Galeria</a></li>
+        <li><a href="index.html#opinie">Opinie</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+      </ul>
 
-<h2>Dlaczego rodzice z Ursynowa wybierają Pod Chmurką?</h2>
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/p/Pod-chmurk%C4%85-punkt-opieki-dziennej-100063548951420/?locale=pl_PL"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/zlobekpodchmurka2018/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
 
-<ul>
-<li>kameralne grupy dzieci,</li>
-<li>indywidualne podejście do każdego dziecka,</li>
-<li>codzienne spacery i kontakt z naturą,</li>
-<li>bliskość Lasu Kabackiego,</li>
-<li>doświadczona i empatyczna kadra.</li>
-</ul>
+      <a class="call" href="tel:+48530119251">
+        530 119 251
+      </a>
+    </div>
+  </header>
 
-<h2>Żłobek blisko Lasu Kabackiego</h2>
+  <main id="top">
 
-<p>
-Nasza placówka znajduje się w spokojnej części Ursynowa.
-Bliskość terenów zielonych pozwala organizować codzienne spacery,
-zajęcia na świeżym powietrzu oraz poznawanie przyrody.
-</p>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div>
+        <h1 id="hero-heading">
+          Żłobek Ursynów – Żłobek Pod Chmurką
+        </h1>
+        <p class="lead">
+          Kameralna opieka dla dzieci od 12 do 36 miesięcy na warszawskim Ursynowie. 
+          Stwarzamy domową atmosferę, w której każde dziecko ma prawo być sobą.
+        </p>
+        <p class="address">
+          ul. Kanarkowa 8, Warszawa-Ursynów (Kabaty)
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:+48530119251">
+            Zadzwoń: 530 119 251
+          </a>
+          <a class="btn btn-secondary" href="index.html#kontakt">
+            Napisz do nas
+          </a>
+        </div>
+      </div>
 
-<h2>Rekrutacja do żłobka na Ursynowie</h2>
+      <div class="hero-logo-wrapper">
+        <img
+          src="logo.webp"
+          alt="Logo Żłobka Pod Chmurką – lisek wśród gór pod chmurami"
+          width="300"
+          height="300"
+        >
+      </div>
+    </section>
 
-<p>
-Prowadzimy zapisy dzieci przez cały rok w miarę dostępnych miejsc.
-Zapraszamy do kontaktu telefonicznego lub odwiedzenia placówki.
-</p>
+    <div class="cloud-divider" aria-hidden="true">
+      <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,40 C150,10 300,60 450,35 C600,10 750,55 900,30 C1050,10 1150,45 1200,30 L1200,60 L0,60 Z" fill="#FFFFFF"></path>
+      </svg>
+    </div>
 
-<h2>Kontakt</h2>
+    <section class="band-white">
+      <div class="wrap">
+        <div class="content-container">
+          
+          <h2>Szukasz sprawdzonego żłobka na Ursynowie?</h2>
+          <p>
+            Żłobek Pod Chmurką znajduje się przy ul. Kanarkowej 8 w Warszawie i oferuje troskliwą, 
+            kameralną opiekę dla najmłodszych. Nasza placówka to bezpieczna przystań, w której maluchy 
+            stawiają swoje pierwsze kroki w grupie rówieśników, rozwijając samodzielność i ciekawość świata.
+          </p>
 
-<p>
-Żłobek Pod Chmurką nr 208<br>
-ul. Kanarkowa 8<br>
-02-818 Warszawa<br>
-tel. 530 119 251
-</p>
+          <h2>Dlaczego rodzice z Ursynowa wybierają Pod Chmurką?</h2>
+          <ul class="values">
+            <li>kameralne grupy dzieci gwarantujące indywidualne i uważne podejście,</li>
+            <li>ciepła, domowa atmosfera i empatyczna kadra z przygotowaniem pedagogicznym,</li>
+            <li>codzienne spacery i bliski kontakt z naturą,</li>
+            <li>wyjątkowa lokalizacja tuż obok Lasu Kabackiego.</li>
+          </ul>
 
-<p>
-/Powrót do strony głównej</a>
-</p>
+          <h2>Żłobek blisko Lasu Kabackiego</h2>
+          <p>
+            Nasz żłobek położony jest w spokojnej, zielonej części Ursynowa. Bliskość terenów 
+            leśnych pozwala nam na regularne organizowanie bezpiecznych spacerów na świeżym powietrzu, 
+            podczas których dzieci mogą obcować z przyrodą o każdej porze roku.
+          </p>
+
+          <h2>Rekrutacja i zapisy do żłobka na Ursynowie</h2>
+          <p>
+            Prowadzimy zapisy dzieci przez cały rok w miarę dostępnych miejsc. Serdecznie zapraszamy 
+            rodziców do kontaktu telefonicznego lub odwiedzenia naszej placówki po wcześniejszym umówieniu spotkania.
+          </p>
+
+          <a class="back-link" href="index.html">
+            <i class="fa-solid fa-arrow-left" style="margin-right: 6px;"></i> Powrót do strony głównej
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="wrap">
+      <span>
+        © <span id="year">2026</span>
+        Żłobek Pod Chmurką · ul. Kanarkowa 8, Warszawa-Ursynów (Las Kabacki)
+      </span>
+
+      <div class="footer-socials">
+        <a
+          href="https://www.facebook.com/p/Pod-chmurk%C4%85-punkt-opieki-dziennej-100063548951420/?locale=pl_PL"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/zlobekpodchmurka2018/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
+      <span>
+        <a href="tel:+48530119251">530 119 251</a>
+        ·
+        <a href="mailto:zlobekpodchmurka@wp.pl">zlobekpodchmurka@wp.pl</a>
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
