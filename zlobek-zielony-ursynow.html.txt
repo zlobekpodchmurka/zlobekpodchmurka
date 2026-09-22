@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Żłobek Zielony Ursynów | Pod Chmurką nr 208</title>
+
+<meta name="description"
+content="Żłobek Zielony Ursynów. Kameralna opieka dla dzieci blisko Lasu Kabackiego. Żłobek Pod Chmurką nr 208 przy ul. Kanarkowej 8.">
+
+<link rel="canonical" href="https://zlobekpodchmurka.pl/zlobek-zielony-ursynow.html">
+elony Ursynów</h1>
+
+<p>
+Żłobek Pod Chmurką nr 208 znajduje się w zielonej części Ursynowa,
+w pobliżu Lasu Kabackiego. To miejsce stworzone dla dzieci,
+które potrzebują bezpiecznej atmosfery, ruchu oraz codziennego
+kontaktu z naturą.
+</p>
+
+<h2>Naturalny rozwój dziecka</h2>
+
+<p>
+Wierzymy, że każde dziecko rozwija się we własnym tempie.
+Zapewniamy opiekę opartą na szacunku, bezpieczeństwie i budowaniu
+samodzielności.
+</p>
+
+<h2>Codzienny kontakt z przyrodą</h2>
+
+<p>
+Położenie placówki przy ul. Kanarkowej na Zielonym Ursynowie
+umożliwia częste spacery oraz obserwowanie zmian zachodzących
+w przyrodzie przez cały rok.
+</p>
+
+<h2>Dla kogo jest nasz żłobek?</h2>
+
+<p>
+Zapraszamy rodziców mieszkających na:
+</p>
+
+<ul>
+<li>Ursynowie,</li>
+<li>Grabowie,</li>
+<li>Pyrach,</li>
+<li>Jeziorkach,</li>
+<li>w okolicy Kabat i Natolina.</li>
+</ul>
+
+<h2>Kontakt</h2>
+
+<p>
+Żłobek Pod Chmurką nr 208<br>
+ul. Kanarkowa 8<br>
+02-818 Warszawa<br>
+530 119 251
+</p>
+
+<p>
+<a href="/">Powrót do strony>
+</p>
+
+</body>
+</html>
