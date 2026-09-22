@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Żłobek Ursynów | Żłobek Pod Chmurką nr 208</title>
+
+<meta name="description"
+content="Żłobek Ursynów. Kameralna opieka dla dzieci od 12 do 36 miesięcy. Żłobek Pod Chmurką nr 208 przy ul. Kanarkowej 8 na Ursynowie.">
+
+<link rel="canonical" href="https://zlobekpodch
+</head>
+
+<body>
+
+<h1>Żłobek Ursynów – Żłobek Pod Chmurką nr 208</h1>
+
+<p>
+Szukasz sprawdzonego żłobka na Ursynowie?
+Żłobek Pod Chmurką nr 208 znajduje się przy ul. Kanarkowej 8
+w Warszawie i oferuje opiekę dla dzieci od 12 do 36 miesiąca życia.
+</p>
+
+<h2>Dlaczego rodzice z Ursynowa wybierają Pod Chmurką?</h2>
+
+<ul>
+<li>kameralne grupy dzieci,</li>
+<li>indywidualne podejście do każdego dziecka,</li>
+<li>codzienne spacery i kontakt z naturą,</li>
+<li>bliskość Lasu Kabackiego,</li>
+<li>doświadczona i empatyczna kadra.</li>
+</ul>
+
+<h2>Żłobek blisko Lasu Kabackiego</h2>
+
+<p>
+Nasza placówka znajduje się w spokojnej części Ursynowa.
+Bliskość terenów zielonych pozwala organizować codzienne spacery,
+zajęcia na świeżym powietrzu oraz poznawanie przyrody.
+</p>
+
+<h2>Rekrutacja do żłobka na Ursynowie</h2>
+
+<p>
+Prowadzimy zapisy dzieci przez cały rok w miarę dostępnych miejsc.
+Zapraszamy do kontaktu telefonicznego lub odwiedzenia placówki.
+</p>
+
+<h2>Kontakt</h2>
+
+<p>
+Żłobek Pod Chmurką nr 208<br>
+ul. Kanarkowa 8<br>
+02-818 Warszawa<br>
+tel. 530 119 251
+</p>
+
+<p>
+/Powrót do strony głównej</a>
+</p>
+
+</body>
+</html>
