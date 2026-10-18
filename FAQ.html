@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -68,17 +71,22 @@
     .wrap{ max-width:1080px; margin:0 auto; padding:0 24px; }
 
     /* ---------- top bar & nav ---------- */
-    .topbar{ display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:1080px; margin:0 auto; }
-    .brand{ display:flex; align-items:center; gap:10px; font-family:'Baloo 2', sans-serif; font-weight:600; font-size:1.15rem; color:var(--mountain-blue-deep); text-decoration:none; flex-shrink:0; }
+    .topbar{ display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:1080px; margin:0 auto; flex-wrap: wrap; gap: 16px; }
+    .brand{ display:flex; align-items:center; gap:12px; font-family:'Baloo 2', sans-serif; font-weight:600; font-size:1.15rem; color:var(--mountain-blue-deep); text-decoration:none; flex-shrink:0; transition: opacity 0.2s ease; }
+    .brand:hover { opacity: 0.85; }
     .brand img{ width:42px; height:42px; border-radius:50%; object-fit:cover; flex-shrink:0; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
-    .nav-links{ display:flex; gap:24px; align-items:center; list-style:none; margin:0; padding:0; }
-    .nav-links a{ text-decoration:none; font-weight:600; color:var(--mountain-blue-deep); font-family:'Baloo 2',sans-serif; font-size:1.05rem; }
-    .nav-links a:hover{ color:var(--fox-amber-deep); }
-    .social-icons{ display:flex; gap:14px; align-items:center; }
-    .social-icons a{ color:var(--mountain-blue-deep); font-size:1.2rem; transition:color 0.2s; }
-    .social-icons a:hover{ color:var(--fox-amber-deep); }
-    .topbar .call{ font-weight:700; text-decoration:none; color:var(--cloud); background:var(--fox-amber); padding:10px 18px; border-radius:999px; font-family:'Baloo 2',sans-serif; white-space:nowrap; }
+    
+    .header-right { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .faq-badge { background: var(--cloud); border: 2px solid var(--mountain-blue-deep); color: var(--mountain-blue-deep); padding: 8px 16px; border-radius: 999px; font-family: 'Baloo 2', sans-serif; font-weight: 700; text-decoration: none; font-size: 0.95rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 6px; }
+    .faq-badge:hover { background: var(--mountain-blue-deep); color: var(--cloud); }
+
+    .social-icons{ display:flex; gap:14px; align-items:center; margin-left: 8px; }
+    .social-icons a{ color:var(--mountain-blue-deep); font-size:1.2rem; transition:color 0.2s, transform 0.2s; }
+    .social-icons a:hover{ color:var(--fox-amber-deep); transform: scale(1.1); }
+    
+    .topbar .call{ font-weight:700; text-decoration:none; color:var(--cloud); background:var(--fox-amber); padding:10px 18px; border-radius:999px; font-family:'Baloo 2',sans-serif; white-space:nowrap; transition: background-color 0.3s ease, transform 0.2s ease; }
     .topbar .call:hover{ background:var(--fox-amber-deep); }
+    .topbar .call:active { transform: scale(0.95); }
 
     /* ---------- hero ---------- */
     .hero{ text-align:center; padding:50px 24px 70px; max-width:800px; margin:0 auto; }
@@ -91,7 +99,7 @@
     .band-white{ background:var(--cloud); }
 
     /* ---------- FAQ ---------- */
-    section{ padding:64px 0; }
+    section.faq-section{ padding:64px 0; }
     .faq-list{ max-width:800px; margin:0 auto; display:grid; gap:16px; }
     details{ background:var(--cloud); border:1px solid var(--line); border-radius:8px; padding:0 24px; box-shadow:0 4px 10px rgba(94,134,160,0.05); }
     summary{ cursor:pointer; list-style:none; padding:20px 34px 20px 0; font-family:'Baloo 2',sans-serif; font-size:1.15rem; font-weight:700; color:var(--mountain-blue-deep); position:relative; }
@@ -103,12 +111,14 @@
     .answer p:last-child{ margin-bottom:0; }
     .answer a{ color:var(--mountain-blue-deep); font-weight:700; text-decoration:none; }
     .answer a:hover{ text-decoration:underline; }
+    .answer ul { margin: 10px 0 10px 20px; padding: 0; color: var(--ink-soft); }
+    .answer li { margin-bottom: 6px; }
 
     /* ---------- contact banner ---------- */
     .contact-banner{ margin:40px auto 0; max-width:800px; background:linear-gradient(135deg, var(--mountain-blue-deep), var(--mountain-blue)); color:#fff; border-radius:12px; padding:34px; text-align:center; box-shadow:0 14px 30px rgba(63,97,120,0.15); }
     .contact-banner h2{ color:var(--fox-amber); margin:0 0 10px; font-size:1.8rem; }
     .contact-banner p{ color:#F0F4F7; margin:0 0 20px; font-size:1.1rem; }
-    .btn{ display:inline-block; font-family:'Baloo 2',sans-serif; font-weight:600; text-decoration:none; padding:13px 24px; border-radius:999px; border:2px solid transparent; }
+    .btn{ display:inline-block; font-family:'Baloo 2',sans-serif; font-weight:600; text-decoration:none; padding:13px 24px; border-radius:999px; border:2px solid transparent; transition: background-color 0.3s ease; }
     .btn-primary{ background:var(--fox-amber); color:#fff; }
     .btn-primary:hover{ background:var(--fox-amber-deep); }
     .btn-secondary{ border-color:#fff; color:#fff; }
@@ -118,14 +128,13 @@
     /* ---------- footer ---------- */
     footer{ background:var(--mountain-blue-deep); color:#E7EFF2; padding:34px 0; font-size:.92rem; }
     footer .wrap{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; }
-    footer a{ color:#fff; text-decoration:none; }
+    footer a{ color:#fff; text-decoration:none; transition: color 0.2s ease; }
     footer a:hover{ color:var(--fox-amber); }
     .footer-socials{ display:flex; gap:16px; }
     .footer-socials a{ font-size:1.3rem; color:#fff; }
     .footer-socials a:hover{ color:var(--fox-amber); }
 
     @media (max-width:760px){
-      .nav-links{ display:none; }
       h1{ font-size:2rem !important; }
       details{ padding:0 16px; }
       summary{ font-size:1.05rem; }
@@ -150,17 +159,25 @@
         <img src="logo.webp" alt="Logo żłobka Pod Chmurką" width="42" height="42">
         Żłobek Pod Chmurką
       </a>
-      <ul class="nav-links">
-        <li><a href="index.html#o-nas">O nas</a></li>
-        <li><a href="index.html#galeria">Galeria</a></li>
-        <li><a href="index.html#opinie">Opinie</a></li>
-        <li><a href="index.html#kontakt">Kontakt</a></li>
-      </ul>
-      <div class="social-icons">
-        <a href="https://www.facebook.com/p/Pod-chmurk%C4%85-punkt-opieki-dziennej-100063548951420/?locale=pl_PL" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/zlobekpodchmurka2018/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+
+      <div class="header-right">
+        <!-- Przycisk powrotu do strony głównej -->
+        <a class="faq-badge" href="index.html">
+          <i class="fa-solid fa-house"></i> Strona główna
+        </a>
+
+        <!-- Ikony społecznościowe -->
+        <div class="social-icons">
+          <a href="https://www.facebook.com/p/Pod-chmurk%C4%85-punkt-opieki-dziennej-100063548951420/?locale=pl_PL" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/zlobekpodchmurka2018/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+
+        <a class="call" href="tel:+48530119251">530 119 251</a>
       </div>
-      <a class="call" href="tel:+48530119251">530 119 251</a>
     </div>
   </header>
 
@@ -176,7 +193,7 @@
       </svg>
     </div>
 
-    <section class="band-white">
+    <section class="band-white faq-section">
       <div class="wrap faq-list" aria-label="Najczęściej zadawane pytania">
         
         <details>
@@ -184,22 +201,25 @@
           <div class="answer"><p>Placówka jest przeznaczona dla dzieci w wieku od 8 do 36 miesięcy. W przypadku dziecka, które jest blisko granicy tego przedziału, najlepiej skontaktować się z nami i omówić indywidualną sytuację.</p></div>
         </details>
 
-
         <details>
           <summary>Dlaczego Żłobek Pod Chmurką jest przeznaczony wyłącznie dla maluchów do 36. miesiąca życia?</summary>
-          <div class="answer"><p>Nasz żłobek to kameralna placówka stworzona wyłącznie z myślą o najmłodszych dzieciach w wieku od 8 do 36 miesięcy. Dzięki temu, że nie ma u nas przedszkolaków ani starszych dzieci, maluchy rozwijają się w bezpiecznym, spokojnym środowisku rówieśniczym, wolnym od hałasu i zgiełku dużych placówek.</p><p>Brak starszych dzieci eliminuje ryzyko przypadkowego potrącenia czy przytłoczenia maluszków, co pozwala na pełną, uważną opiekę i harmonijny rozwój każdego dziecka we własnym tempie.</p></div>
+          <div class="answer">
+            <p>Nasz żłobek to kameralna placówka stworzona wyłącznie z myślą o najmłodszych dzieciach w wieku od 8 do 36 miesięcy. Dzięki temu, że nie ma u nas przedszkolaków ani starszych dzieci, maluchy rozwijają się w bezpiecznym, spokojnym środowisku rówieśniczym, wolnym od hałasu i zgiełku dużych placówek.</p>
+            <p>Brak starszych dzieci eliminuje ryzyko przypadkowego potrącenia czy przytłoczenia maluszków, co pozwala na pełną, uważną opiekę i harmonijny rozwój każdego dziecka we własnym tempie.</p>
+          </div>
         </details>
-
-
         
         <details>
           <summary>Gdzie znajduje się Żłobek Pod Chmurką?</summary>
-          <div class="answer"><p>Znajdujemy się przy ul. Kanarkowej 8 w Warszawie, na Ursynowie. Szczegóły dojazdu można ustalić telefonicznie przed planowaną wizytą.</p><p><a href="zlobek-ursynow.html">Zobacz także stronę o żłobku na Ursynowie.</a></p></div>
+          <div class="answer">
+            <p>Znajdujemy się przy ul. Kanarkowej 8 w Warszawie, na Ursynowie. Szczegóły dojazdu można ustalić telefonicznie przed planowaną wizytą.</p>
+            <p><a href="zlobek-ursynow.html">Zobacz także stronę o żłobku na Ursynowie.</a></p>
+          </div>
         </details>
         
         <details>
           <summary>W jakich godzinach działa żłobek?</summary>
-          <div class="answer"><p>Standardowe godziny otwarcia to od poniedziałku do piątku, w godzinach 7:30–17:30. W razie wątpliwości dotyczących konkretnego dnia lub organizacji opieki prosimy o kontakt.</p></div>
+          <div class="answer"><p>Standardowe godziny otwarcia to od poniedziałku do piątku, w godzinach 7:00–18:00. W razie wątpliwości dotyczących konkretnego dnia lub organizacji opieki prosimy o kontakt.</p></div>
         </details>
         
         <details>
@@ -209,7 +229,10 @@
 
         <details>
           <summary>Jak zapisać dziecko do żłobka?</summary>
-          <div class="answer"><p>Najlepiej zacząć od kontaktu telefonicznego lub e-mailowego. Porozmawiamy o potrzebach dziecka, odpowiemy na pytania i przekażemy aktualne informacje o procedurze zapisu.</p><p>Przyjęcia są uzależnione od dostępności miejsc, dlatego warto zapytać o aktualną sytuację, planowany termin rozpoczęcia opieki i dalsze kroki.</p></div>
+          <div class="answer">
+            <p>Najlepiej zacząć od kontaktu telefonicznego lub e-mailowego. Porozmawiamy o potrzebach dziecka, odpowiemy na pytania i przekażemy aktualne informacje o procedurze zapisu.</p>
+            <p>Przyjęcia są uzależnione od dostępności miejsc, dlatego warto zapytać o aktualną sytuację, planowany termin rozpoczęcia opieki i dalsze kroki.</p>
+          </div>
         </details>
         
         <details>
@@ -224,7 +247,7 @@
         
         <details>
           <summary>Co przygotować dziecku na pierwszy dzień?</summary>
-          <div class="answer"><p>Dokładna lista wyprawkowa obejmuje podstawowe rzeczy osobiste, takie jak komplet ubranek na zmianę, kapcie czy Pieluszki. Przed pierwszym dniem przesyłamy szczegółową listę, aby rodzice przygotowali wyłącznie to, co rzeczywiście niezbędne.</p></div>
+          <div class="answer"><p>Dokładna lista wyprawkowa obejmuje podstawowe rzeczy osobiste, takie jak komplet ubranek na zmianę, kapcie czy pieluszki. Przed pierwszym dniem przesyłamy szczegółową listę, aby rodzice przygotowali wyłącznie to, co rzeczywiście niezbędne.</p></div>
         </details>
 
         <details>
@@ -257,37 +280,35 @@
           <div class="answer"><p>Budujemy relacje oparte na stałym, otwartym kontakcie. Przy odbiorze dziecka opiekunki przekazują bezpośrednie podsumowanie dnia (dotyczące apetytu, humoru i drzemki). W ważnych sprawach pozostajemy także w kontakcie telefonicznym.</p></div>
         </details>
 
-
         <details>
           <summary>Dlaczego nie udostępniamy wizerunku dzieci w mediach społecznościowych i na stronie?</summary>
-          <div class="answer"><p>Bezpieczeństwo, prywatność oraz komfort psychiczny maluchów są dla nas absolute priorytetem. Celowo nie publikujemy zdjęć twarzy podopiecznych w internecie z kilku ważnych powodów:</p><ul><li><strong>Pełna ochrona prywatności:</strong> Zdjęcia raz wrzucone do sieci pozostają w niej na zawsze. Uważamy, że decyzja o upublicznianiu swojego wizerunku powinna należeć do samego dziecka, gdy dorosnie.</li><li><strong>Bezpieczeństwo cyfrowe:</strong> Chronimy maluchy przed zagrożeniami związanymi z niekontrolowanym kopiowaniem, przetwarzaniem lub wykorzystywaniem zdjęć przez algorytmy czy osoby trzecie.</li><li><strong>Spokój i skupienie:</strong> Nasz żłobek to przestrzeń do beztroskiej zabawy i naturalnego rozwoju, a nie plan medialny. Chcemy, aby dzieci czuły się w pełni swobodnie, bez ciągłego skupiania obiektywów na ich codziennych aktywnościach.</li></ul><p>.</p></div>
+          <div class="answer">
+            <p>Bezpieczeństwo, prywatność oraz komfort psychiczny maluchów są dla nas absolutnym priorytetem. Celowo nie publikujemy zdjęć twarzy podopiecznych w internecie z kilku ważnych powodów:</p>
+            <ul>
+              <li><strong>Pełna ochrona prywatności:</strong> Zdjęcia raz wrzucone do sieci pozostają w niej na zawsze. Uważamy, że decyzja o upublicznianiu swojego wizerunku powinna należeć do samego dziecka, gdy dorosną.</li>
+              <li><strong>Bezpieczeństwo cyfrowe:</strong> Chronimy maluchy przed zagrożeniami związanymi z niekontrolowanym kopiowaniem, przetwarzaniem lub wykorzystywaniem zdjęć przez algorytmy czy osoby trzecie.</li>
+              <li><strong>Spokój i skupienie:</strong> Nasz żłobek to przestrzeń do beztroskiej zabawy i naturalnego rozwoju, a nie plan medialny. Chcemy, aby dzieci czuły się w pełni swobodnie, bez ciągłego skupiania obiektywów na ich codziennych aktywnościach.</li>
+            </ul>
+          </div>
         </details>
 
-
-
-        
         <details>
           <summary>Ile kosztuje pobyt dziecka w żłobku?</summary>
           <div class="answer"><p>Aktualną wysokość opłat oraz ewentualne dofinansowania należy potwierdzić bezpośrednio w placówce, ponieważ warunki mogą się zmieniać. Zadzwoń lub napisz do nas, a przekażemy aktualne informacje.</p></div>
         </details>
-
 
         <details>
           <summary>Czy Żłobek Pod Chmurką to placówka prywatna czy publiczna?</summary>
           <div class="answer"><p>Żłobek Pod Chmurką jest prywatną placówką, w której oferujemy również miejsca upublicznione oraz darmowe miejsca dla dzieci. Dzięki programom wsparcia i dofinansowaniom rodzice mogą ubiegać się o całkowite pokrycie kosztów pobytu malucha, zachowując jednocześnie kameralną, domową atmosferę oraz indywidualne podejście charakterystyczne dla opieki prywatnej.</p></div>
         </details>
 
-
-
-               <details>
+        <details>
           <summary>Czym różni się żłobek od punktu opieki dziennej?</summary>
           <div class="answer">
             <p>Choć obie placówki zapewniają profesjonalną opiekę najmłodszym dzieciom, różnią się głównie formą organizacyjną. Tradycyjny żłobek funkcjonuje w oparciu o rygorystyczne przepisy lokalowo-budowlane przypisane do dużych instytucji.</p>
             <p>Nasz <strong>Punkt Opieki Dziennej „Pod Chmurką”</strong> działa w pełni legalnie na podstawie <em>Ustawy o opiece nad dziećmi w wieku do lat 3</em>. Taka forma pozwala nam tworzyć małe, kameralne i domowe grupy, w których każde dziecko otrzymuje maksimum indywidualnej uwagi, ciepła i troski w bezpiecznym, domowym otoczeniu.</p>
           </div>
         </details>
- 
-
         
         <details>
           <summary>Czy są obecnie wolne miejsca?</summary>
