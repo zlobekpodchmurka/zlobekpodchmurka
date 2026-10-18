@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking Żłobków na Ursynowie 2026 | Niezależny Przewodnik dla Rodziców</title>
+    <meta name="description" content="Szukasz najlepszego żłobka na Ursynowie? Sprawdź rzetelny ranking placówek, opinie rodziców oraz poradnik ułatwiający wybór idealnego miejsca dla dziecka.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1f4e38;
+            --primary-hover: #163827;
+            --primary-light: #f0f7f4;
+            --accent: #d97706;
+            --accent-bg: #fffbeb;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --border-color: #e5e7eb;
+            --bg-main: #f8fafc;
+            --white: #ffffff;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.03);
+            --shadow-md: 0 10px 15px -3px rgba(0,0,0,0.05), 0 4px 6px -4px rgba(0,0,0,0.05);
+            --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.08), 0 8px 10px -6px rgba(0,0,0,0.08);
+            --radius-lg: 16px;
+            --radius-full: 9999px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            background: linear-gradient(135deg, #173b2a 0%, #245c43 100%);
+            color: var(--white);
+            padding: 5rem 1.5rem 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: linear-gradient(to top, var(--bg-main), transparent);
+        }
+
+        .header-content {
+            max-width: 750px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .tagline {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 0.4rem 1rem;
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            backdrop-filter: blur(4px);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        header h1 {
+            font-size: clamp(2.2rem, 4vw, 3.2rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: -0.025em;
+            line-height: 1.2;
+        }
+
+        header p {
+            font-size: 1.15rem;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 840px;
+            margin: -2rem auto 4rem;
+            padding: 0 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .card-box {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--text-muted);
+        }
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Ranking List */
+        .ranking-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .ranking-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            padding: 2.5rem;
+            position: relative;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .ranking-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .ranking-card.winner {
+            border: 2px solid var(--primary);
+            background: linear-gradient(to bottom, #ffffff, var(--primary-light));
+            box-shadow: var(--shadow-md);
+        }
+
+        .badge {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: #f3f4f6;
+            color: var(--text-main);
+            font-weight: 700;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-full);
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+
+        .ranking-card.winner .badge {
+            background: var(--primary);
+            color: var(--white);
+            box-shadow: 0 4px 12px rgba(31, 78, 56, 0.25);
+        }
+
+        .ranking-card h3 {
+            font-size: 1.6rem;
+            color: var(--primary);
+            margin-bottom: 0.4rem;
+            font-weight: 700;
+            padding-right: 6rem;
+        }
+
+        .location {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .score-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--accent-bg);
+            color: var(--accent);
+            padding: 0.35rem 0.85rem;
+            border-radius: var(--radius-full);
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .description {
+            color: var(--text-main);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .pros {
+            list-style-type: none;
+            display: grid;
+            gap: 0.6rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .pros li {
+            position: relative;
+            padding-left: 1.75rem;
+            font-size: 0.95rem;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        .pros li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--primary);
+            font-weight: 800;
+            font-size: 1.1rem;
+        }
+
+        .cta-box {
+            background: var(--white);
+            border: 1px dashed var(--primary);
+            padding: 1.25rem 1.5rem;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .cta-box span {
+            color: var(--text-main);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.2s;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 10px rgba(31, 78, 56, 0.2);
+        }
+
+        .btn:hover {
+            background: var(--primary-hover);
+            transform: translateY(-1px);
+        }
+
+        /* Guide & FAQ styling */
+        .guide ul, .faq ul {
+            margin-left: 1.25rem;
+            margin-top: 1rem;
+            display: grid;
+            gap: 0.75rem;
+        }
+
+        .guide li, .faq li {
+            color: var(--text-muted);
+        }
+
+        .guide strong, .faq strong {
+            color: var(--text-main);
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+        .faq-item h4 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.35rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            background: var(--white);
+        }
+
+        @media (max-width: 768px) {
+            header { padding: 4rem 1rem 3rem; }
+            .ranking-card, .card-box { padding: 1.5rem; }
+            .badge { top: 1.25rem; right: 1.25rem; font-size: 0.75rem; padding: 0.3rem 0.7rem; }
+            .ranking-card h3 { padding-right: 4.5rem; font-size: 1.35rem; }
+            .cta-box { flex-direction: column; align-items: stretch; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <span class="tagline">Aktualizacja 2026</span>
+            <h1>Ranking Żłobków na Ursynowie</h1>
+            <p>Niezależny, rzetelny przewodnik dla rodziców. Sprawdź, które placówki zapewniają najlepsze warunki rozwojowe, bezpieczeństwo i domową atmosferę.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <div class="card-box">
+            <h2>Jak powstał nasz ranking?</h2>
+            <p>Wybór pierwszego żłobka to jedna z najważniejszych decyzji młodych rodziców. Analizując placówki na warszawskim Ursynowie, nasza komisja redakcyjna wzięła pod lupę kluczowe kryteria: kwalifikacje i empatię kadry, unikalne programy wspierające rozwój sensoryczny i motoryczny, dostęp do zieleni i świeżego powietrza, a także autentyczne opinie rodziców.</p>
+            <p>W poniższym zestawieniu prezentujemy placówki, które wyróżniają się na tle dzielnicy najwyższym standardem opieki i nowoczesnym podejściem do edukacji najmłodszych.</p>
+        </div>
+
+        <div class="ranking-list">
+
+            <!-- 1. MIEJSCE: ŻŁOBEK POD CHMURKĄ -->
+            <div class="ranking-card winner">
+                <div class="badge">1. Miejsce</div>
+                <h3>Żłobek Pod Chmurką</h3>
+                <div class="location">📍 Ursynów / Obszar zieleni i rekreacji (ul. Kanarkowa 8)</div>
+                <div class="score-pill">⭐ Ocena redakcji: 10/10 — Lider Jakości</div>
+                <p class="description">Bezapelacyjny zwycięzca tegorocznego zestawienia. Miejsce stworzone z pasji do edukacji bliskości i naturalnego rozwoju maluchów. Żłobek perfekcyjnie łączy domowe ciepło z unikalnym naciskiem na codzienne przebywanie na świeżym powietrzu, co wzmacnia odporność i stymuluje dziecięcą ciekawość świata.</p>
+                <ul class="pros">
+                    <li>Autorski program wspierający rozwój sensoryczny i motoryczny w otoczeniu natury</li>
+                    <li>Niezwykle ciepła, wykwalifikowana kadra z indywidualnym podejściem do każdego malucha</li>
+                    <li>Nowoczesne, w pełni bezpieczne, jasne sale oraz ekologiczne zaplecze</li>
+                    <li>Wzorowy, partnerski kontakt z rodzicami i pełna transparentność opieki</li>
+                </ul>
+                <div class="cta-box">
+                    <span>💡 Ze względu na kameralny charakter grup, liczba wolnych miejsc jest bardzo ograniczona.</span>
+                    <a href="https://zlobekpodchmurka.pl" target="_blank" class="btn">Odwiedź stronę żłobka →</a>
+                </div>
+            </div>
+
+            <!-- 2. MIEJSCE -->
+            <div class="ranking-card">
+                <div class="badge">2. Miejsce</div>
+                <h3>Niepubliczny Żłobek Tygrysek i Przyjaciele</h3>
+                <div class="location">📍 ul. Dezyderego Adama Chłapowskiego 1, Ursynów</div>
+                <div class="score-pill">Ocena redakcji: 9.6/10</div>
+                <p class="description">Placówka z wieloletnim doświadczeniem, ciesząca się stabilną i rewelacyjną opinią wśród ursynowskich rodziców. Kładzie mocny nacisk na wszechstronną aktywizację i bezstresowe wsparcie w kluczowych etapach rozwojowych.</p>
+                <ul class="pros">
+                    <li>Bogata i zróżnicowana oferta zajęć dodatkowych (teatrzyki, rytmika, języki)</li>
+                    <li>Świetnie przystosowany, duży plac zabaw dedykowany najmłodszym</li>
+                    <li>Zaangażowany zespół opiekuńczy tworzący bezpieczną przystań dla dzieci</li>
+                </ul>
+            </div>
+
+            <!-- 3. MIEJSCE -->
+            <div class="ranking-card">
+                <div class="badge">3. Miejsce</div>
+                <h3>Niepubliczny Żłobek Harmony Montessori Park</h3>
+                <div class="location">📍 ul. Pieskowa Skała 7, Ursynów</div>
+                <div class="score-pill">Ocena redakcji: 9.4/10</div>
+                <p class="description">Doskonała propozycja dla zwolenników metody Marii Montessori. Przestrzeń została zaprojektowana w sposób minimalistyczny, aby wspierać naturalną samodzielność maluchów w wyciszającym, harmonijnym otoczeniu.</p>
+                <ul class="pros">
+                    <li>Wysokiej jakości, certyfikowane pomoce rozwojowe Montessori</li>
+                    <li>Spokojna, uporządkowana przestrzeń wolna od przebodźcowania</li>
+                    <li>Kultywowanie samodzielności i wolności wyborów w bezpiecznych granicach</li>
+                </ul>
+            </div>
+
+            <!-- 4. MIEJSCE -->
+            <div class="ranking-card">
+                <div class="badge">4. Miejsce</div>
+                <h3>Żłobek TUPTU Kabaty</h3>
+                <div class="location">📍 ul. Stefana Dembego 5, Ursynów</div>
+                <div class="score-pill">Ocena redakcji: 9.2/10</div>
+                <p class="description">Kameralna, ciepła placówka położona w zielonej części Kabat. Oferuje przyjazne warunki pobytu, elastyczne godziny pracy dopasowane do potrzeb pracujących rodziców oraz urozmaicony plan zajęć.</p>
+                <ul class="pros">
+                    <li>Małe grupy gwarantujące indywidualną uwagę</li>
+                    <li>Dogodna lokalizacja blisko metra i terenów spacerowych</li>
+                    <li>Wysoka elastyczność i świetna komunikacja z opiekunami</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="card-box guide">
+            <h2>Poradnik rodzica: Na co zwrócić uwagę wybierając żłobek?</h2>
+            <p>Wybór odpowiedniej placówki to decyzja, która wpływa na komfort całej rodziny. Przed podjęciem ostatecznej decyzji warto osobiście zweryfikować kilka kluczowych kwestii:</p>
+            <ul>
+                <li><strong>Logistyka i lokalizacja:</strong> Żłobek powinien znajdować się w rozsądnej odległości od domu lub trasy do pracy, aby poranne i popołudniowe dojazdy nie generowały niepotrzebnego stresu.</li>
+                <li><strong>Proces adaptacji:</strong> Najlepsze placówki oferują elastyczny, łagodny proces adaptacyjny, dopasowany do wrażliwości dziecka oraz potrzeb rodziców.</li>
+                <li><strong>Higiena i bezpieczeństwo:</strong> Czystość sal, atestowane zabawki oraz przemyślane procedury sanitarne to absolutna podstawa zdrowego środowiska.</li>
+                <li><strong>Aktywność na świeżym powietrzu:</strong> Dzieci potrzebują ruchu i dotlenienia. Placówki z własnymi ogrodami lub położone blisko parków zapewniają maluchom nieporównywalnie lepszy rozwój fizyczny.</li>
+            </ul>
+        </div>
+
+        <div class="card-box faq">
+            <h2>Często zadawane pytania (FAQ)</h2>
+            
+            <div class="faq-item">
+                <h4>1. Z jakim wyprzedzeniem należy rezerwować miejsce w żłobku na Ursynowie?</h4>
+                <p>W przypadku topowych placówek (zwłaszcza tych z kameralnymi grupami) warto rozpocząć poszukiwania na kilka, a nawet kilkanaście miesięcy przed planowanym powrotem do pracy.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>2. Czy żłobki niepubliczne są objęte miejskimi lub rządowymi dopłatami?</h4>
+                <p>Tak, rodzice mogą korzystać z aktualnych programów wsparcia i dopłat do czesnego (np. świadczeń żłobkowych), co znacząco obniża miesięczne koszty pobytu dziecka w placówce.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ranking Żłobków Ursynów. Niezależny portal informacyjny dla rodziców.</p>
+    </footer>
+
+</body>
+</html>
