@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pl">
 <head>
   <!-- Dedykowana favicona dla Google i przeglądarek -->
@@ -125,8 +125,10 @@
       color:var(--mountain-blue-deep);
     }
 
+    /* KRYTYCZNA POPRAWKA DLA OBRAZKÓW */
     img{
       max-width:100%;
+      height:auto; /* To zapobiega rozciąganiu na telefonach */
       display:block;
     }
 
@@ -157,6 +159,11 @@
       color:var(--mountain-blue-deep);
       text-decoration:none;
       flex-shrink:0;
+      transition: opacity 0.2s ease;
+    }
+
+    .brand:hover {
+      opacity: 0.85;
     }
 
     .brand img{
@@ -183,6 +190,7 @@
       color:var(--mountain-blue-deep);
       font-family:'Baloo 2',sans-serif;
       font-size:1.05rem;
+      transition: color 0.2s ease;
     }
 
     .nav-links a:hover{
@@ -198,11 +206,12 @@
     .social-icons a{
       color:var(--mountain-blue-deep);
       font-size:1.2rem;
-      transition:color 0.2s;
+      transition:color 0.2s, transform 0.2s;
     }
 
     .social-icons a:hover{
       color:var(--fox-amber-deep);
+      transform: scale(1.1);
     }
 
     .topbar .call{
@@ -214,10 +223,15 @@
       border-radius:999px;
       font-family:'Baloo 2',sans-serif;
       white-space:nowrap;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     .topbar .call:hover{
       background:var(--fox-amber-deep);
+    }
+    
+    .topbar .call:active {
+      transform: scale(0.95);
     }
 
     /* ---------- hero ---------- */
@@ -265,15 +279,22 @@
       padding:13px 24px;
       border-radius:999px;
       border:2px solid transparent;
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    }
+    
+    .btn:active {
+      transform: scale(0.97);
     }
 
     .btn-primary{
       background:var(--mountain-blue-deep);
       color:#fff;
+      box-shadow: 0 4px 14px rgba(63,97,120,0.2);
     }
 
     .btn-primary:hover{
       background:var(--mountain-blue);
+      box-shadow: 0 6px 20px rgba(63,97,120,0.3);
     }
 
     .btn-secondary{
@@ -352,7 +373,7 @@
         100% 100%,
         0 100%
       );
-      border-radius:4px;
+      border-radius:8px;
     }
 
     .values{
@@ -424,6 +445,13 @@
       padding:24px;
       border-radius:8px;
       border:1px solid var(--line);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .day-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(63,97,120,0.1);
+      border-color: transparent;
     }
 
     .day-card h3{
@@ -447,13 +475,20 @@
 
     .gallery-grid figure{
       margin:0;
+      border-radius: 8px;
+      overflow: hidden;
     }
 
     .gallery-grid img{
       width:100%;
       height:100%;
       object-fit:cover;
-      border-radius:4px;
+      border-radius:8px;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-grid figure:hover img {
+      transform: scale(1.03);
     }
 
     .gallery-grid figcaption{
@@ -477,6 +512,13 @@
       padding:28px;
       border-radius:10px;
       position:relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .review-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(63,97,120,0.1);
+      border-color: transparent;
     }
 
     .review-header{
@@ -548,10 +590,12 @@
     .contact-list a{
       text-decoration:none;
       font-weight:700;
+      transition: color 0.2s ease;
     }
 
     .contact-list a:hover{
       text-decoration:underline;
+      color: var(--fox-amber-deep);
     }
 
     .seo-contact-box{
@@ -570,7 +614,7 @@
       border:0;
       width:100%;
       height:360px;
-      border-radius:6px;
+      border-radius:10px;
       box-shadow:0 18px 40px -18px rgba(63,97,120,.35);
     }
 
@@ -593,6 +637,12 @@
 
     footer a{
       color:#fff;
+      text-decoration:none;
+      transition: color 0.2s ease;
+    }
+    
+    footer a:hover {
+      color: var(--fox-amber);
     }
 
     .footer-socials{
@@ -603,10 +653,12 @@
     .footer-socials a{
       font-size:1.3rem;
       color:#fff;
+      transition: color 0.2s ease, transform 0.2s ease;
     }
 
     .footer-socials a:hover{
       color:var(--fox-amber);
+      transform: translateY(-3px);
     }
 
     @media (max-width:760px){
@@ -644,11 +696,12 @@
       }
 
       .about-photo img{
-        clip-path:none;
+        clip-path:none; /* Wyłącza skomplikowany kształt na mobile */
+        border-radius: 12px; /* Dodaje ładne zaokrąglenie w zamian */
       }
 
       h1{
-        font-size:2rem !important;
+        font-size:2.1rem !important;
       }
     }
 
@@ -660,6 +713,12 @@
     @media (prefers-reduced-motion: reduce){
       html{
         scroll-behavior:auto;
+      }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
       }
     }
   </style>
@@ -857,7 +916,7 @@
               "
             >
               Wierzymy w szacunek do emocji malucha, naturalność i swobodę
-              odkrywania świata bez presji. Dajemy przestreneń na swobodną zabawę
+              odkrywania świata bez presji. Dajemy przestrzeń na swobodną zabawę
               i budowanie pewności siebie.
             </p>
 
@@ -1380,9 +1439,9 @@
             </p>
             <p style="margin-top: 12px;">
               Sprawdź również nasze dedykowane podstrony lokalne: 
-              <a href="zlobek-ursynow.html" style="font-weight: 700; text-decoration: underline;">Żłobek Ursynów</a>, 
-              <a href="zlobek-zielony-ursynow.html" style="font-weight: 700; text-decoration: underline;">Żłobek Zielony Ursynów</a> 
-              oraz odpowiedź na <a href="FAQ.html" style="font-weight: 700; text-decoration: underline;">Najczęściej zadawane pytania (FAQ)</a>.
+              <a href="zlobek-ursynow.html">Żłobek Ursynów</a>, 
+              <a href="zlobek-zielony-ursynow.html">Żłobek Zielony Ursynów</a> 
+              oraz odpowiedź na <a href="FAQ.html">Najczęściej zadawane pytania (FAQ)</a>.
             </p>
 
           </div>
