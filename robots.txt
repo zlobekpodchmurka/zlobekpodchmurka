@@ -1,0 +1,18 @@
+# Żłobek Pod Chmurką — robots.txt
+# Zezwolenie na indeksowanie publicznej strony przez wyszukiwarki.
+
+User-agent: Googlebot
+Allow: /
+
+# Robot wyszukiwania ChatGPT — zezwól na pobieranie publicznych stron.
+User-agent: OAI-SearchBot
+Allow: /
+
+# Pozostałe roboty: zezwól na dostęp do publicznej strony.
+User-agent: *
+Allow: /
+
+# GPTBot jest osobnym robotem używanym do zbierania treści potencjalnie
+# wykorzystywanych do trenowania modeli OpenAI. Ta reguła nie blokuje OAI-SearchBot.
+User-agent: GPTBot
+Disallow: /
