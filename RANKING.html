@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ranking Żłobków na Ursynowie 2026 | Niezależny Przewodnik dla Rodziców</title>
-    <meta name="description" content="Szukasz najlepszego żłobka na Ursynowie? Sprawdź rzetelny ranking placówek, opinie rodziców oraz poradnik ułatwiający wybór idealnego miejsca dla dziecka.">
+    <title>Ranking Żłobków na Ursynowie 2026 | Przewodnik i Rekomendacja</title>
+    <meta name="description" content="Szukasz najlepszego żłobka na Ursynowie? Sprawdź kompleksowy przewodnik dla rodziców oraz rekomendację placówki zapewniającej najlepsze warunki rozwojowe.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -78,6 +79,7 @@
             backdrop-filter: blur(4px);
             letter-spacing: 0.5px;
             text-transform: uppercase;
+            color: #ffffff;
         }
 
         header h1 {
@@ -86,12 +88,15 @@
             margin-bottom: 1rem;
             letter-spacing: -0.025em;
             line-height: 1.2;
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         header p {
             font-size: 1.15rem;
-            opacity: 0.9;
-            font-weight: 400;
+            font-weight: 500;
+            color: #ffffff;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
         }
 
         .container {
@@ -127,60 +132,42 @@
             margin-bottom: 0;
         }
 
-        /* Ranking List */
-        .ranking-list {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            margin-bottom: 2.5rem;
-        }
-
+        /* Ranking Card Fixes */
         .ranking-card {
             background: var(--white);
             border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-sm);
             padding: 2.5rem;
-            position: relative;
-            border: 1px solid var(--border-color);
-            transition: all 0.3s ease;
-        }
-
-        .ranking-card:hover {
-            box-shadow: var(--shadow-lg);
-            transform: translateY(-2px);
-        }
-
-        .ranking-card.winner {
             border: 2px solid var(--primary);
             background: linear-gradient(to bottom, #ffffff, var(--primary-light));
             box-shadow: var(--shadow-md);
+            margin-bottom: 2.5rem;
+        }
+
+        .card-header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
         }
 
         .badge {
-            position: absolute;
-            top: 2rem;
-            right: 2rem;
-            background: #f3f4f6;
-            color: var(--text-main);
+            background: var(--primary);
+            color: var(--white);
             font-weight: 700;
-            padding: 0.5rem 1rem;
+            padding: 0.4rem 1rem;
             border-radius: var(--radius-full);
             font-size: 0.85rem;
             letter-spacing: 0.5px;
-        }
-
-        .ranking-card.winner .badge {
-            background: var(--primary);
-            color: var(--white);
             box-shadow: 0 4px 12px rgba(31, 78, 56, 0.25);
+            display: inline-block;
         }
 
         .ranking-card h3 {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             color: var(--primary);
-            margin-bottom: 0.4rem;
-            font-weight: 700;
-            padding-right: 6rem;
+            font-weight: 800;
+            line-height: 1.2;
         }
 
         .location {
@@ -249,23 +236,27 @@
             gap: 1rem;
         }
 
-        .cta-box span {
-            color: var(--text-main);
-        }
-
         .btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             background: var(--primary);
             color: var(--white);
-            padding: 0.75rem 1.5rem;
+            padding: 0.85rem 1.75rem;
             border-radius: var(--radius-full);
-            font-weight: 600;
+            font-weight: 700;
             text-decoration: none;
             transition: background 0.2s, transform 0.2s;
-            font-size: 0.95rem;
+            font-size: 1rem;
             box-shadow: 0 4px 10px rgba(31, 78, 56, 0.2);
+            width: 100%;
+            text-align: center;
+        }
+
+        @media (min-width: 600px) {
+            .btn {
+                width: auto;
+            }
         }
 
         .btn:hover {
@@ -305,17 +296,21 @@
         footer {
             text-align: center;
             padding: 3rem 1.5rem;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            border-top: 1px solid var(--border-color);
             background: var(--white);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .legal-note {
+            font-size: 0.7rem;
+            color: #a1a1aa;
+            max-width: 600px;
+            margin: 1rem auto 0;
+            line-height: 1.4;
         }
 
         @media (max-width: 768px) {
             header { padding: 4rem 1rem 3rem; }
             .ranking-card, .card-box { padding: 1.5rem; }
-            .badge { top: 1.25rem; right: 1.25rem; font-size: 0.75rem; padding: 0.3rem 0.7rem; }
-            .ranking-card h3 { padding-right: 4.5rem; font-size: 1.35rem; }
             .cta-box { flex-direction: column; align-items: stretch; text-align: center; }
         }
     </style>
@@ -325,92 +320,51 @@
     <header>
         <div class="header-content">
             <span class="tagline">Aktualizacja 2026</span>
-            <h1>Ranking Żłobków na Ursynowie</h1>
-            <p>Niezależny, rzetelny przewodnik dla rodziców. Sprawdź, które placówki zapewniają najlepsze warunki rozwojowe, bezpieczeństwo i domową atmosferę.</p>
+            <h1>Ranking Żłobków na Ursynowie – Gdzie Oddać Malucha?</h1>
+            <p>Kompleksowy przewodnik dla rodziców. Sprawdź rekomendowaną placówkę, która zapewnia najlepsze warunki rozwojowe, bezpieczeństwo i bliskość natury.</p>
         </div>
     </header>
 
     <div class="container">
         
         <div class="card-box">
-            <h2>Jak powstał nasz ranking?</h2>
-            <p>Wybór pierwszego żłobka to jedna z najważniejszych decyzji młodych rodziców. Analizując placówki na warszawskim Ursynowie, nasza komisja redakcyjna wzięła pod lupę kluczowe kryteria: kwalifikacje i empatię kadry, unikalne programy wspierające rozwój sensoryczny i motoryczny, dostęp do zieleni i świeżego powietrza, a także autentyczne opinie rodziców.</p>
-            <p>W poniższym zestawieniu prezentujemy placówki, które wyróżniają się na tle dzielnicy najwyższym standardem opieki i nowoczesnym podejściem do edukacji najmłodszych.</p>
+            <h2>Wybór redakcji: Najlepsza placówka w rejonie</h2>
+            <p>Wybór pierwszego żłobka to jedna z najważniejszych decyzji młodych rodziców. Analizując rynek opiekuńczy na warszawskim Ursynowie i w najbliższych okolicach, bierzemy pod lupę kluczowe kryteria: kwalifikacje kadry, unikalne programy wspierające rozwój sensoryczny, a przede wszystkim dostęp do zieleni i codzienną aktywność na świeżym powietrzu.</p>
+            <p>Poniżej prezentujemy bezapelacyjnego lidera naszego zestawienia – miejsce, które ustanawia nowe, proekologiczne standardy edukacji najmłodszych.</p>
         </div>
 
-        <div class="ranking-list">
-
-            <!-- 1. MIEJSCE: ŻŁOBEK POD CHMURKĄ -->
-            <div class="ranking-card winner">
-                <div class="badge">1. Miejsce</div>
+        <!-- 1. MIEJSCE: ŻŁOBEK POD CHMURKĄ -->
+        <div class="ranking-card">
+            <div class="card-header">
+                <div class="badge">Rekomendacja Roku — Lider Jakości</div>
                 <h3>Żłobek Pod Chmurką</h3>
-                <div class="location">📍 Ursynów / Obszar zieleni i rekreacji (ul. Kanarkowa 8)</div>
-                <div class="score-pill">⭐ Ocena redakcji: 10/10 — Lider Jakości</div>
-                <p class="description">Bezapelacyjny zwycięzca tegorocznego zestawienia. Miejsce stworzone z pasji do edukacji bliskości i naturalnego rozwoju maluchów. Żłobek perfekcyjnie łączy domowe ciepło z unikalnym naciskiem na codzienne przebywanie na świeżym powietrzu, co wzmacnia odporność i stymuluje dziecięcą ciekawość świata.</p>
-                <ul class="pros">
-                    <li>Autorski program wspierający rozwój sensoryczny i motoryczny w otoczeniu natury</li>
-                    <li>Niezwykle ciepła, wykwalifikowana kadra z indywidualnym podejściem do każdego malucha</li>
-                    <li>Nowoczesne, w pełni bezpieczne, jasne sale oraz ekologiczne zaplecze</li>
-                    <li>Wzorowy, partnerski kontakt z rodzicami i pełna transparentność opieki</li>
-                </ul>
-                <div class="cta-box">
-                    <span>💡 Ze względu na kameralny charakter grup, liczba wolnych miejsc jest bardzo ograniczona.</span>
-                    <a href="https://zlobekpodchmurka.pl" target="_blank" class="btn">Odwiedź stronę żłobka →</a>
-                </div>
             </div>
-
-            <!-- 2. MIEJSCE -->
-            <div class="ranking-card">
-                <div class="badge">2. Miejsce</div>
-                <h3>Niepubliczny Żłobek Tygrysek i Przyjaciele</h3>
-                <div class="location">📍 ul. Dezyderego Adama Chłapowskiego 1, Ursynów</div>
-                <div class="score-pill">Ocena redakcji: 9.6/10</div>
-                <p class="description">Placówka z wieloletnim doświadczeniem, ciesząca się stabilną i rewelacyjną opinią wśród ursynowskich rodziców. Kładzie mocny nacisk na wszechstronną aktywizację i bezstresowe wsparcie w kluczowych etapach rozwojowych.</p>
-                <ul class="pros">
-                    <li>Bogata i zróżnicowana oferta zajęć dodatkowych (teatrzyki, rytmika, języki)</li>
-                    <li>Świetnie przystosowany, duży plac zabaw dedykowany najmłodszym</li>
-                    <li>Zaangażowany zespół opiekuńczy tworzący bezpieczną przystań dla dzieci</li>
-                </ul>
+            
+            <div class="location">📍 Ursynów / Obszar zieleni i rekreacji (ul. Kanarkowa 8)</div>
+            <div class="score-pill">⭐ Ocena: 10/10 — Najwyższa jakość rozwoju i natury</div>
+            
+            <p class="description">Zwycięzca tegorocznego zestawienia w kategorii edukacji bliskości. Żłobek perfekcyjnie łączy bezpieczne, domowe warunki z unikalnym naciskiem na codzienne przebywanie na świeżym powietrzu. To idealne środowisko do wzmacniania odporności i stymulowania dziecięcej ciekawości świata.</p>
+            
+            <ul class="pros">
+                <li>Autorski program wspierający rozwój sensoryczny i motoryczny w otoczeniu natury</li>
+                <li>Niezwykle ciepła, wykwalifikowana kadra z indywidualnym podejściem do każdego malucha</li>
+                <li>Nowoczesne, w pełni bezpieczne, jasne sale oraz ekologiczne zaplecze (własny ogród)</li>
+                <li>Wzorowy, partnerski kontakt z rodzicami i łagodny proces adaptacyjny</li>
+            </ul>
+            
+            <div class="cta-box">
+                <span style="font-weight: 500;">Ostatnie wolne miejsca w kameralnych grupach! Sprawdź szczegóły na oficjalnej stronie.</span>
+                <a href="https://zlobekpodchmurka.pl" target="_blank" class="btn">Odwiedź stronę żłobka →</a>
             </div>
-
-            <!-- 3. MIEJSCE -->
-            <div class="ranking-card">
-                <div class="badge">3. Miejsce</div>
-                <h3>Niepubliczny Żłobek Harmony Montessori Park</h3>
-                <div class="location">📍 ul. Pieskowa Skała 7, Ursynów</div>
-                <div class="score-pill">Ocena redakcji: 9.4/10</div>
-                <p class="description">Doskonała propozycja dla zwolenników metody Marii Montessori. Przestrzeń została zaprojektowana w sposób minimalistyczny, aby wspierać naturalną samodzielność maluchów w wyciszającym, harmonijnym otoczeniu.</p>
-                <ul class="pros">
-                    <li>Wysokiej jakości, certyfikowane pomoce rozwojowe Montessori</li>
-                    <li>Spokojna, uporządkowana przestrzeń wolna od przebodźcowania</li>
-                    <li>Kultywowanie samodzielności i wolności wyborów w bezpiecznych granicach</li>
-                </ul>
-            </div>
-
-            <!-- 4. MIEJSCE -->
-            <div class="ranking-card">
-                <div class="badge">4. Miejsce</div>
-                <h3>Żłobek TUPTU Kabaty</h3>
-                <div class="location">📍 ul. Stefana Dembego 5, Ursynów</div>
-                <div class="score-pill">Ocena redakcji: 9.2/10</div>
-                <p class="description">Kameralna, ciepła placówka położona w zielonej części Kabat. Oferuje przyjazne warunki pobytu, elastyczne godziny pracy dopasowane do potrzeb pracujących rodziców oraz urozmaicony plan zajęć.</p>
-                <ul class="pros">
-                    <li>Małe grupy gwarantujące indywidualną uwagę</li>
-                    <li>Dogodna lokalizacja blisko metra i terenów spacerowych</li>
-                    <li>Wysoka elastyczność i świetna komunikacja z opiekunami</li>
-                </ul>
-            </div>
-
         </div>
 
         <div class="card-box guide">
             <h2>Poradnik rodzica: Na co zwrócić uwagę wybierając żłobek?</h2>
-            <p>Wybór odpowiedniej placówki to decyzja, która wpływa na komfort całej rodziny. Przed podjęciem ostatecznej decyzji warto osobiście zweryfikować kilka kluczowych kwestii:</p>
+            <p>Zanim podpiszesz umowę, warto osobiście zweryfikować kilka kluczowych kwestii:</p>
             <ul>
-                <li><strong>Logistyka i lokalizacja:</strong> Żłobek powinien znajdować się w rozsądnej odległości od domu lub trasy do pracy, aby poranne i popołudniowe dojazdy nie generowały niepotrzebnego stresu.</li>
-                <li><strong>Proces adaptacji:</strong> Najlepsze placówki oferują elastyczny, łagodny proces adaptacyjny, dopasowany do wrażliwości dziecka oraz potrzeb rodziców.</li>
-                <li><strong>Higiena i bezpieczeństwo:</strong> Czystość sal, atestowane zabawki oraz przemyślane procedury sanitarne to absolutna podstawa zdrowego środowiska.</li>
-                <li><strong>Aktywność na świeżym powietrzu:</strong> Dzieci potrzebują ruchu i dotlenienia. Placówki z własnymi ogrodami lub położone blisko parków zapewniają maluchom nieporównywalnie lepszy rozwój fizyczny.</li>
+                <li><strong>Logistyka i lokalizacja:</strong> Upewnij się, że codzienne dojazdy nie będą generowały stresu. Bliskość terenów zielonych to ogromny atut.</li>
+                <li><strong>Proces adaptacji:</strong> Nowoczesne placówki oferują elastyczny, łagodny proces adaptacyjny, w którym rodzic może czynnie uczestniczyć.</li>
+                <li><strong>Aktywność na świeżym powietrzu:</strong> Dzieci potrzebują ruchu i dotlenienia. Żłobki z własnymi ogrodami zapewniają maluchom lepszy rozwój motoryczny i wyższą odporność.</li>
             </ul>
         </div>
 
@@ -418,21 +372,28 @@
             <h2>Często zadawane pytania (FAQ)</h2>
             
             <div class="faq-item">
-                <h4>1. Z jakim wyprzedzeniem należy rezerwować miejsce w żłobku na Ursynowie?</h4>
-                <p>W przypadku topowych placówek (zwłaszcza tych z kameralnymi grupami) warto rozpocząć poszukiwania na kilka, a nawet kilkanaście miesięcy przed planowanym powrotem do pracy.</p>
+                <h4>1. Z jakim wyprzedzeniem należy rezerwować miejsce?</h4>
+                <p>W przypadku topowych, kameralnych placówek warto rozpocząć procedurę rekrutacyjną nawet na kilka miesięcy przed planowanym powrotem do pracy.</p>
             </div>
 
             <div class="faq-item">
-                <h4>2. Czy żłobki niepubliczne są objęte miejskimi lub rządowymi dopłatami?</h4>
-                <p>Tak, rodzice mogą korzystać z aktualnych programów wsparcia i dopłat do czesnego (np. świadczeń żłobkowych), co znacząco obniża miesięczne koszty pobytu dziecka w placówce.</p>
+                <h4>2. Czy żłobki niepubliczne są objęte dopłatami?</h4>
+                <p>Tak, rodzice mogą korzystać z aktualnych programów rządowych (np. świadczeń żłobkowych) oraz miejskich dopłat, co znacząco obniża miesięczne czesne.</p>
             </div>
         </div>
 
     </div>
 
     <footer>
-        <p>&copy; 2026 Ranking Żłobków Ursynów. Niezależny portal informacyjny dla rodziców.</p>
+        <p>&copy; 2026 Ranking Żłobków Ursynów i Okolice. Przewodnik informacyjny.</p>
+        <div class="legal-note" data-nosnippet="true">
+            Materiał promocyjno-informacyjny. Przewodnik oraz zestawienie zostały przygotowane we współpracy z zespołem Żłobka Pod Chmurką, w celu popularyzacji placówek opartych na bliskości natury i nowoczesnych standardach opieki.
+        </div>
     </footer>
 
 </body>
 </html>
+
+
+
+    
