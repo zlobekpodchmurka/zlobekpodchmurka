@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Dedykowana favicona dla Google i przeglądarek -->
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ==================== SEO: podstawowe meta tagi ==================== -->
+  <title>FAQ – Żłobek Pod Chmurką | Pytania rodziców, Ursynów</title>
+  <meta name="description" content="Najczęstsze pytania rodziców o Żłobek Pod Chmurką na Ursynowie: wiek dzieci, rekrutacja, adaptacja, wyprawka, godziny otwarcia i kontakt.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.zlobekpodchmurka.pl/FAQ.html">
+
+  <!-- ==================== IKONY / FAVICON ==================== -->
+  <link rel="icon" type="image/webp" href="logo.webp">
+  <link rel="shortcut icon" type="image/webp" href="logo.webp">
+  <link rel="apple-touch-icon" href="logo.webp">
+
+  <!-- ==================== SEO: Open Graph / social ==================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FAQ – Żłobek Pod Chmurką na Ursynowie">
+  <meta property="og:description" content="Odpowiedzi na najczęstsze pytania rodziców zainteresowanych naszym żłobkiem na Ursynowie.">
+  <meta property="og:url" content="https://www.zlobekpodchmurka.pl/FAQ.html">
+  <meta property="og:image" content="https://www.zlobekpodchmurka.pl/logo.webp">
+  <meta property="og:locale" content="pl_PL">
+  <meta name="twitter:card" content="summary">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "FAQ – Żłobek Pod Chmurką",
+    "url": "https://www.zlobekpodchmurka.pl/FAQ.html",
+    "inLanguage": "pl-PL",
+    "description": "Odpowiedzi na najczęstsze pytania rodziców dotyczące Żłobka Pod Chmurką na warszawskim Ursynowie."
+  }
+  </script>
+
+  <!-- ==================== Fonty i ikony FontAwesome ==================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root{
+      --sky:#EEF5F8;
+      --cloud:#FFFFFF;
+      --mountain-blue:#5E86A0;
+      --mountain-blue-deep:#3F6178;
+      --mountain-gray:#A9AFB3;
+      --fox-amber:#E2A23D;
+      --fox-amber-deep:#C6842A;
+      --ink:#26333B;
+      --ink-soft:#5B6B74;
+      --line:#D8E3E8;
+    }
+
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{ margin:0; background:var(--sky); color:var(--ink); font-family:'Karla', sans-serif; font-size:17px; line-height:1.6; }
+    h1,h2,h3{ font-family:'Baloo 2', sans-serif; font-weight:700; color:var(--mountain-blue-deep); margin:0 0 .4em 0; }
+    a{ color:var(--mountain-blue-deep); }
+    img{ max-width:100%; display:block; }
+    .wrap{ max-width:1080px; margin:0 auto; padding:0 24px; }
+
+    /* ---------- top bar & nav ---------- */
+    .topbar{ display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:1080px; margin:0 auto; }
+    .brand{ display:flex; align-items:center; gap:10px; font-family:'Baloo 2', sans-serif; font-weight:600; font-size:1.15rem; color:var(--mountain-blue-deep); text-decoration:none; flex-shrink:0; }
+    .brand img{ width:42px; height:42px; border-radius:50%; object-fit:cover; flex-shrink:0; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    .nav-links{ display:flex; gap:24px; align-items:center; list-style:none; margin:0; padding:0; }
+    .nav-links a{ text-decoration:none; font-weight:600; color:var(--mountain-blue-deep); font-family:'Baloo 2',sans-serif; font-size:1.05rem; }
+    .nav-links a:hover{ color:var(--fox-amber-deep); }
+    .social-icons{ display:flex; gap:14px; align-items:center; }
+    .social-icons a{ color:var(--mountain-blue-deep); font-size:1.2rem; transition:color 0.2s; }
+    .social-icons a:hover{ color:var(--fox-amber-deep); }
+    .topbar .call{ font-weight:700; text-decoration:none; color:var(--cloud); background:var(--fox-amber); padding:10px 18px; border-radius:999px; font-family:'Baloo 2',sans-serif; white-space:nowrap; }
+    .topbar .call:hover{ background:var(--fox-amber-deep); }
+
+    /* ---------- hero ---------- */
+    .hero{ text-align:center; padding:50px 24px 70px; max-width:800px; margin:0 auto; }
+    .hero h1{ font-size:2.5rem; line-height:1.18; }
+    .hero p.lead{ font-size:1.1rem; color:var(--ink-soft); margin: 0 auto; }
+
+    /* ---------- cloud divider ---------- */
+    .cloud-divider{ display:block; width:100%; height:60px; }
+    .cloud-divider svg{ width:100%; height:100%; display:block; }
+    .band-white{ background:var(--cloud); }
+
+    /* ---------- FAQ ---------- */
+    section{ padding:64px 0; }
+    .faq-list{ max-width:800px; margin:0 auto; display:grid; gap:16px; }
+    details{ background:var(--cloud); border:1px solid var(--line); border-radius:8px; padding:0 24px; box-shadow:0 4px 10px rgba(94,134,160,0.05); }
+    summary{ cursor:pointer; list-style:none; padding:20px 34px 20px 0; font-family:'Baloo 2',sans-serif; font-size:1.15rem; font-weight:700; color:var(--mountain-blue-deep); position:relative; }
+    summary::-webkit-details-marker{ display:none; }
+    summary:after{ content:"+"; position:absolute; right:0; top:15px; font-family:'Karla',sans-serif; font-size:1.8rem; font-weight:400; color:var(--fox-amber); }
+    details[open] summary:after{ content:"−"; }
+    .answer{ padding:0 0 24px; color:var(--ink-soft); }
+    .answer p{ margin:0 0 10px; }
+    .answer p:last-child{ margin-bottom:0; }
+    .answer a{ color:var(--mountain-blue-deep); font-weight:700; text-decoration:none; }
+    .answer a:hover{ text-decoration:underline; }
+
+    /* ---------- contact banner (dostosowany z głównej) ---------- */
+    .contact-banner{ margin:40px auto 0; max-width:800px; background:linear-gradient(135deg, var(--mountain-blue-deep), var(--mountain-blue)); color:#fff; border-radius:12px; padding:34px; text-align:center; box-shadow:0 14px 30px rgba(63,97,120,0.15); }
+    .contact-banner h2{ color:var(--fox-amber); margin:0 0 10px; font-size:1.8rem; }
+    .contact-banner p{ color:#F0F4F7; margin:0 0 20px; font-size:1.1rem; }
+    .btn{ display:inline-block; font-family:'Baloo 2',sans-serif; font-weight:600; text-decoration:none; padding:13px 24px; border-radius:999px; border:2px solid transparent; }
+    .btn-primary{ background:var(--fox-amber); color:#fff; }
+    .btn-primary:hover{ background:var(--fox-amber-deep); }
+    .btn-secondary{ border-color:#fff; color:#fff; }
+    .btn-secondary:hover{ background:rgba(255,255,255,0.1); }
+    .buttons-row{ display:flex; justify-content:center; gap:14px; flex-wrap:wrap; }
+
+    /* ---------- footer ---------- */
+    footer{ background:var(--mountain-blue-deep); color:#E7EFF2; padding:34px 0; font-size:.92rem; }
+    footer .wrap{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; }
+    footer a{ color:#fff; text-decoration:none; }
+    footer a:hover{ color:var(--fox-amber); }
+    .footer-socials{ display:flex; gap:16px; }
+    .footer-socials a{ font-size:1.3rem; color:#fff; }
+    .footer-socials a:hover{ color:var(--fox-amber); }
+
+    @media (max-width:760px){
+      .nav-links{ display:none; }
+      h1{ font-size:2rem !important; }
+      details{ padding:0 16px; }
+      summary{ font-size:1.05rem; }
+    }
+    :focus-visible{ outline:3px solid var(--fox-amber); outline-offset:2px; }
+  </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BG459L0V90"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BG459L0V90');
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="topbar">
+      <a class="brand" href="index.html">
+        <img src="logo.webp" alt="Logo żłobka Pod Chmurką" width="42" height="42">
+        Żłobek Pod Chmurką
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#o-nas">O nas</a></li>
+        <li><a href="index.html#galeria">Galeria</a></li>
+        <li><a href="index.html#opinie">Opinie</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/p/Pod-chmurk%C4%85-punkt-opieki-dziennej-100063548951420/?locale=pl_PL" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/zlobekpodchmurka2018/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <a class="call" href="tel:+48530119251">530 119 251</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>FAQ – najczęstsze pytania</h1>
+      <p class="lead">Zastanawiasz się, czy Żłobek Pod Chmurką będzie odpowiednim miejscem dla Twojego dziecka? Zebraliśmy odpowiedzi na pytania, które warto zadać przed kontaktem i odwiedzinami placówki.</p>
+    </section>
+
+    <div class="cloud-divider" aria-hidden="true">
+      <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,40 C150,10 300,60 450,35 C600,10 750,55 900,30 C1050,10 1150,45 1200,30 L1200,60 L0,60 Z" fill="#FFFFFF"></path>
+      </svg>
+    </div>
+
+    <section class="band-white">
+      <div class="wrap faq-list" aria-label="Najczęściej zadawane pytania">
+        
+        <details>
+          <summary>W jakim wieku dzieci mogą uczęszczać do Żłobka Pod Chmurką?</summary>
+          <div class="answer"><p>Placówka jest przeznaczona dla dzieci w wieku od 12 do 36 miesięcy. W przypadku dziecka, które jest blisko granicy tego przedziału, najlepiej skontaktować się z nami i omówić indywidualną sytuację.</p></div>
+        </details>
+        
+        <details>
+          <summary>Gdzie znajduje się Żłobek Pod Chmurką?</summary>
+          <div class="answer"><p>Znajdujemy się przy ul. Kanarkowej 8 w Warszawie, na Ursynowie. Szczegóły dojazdu można ustalić telefonicznie przed planowaną wizytą.</p><p><a href="zlobek-ursynow.html">Zobacz także stronę o żłobku na Ursynowie.</a></p></div>
+        </details>
+        
+        <details>
+          <summary>W jakich godzinach działa żłobek?</summary>
+          <div class="answer"><p>Standardowe godziny otwarcia to od poniedziałku do piątku, w godzinach 7:00–18:00. W razie wątpliwości dotyczących konkretnego dnia lub organizacji opieki prosimy o kontakt.</p></div>
+        </details>
+        
+        <details>
+          <summary>Jak zapisać dziecko do żłobka?</summary>
+          <div class="answer"><p>Najlepiej zacząć od kontaktu telefonicznego lub e-mailowego. Porozmawiamy o potrzebach dziecka, odpowiemy na pytania i przekażemy aktualne informacje o procedurze zapisu.</p><p>Przyjęcia są uzależnione od dostępności miejsc, dlatego warto zapytać o aktualną sytuację, planowany termin rozpoczęcia opieki i dalsze kroki.</p></div>
+        </details>
+        
+        <details>
+          <summary>Czy można zapisać dziecko w trakcie roku?</summary>
+          <div class="answer"><p>Możliwość rozpoczęcia opieki w trakcie roku zależy od dostępności miejsc i ustaleń z placówką. Skontaktuj się z nami, aby sprawdzić aktualne możliwości dla wybranego terminu.</p></div>
+        </details>
+        
+        <details>
+          <summary>Jak wygląda adaptacja dziecka w żłobku?</summary>
+          <div class="answer"><p>Adaptacja to ważny etap poznawania nowego miejsca, opiekunów i rytmu dnia. Jej przebieg warto dopasować do potrzeb dziecka oraz ustaleń z placówką. Przed rozpoczęciem opieki porozmawiajmy o tym, jak przygotować dziecko i jak zaplanować pierwsze dni.</p></div>
+        </details>
+        
+        <details>
+          <summary>Co przygotować dziecku na pierwszy dzień?</summary>
+          <div class="answer"><p>Dokładna lista rzeczy zależy od ustaleń z placówką i potrzeb dziecka. Przed rozpoczęciem opieki poproś nas o aktualną listę wyprawkową, aby przygotować tylko to, co będzie potrzebne.</p></div>
+        </details>
+        
+        <details>
+          <summary>Jak wygląda typowy dzień w żłobku?</summary>
+          <div class="answer"><p>Dzień małych dzieci powinien uwzględniać zabawę, odpoczynek, posiłki i aktywności dostosowane do wieku. Szczegółowy plan dnia oraz organizację poszczególnych aktywności najlepiej omówić bezpośrednio z placówką.</p></div>
+        </details>
+        
+        <details>
+          <summary>Czy dzieci spędzają czas na świeżym powietrzu?</summary>
+          <div class="answer"><p>Okolica sprzyja aktywności na zewnątrz, a w pobliżu znajduje się Las Kabacki. Możliwość wyjść danego dnia zależy m.in. od pogody, bezpieczeństwa i organizacji opieki. Podczas rozmowy chętnie wyjaśnimy, jak wyglądają spacery i aktywności na świeżym powietrzu.</p></div>
+        </details>
+        
+        <details>
+          <summary>Ile kosztuje pobyt dziecka w żłobku?</summary>
+          <div class="answer"><p>Aktualną wysokość opłat oraz ewentualne dofinansowania należy potwierdzić bezpośrednio w placówce, ponieważ warunki mogą się zmieniać. Zadzwoń lub napisz do nas, a przekażemy aktualne informacje.</p></div>
+        </details>
+        
+        <details>
+          <summary>Czy są obecnie wolne miejsca?</summary>
+          <div class="answer"><p>Dostępność miejsc zmienia się w ciągu roku. Najszybciej uzyskasz aktualną informację, kontaktując się z nami telefonicznie lub e-mailowo. Warto podać wiek dziecka i planowaną datę rozpoczęcia opieki.</p></div>
+        </details>
+        
+        <details>
+          <summary>Gdzie znajdę więcej informacji o żłobku na Ursynowie?</summary>
+          <div class="answer"><p>Odwiedź naszą <a href="zlobek-ursynow.html">stronę o Żłobku Pod Chmurką na Ursynowie</a> lub <a href="index.html">stronę główną</a>. Jeśli szukasz żłobka w okolicy, zachęcamy również do bezpośredniej rozmowy i zadania pytań dopasowanych do potrzeb Twojej rodziny.</p></div>
+        </details>
+
+        <div class="contact-banner" id="kontakt">
+          <h2>Masz inne pytanie?</h2>
+          <p>Skontaktuj się z nami, aby omówić potrzeby dziecka i aktualne możliwości przyjęcia.</p>
+          <div class="buttons-row">
+            <a class="btn btn-primary" href="tel:+48530119251">Zadzwoń: 530 119 251</a>
+            <a class="btn btn-secondary" href="mailto:zlobekpodchmurka@wp.pl">Napisz e-mail</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div class="cloud-divider" aria-hidden="true" style="transform:scaleY(-1); background:var(--cloud);">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+      <path d="M0,40 C150,10 300,60 450,35 C600,10 750,55 900,30 C1050,10 1150,45 1200,30 L1200,60 L0,60 Z" fill="#3F6178"></path>
+    </svg>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <span>
+        © <span id="year">2026</span> Żłobek Pod Chmurką · ul. Kanarkowa 8, Warszawa-Ursynów
+      </span>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/p/Pod-chmurk%C4%85-punkt-opieki-dziennej-100063548951420/?locale=pl_PL" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/zlobekpodchmurka2018/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <span>
+        <a href="tel:+48530119251">530 119 251</a> · <a href="mailto:zlobekpodchmurka@wp.pl">zlobekpodchmurka@wp.pl</a>
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
