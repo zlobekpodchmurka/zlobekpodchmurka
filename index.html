@@ -1,3 +1,9 @@
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -147,12 +153,14 @@
       padding:16px 24px;
       max-width:1080px;
       margin:0 auto;
+      flex-wrap: wrap;
+      gap: 16px;
     }
 
     .brand{
       display:flex;
       align-items:center;
-      gap:10px;
+      gap:12px;
       font-family:'Baloo 2', sans-serif;
       font-weight:600;
       font-size:1.15rem;
@@ -175,32 +183,39 @@
       box-shadow:0 2px 6px rgba(0,0,0,0.1);
     }
 
-    .nav-links{
-      display:flex;
-      gap:24px;
-      align-items:center;
-      list-style:none;
-      margin:0;
-      padding:0;
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
     }
 
-    .nav-links a{
-      text-decoration:none;
-      font-weight:600;
-      color:var(--mountain-blue-deep);
-      font-family:'Baloo 2',sans-serif;
-      font-size:1.05rem;
-      transition: color 0.2s ease;
+    .faq-badge {
+      background: var(--cloud);
+      border: 2px solid var(--mountain-blue-deep);
+      color: var(--mountain-blue-deep);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-family: 'Baloo 2', sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
 
-    .nav-links a:hover{
-      color:var(--fox-amber-deep);
+    .faq-badge:hover {
+      background: var(--mountain-blue-deep);
+      color: var(--cloud);
     }
 
     .social-icons{
       display:flex;
       gap:14px;
       align-items:center;
+      margin-left: 8px;
     }
 
     .social-icons a{
@@ -678,10 +693,6 @@
     }
 
     @media (max-width:760px){
-      .nav-links{
-        display:none;
-      }
-
       .hero{
         grid-template-columns:1fr;
         padding-top:20px;
@@ -764,37 +775,36 @@
         Żłobek Pod Chmurką
       </a>
 
-      <ul class="nav-links">
-        <li><a href="#o-nas">O nas</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#opinie">Opinie</a></li>
-        <li><a href="FAQ.html">FAQ</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-      </ul>
-
-      <!-- ================= SOCIAL MEDIA - GÓRA ================= -->
-      <div class="social-icons">
-        <a
-          href="https://www.facebook.com/p/Pod-chmurk%C4%85-punkt-opieki-dziennej-100063548951420/?locale=pl_PL"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Facebook"
-        >
-          <i class="fa-brands fa-facebook-f"></i>
+      <div class="header-right">
+        <!-- Wyeksponowany przycisk FAQ -->
+        <a class="faq-badge" href="FAQ.html">
+          <i class="fa-solid fa-circle-question"></i> FAQ
         </a>
-        <a
-          href="https://www.instagram.com/zlobekpodchmurka2018/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-        >
-          <i class="fa-brands fa-instagram"></i>
+
+        <!-- Ikony społecznościowe -->
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com/p/Pod-chmurk%C4%85-punkt-opieki-dziennej-100063548951420/?locale=pl_PL"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/zlobekpodchmurka2018/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+
+        <a class="call" href="tel:+48530119251">
+          530 119 251
         </a>
       </div>
-
-      <a class="call" href="tel:+48530119251">
-        530 119 251
-      </a>
 
     </div>
   </header>
@@ -819,8 +829,8 @@
           <a class="btn btn-primary" href="tel:+48530119251">
             Zadzwoń: 530 119 251
           </a>
-          <a class="btn btn-secondary" href="#kontakt">
-            Napisz do nas
+          <a class="btn btn-secondary" href="FAQ.html">
+            Zobacz FAQ (Pytania i Odpowiedzi)
           </a>
         </div>
       </div>
