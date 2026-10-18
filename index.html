@@ -629,10 +629,26 @@
 
     footer .wrap{
       display:flex;
-      justify-content:space-between;
-      align-items:center;
-      flex-wrap:wrap;
+      flex-direction: column;
       gap:16px;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      width: 100%;
+    }
+
+    .footer-legal {
+      border-top: 1px solid rgba(255,255,255,0.15);
+      padding-top: 14px;
+      font-size: 0.85rem;
+      color: #CBD5DB;
+      text-align: center;
+      line-height: 1.5;
     }
 
     footer a{
@@ -1467,45 +1483,51 @@
 
     <div class="wrap">
 
-      <span>
-        © <span id="year">2026</span>
-        Żłobek Pod Chmurką · ul. Kanarkowa 8, Warszawa-Ursynów (Las Kabacki)
-      </span>
+      <div class="footer-top">
+        <span>
+          © <span id="year">2026</span>
+          Żłobek Pod Chmurką · ul. Kanarkowa 8, Warszawa-Ursynów (Las Kabacki)
+        </span>
 
-      <!-- ================= SOCIAL MEDIA - STOPKA ================= -->
+        <!-- ================= SOCIAL MEDIA - STOPKA ================= -->
 
-      <div class="footer-socials">
+        <div class="footer-socials">
 
-        <a
-          href="https://www.facebook.com/p/Pod-chmurk%C4%85-punkt-opieki-dziennej-100063548951420/?locale=pl_PL"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Facebook"
-        >
-          <i class="fa-brands fa-facebook-f"></i>
-        </a>
+          <a
+            href="https://www.facebook.com/p/Pod-chmurk%C4%85-punkt-opieki-dziennej-100063548951420/?locale=pl_PL"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
 
-        <a
-          href="https://www.instagram.com/zlobekpodchmurka2018/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-        >
-          <i class="fa-brands fa-instagram"></i>
-        </a>
+          <a
+            href="https://www.instagram.com/zlobekpodchmurka2018/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
 
+        </div>
+
+        <span>
+          <a href="FAQ.html">FAQ</a> ·
+          <a href="tel:+48530119251">
+            530 119 251
+          </a>
+          ·
+          <a href="mailto:zlobekpodchmurka@wp.pl">
+            zlobekpodchmurka@wp.pl
+          </a>
+        </span>
       </div>
 
-      <span>
-        <a href="FAQ.html">FAQ</a> ·
-        <a href="tel:+48530119251">
-          530 119 251
-        </a>
-        ·
-        <a href="mailto:zlobekpodchmurka@wp.pl">
-          zlobekpodchmurka@wp.pl
-        </a>
-      </span>
+      <div class="footer-legal" style="border-top:1px solid rgba(255,255,255,0.15); margin-top:16px; padding-top:14px; font-size:0.85rem; color:#CBD5DB; text-align:center; line-height:1.5;">
+        <strong>Pod Chmurką Anna Mikulak</strong> · ul. Kanarkowa 8, 02-818 Warszawa · Placówka prowadzona jako punkt opieki dziennej na podstawie Ustawy o opiece nad dziećmi w wieku do lat 3.
+      </div>
 
     </div>
 
