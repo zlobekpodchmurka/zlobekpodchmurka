@@ -1,6 +1,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -71,20 +72,20 @@
     .wrap{ max-width:1080px; margin:0 auto; padding:0 24px; }
 
     /* ---------- top bar & nav ---------- */
-    .topbar{ display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:1080px; margin:0 auto; flex-wrap: wrap; gap: 16px; }
-    .brand{ display:flex; align-items:center; gap:12px; font-family:'Baloo 2', sans-serif; font-weight:600; font-size:1.15rem; color:var(--mountain-blue-deep); text-decoration:none; flex-shrink:0; transition: opacity 0.2s ease; }
+    .topbar{ display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:1080px; margin:0 auto; flex-wrap: wrap; gap: 12px; }
+    .brand{ display:flex; align-items:center; gap:10px; font-family:'Baloo 2', sans-serif; font-weight:600; font-size:1.1rem; color:var(--mountain-blue-deep); text-decoration:none; flex-shrink:0; transition: opacity 0.2s ease; }
     .brand:hover { opacity: 0.85; }
-    .brand img{ width:42px; height:42px; border-radius:50%; object-fit:cover; flex-shrink:0; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    .brand img{ width:40px; height:40px; border-radius:50%; object-fit:cover; flex-shrink:0; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
     
-    .header-right { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-    .faq-badge { background: var(--cloud); border: 2px solid var(--mountain-blue-deep); color: var(--mountain-blue-deep); padding: 8px 16px; border-radius: 999px; font-family: 'Baloo 2', sans-serif; font-weight: 700; text-decoration: none; font-size: 0.95rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 6px; }
+    .header-right { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .faq-badge { background: var(--cloud); border: 2px solid var(--mountain-blue-deep); color: var(--mountain-blue-deep); padding: 8px 14px; border-radius: 999px; font-family: 'Baloo 2', sans-serif; font-weight: 700; text-decoration: none; font-size: 0.9rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
     .faq-badge:hover { background: var(--mountain-blue-deep); color: var(--cloud); }
 
-    .social-icons{ display:flex; gap:14px; align-items:center; margin-left: 8px; }
-    .social-icons a{ color:var(--mountain-blue-deep); font-size:1.2rem; transition:color 0.2s, transform 0.2s; }
+    .social-icons{ display:flex; gap:10px; align-items:center; }
+    .social-icons a{ color:var(--mountain-blue-deep); font-size:1.1rem; transition:color 0.2s, transform 0.2s; }
     .social-icons a:hover{ color:var(--fox-amber-deep); transform: scale(1.1); }
     
-    .topbar .call{ font-weight:700; text-decoration:none; color:var(--cloud); background:var(--fox-amber); padding:10px 18px; border-radius:999px; font-family:'Baloo 2',sans-serif; white-space:nowrap; transition: background-color 0.3s ease, transform 0.2s ease; }
+    .topbar .call{ font-weight:700; text-decoration:none; color:var(--cloud); background:var(--fox-amber); padding:8px 16px; border-radius:999px; font-family:'Baloo 2',sans-serif; font-size:0.95rem; white-space:nowrap; transition: background-color 0.3s ease, transform 0.2s ease; }
     .topbar .call:hover{ background:var(--fox-amber-deep); }
     .topbar .call:active { transform: scale(0.95); }
 
@@ -156,14 +157,14 @@
   <header>
     <div class="topbar">
       <a class="brand" href="index.html">
-        <img src="logo.webp" alt="Logo żłobka Pod Chmurką" width="42" height="42">
+        <img src="logo.webp" alt="Logo żłobka Pod Chmurką" width="40" height="40">
         Żłobek Pod Chmurką
       </a>
 
       <div class="header-right">
-        <!-- Przycisk powrotu do strony głównej -->
+        <!-- Zmieniono tekst na krótszy: Główna -->
         <a class="faq-badge" href="index.html">
-          <i class="fa-solid fa-house"></i> Strona główna
+          <i class="fa-solid fa-house"></i> Główna
         </a>
 
         <!-- Ikony społecznościowe -->
@@ -359,3 +360,4 @@
   </script>
 </body>
 </html>
+
