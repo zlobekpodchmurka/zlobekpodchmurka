@@ -1,13 +1,15 @@
-<!DOCTYPE html>
+
+     <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polityka Prywatności i Cookies | Żłobek Pod Chmurką Warszawa-Ursynów</title>
-    <meta name="description" content="Polityka Prywatności oraz zasady ochrony danych osobowych (RODO) i plików cookies w Żłobku Pod Chmurką w Warszawie na Ursynowie.">
+    <meta name="description" content="Polityka Prywatności oraz zasady ochrony danych osobowych (RODO) i plików cookies w Żłobku Pod Chmurką na Ursynowie przy ul. Kanarkowej 8.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary: #2e7d32;
@@ -31,7 +33,7 @@
             font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background-color: var(--bg-body);
             color: var(--text-main);
-            line-height: 1.7;
+            line-height: 1.75;
             padding: 0;
             margin: 0;
         }
@@ -46,7 +48,7 @@
         }
 
         .header-container {
-            max-width: 900px;
+            max-width: 960px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -60,7 +62,7 @@
             text-decoration: none;
             color: var(--primary-dark);
             font-weight: 700;
-            font-size: 1.15rem;
+            font-size: 1.2rem;
         }
 
         .back-btn {
@@ -71,7 +73,7 @@
             color: var(--primary);
             font-weight: 600;
             font-size: 0.95rem;
-            padding: 0.5rem 1rem;
+            padding: 0.5rem 1.1rem;
             background-color: var(--primary-light);
             border-radius: 9999px;
             transition: all 0.2s ease;
@@ -83,7 +85,7 @@
         }
 
         main {
-            max-width: 900px;
+            max-width: 960px;
             margin: 2.5rem auto;
             padding: 0 1.5rem;
         }
@@ -114,7 +116,7 @@
         .company-badge {
             background-color: #f1f5f9;
             border-left: 4px solid var(--primary);
-            padding: 1rem 1.25rem;
+            padding: 1.25rem;
             border-radius: 0 8px 8px 0;
             margin-bottom: 2rem;
             font-size: 0.95rem;
@@ -124,14 +126,18 @@
             color: var(--text-main);
         }
 
+        .history-note {
+            margin-top: 0.5rem;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
         h2 {
             font-size: 1.25rem;
             color: var(--text-main);
             margin-top: 1.75rem;
             margin-bottom: 0.75rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
         }
 
         p {
@@ -162,13 +168,58 @@
             color: var(--primary-dark);
         }
 
+        /* FOOTER COMPONENT */
         footer {
-            max-width: 900px;
-            margin: 3rem auto 2rem auto;
-            text-align: center;
+            background-color: #ffffff;
+            border-top: 1px solid var(--border);
+            margin-top: 4rem;
+            padding: 2.5rem 1.5rem 2rem 1.5rem;
+        }
+
+        .footer-wrap {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.95rem;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .footer-socials a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background-color: var(--primary-light);
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .footer-socials a:hover {
+            background-color: var(--primary);
+            color: #ffffff;
+        }
+
+        .footer-legal {
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
-            font-size: 0.875rem;
-            padding: 0 1.5rem;
+            line-height: 1.6;
         }
 
         @media (max-width: 640px) {
@@ -184,6 +235,11 @@
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 0.75rem;
+            }
+
+            .footer-top {
+                flex-direction: column;
+                align-items: flex-start;
             }
         }
     </style>
@@ -208,16 +264,20 @@
 
             <div class="company-badge">
                 <strong>Pod Chmurką Anna Mikulak</strong><br>
-                ul. Kanarkowa 8, 02-818 Warszawa · NIP: 9512464368<br>
+                ul. Kanarkowa 8, 02-818 Warszawa · NIP: 9512464368 · REGON: 380545140<br>
                 Placówka nr 208N w rejestrze dziennych opiekunów m.st. Warszawy
+                <div class="history-note">
+                    * Placówka prowadzona kontynuacyjnie (wcześniej działająca pod nazwą Pod Chmurką s.c. Kinga Zabłocka, Anna Mikulak).
+                </div>
             </div>
 
             <p>Szanowni Rodzice i Użytkownicy naszej strony internetowej,</p>
-            <p>Dbamy o ochronę Państwa prywatności oraz bezpieczeństwo danych osobowych. Poniższy dokument wyjaśnia zasady gromadzenia, przetwarzania i wykorzystywania danych osobowych na stronie internetowej <strong>zlobekpodchmurka.pl</strong> zgodnie z rozporządzeniem RODO (GDPR).</p>
+            <p>Dbamy o ochronę Państwa prywatności oraz bezpieczeństwo przetwarzanych danych osobowych. Poniższy dokument wyjaśnia zasady gromadzenia, przetwarzania i ochrony danych osobowych na stronie internetowej <strong>zlobekpodchmurka.pl</strong> zgodnie z rozporządzeniem RODO (GDPR) oraz ustawodawstwem krajowym.</p>
 
             <h2>§ 1. Administrator Danych Osobowych</h2>
-            <p>1. Administratorem danych osobowych zbieranych za pośrednictwem strony internetowej zlobekpodchmurka.pl jest <strong>Pod Chmurką Anna Mikulak</strong> z siedzibą przy ul. Kanarkowej 8, 02-818 Warszawa, NIP: 9512464368, prowadząca punkt opieki dziennej zarejestrowany pod numerem <strong>208N</strong> (zwana dalej „Placówką” lub „Administratorem”).</p>
-            <p>2. W sprawach związanych z ochroną danych osobowych oraz realizacją praw przysługujących na mocy RODO można kontaktować się z Administratorem:</p>
+            <p>1. Administratorem danych osobowych zbieranych za pośrednictwem strony internetowej zlobekpodchmurka.pl jest <strong>Pod Chmurką Anna Mikulak</strong> z siedzibą przy ul. Kanarkowej 8, 02-818 Warszawa, NIP: 9512464368, REGON: 380545140, prowadząca punkt opieki dziennej zarejestrowany w wykazie m.st. Warszawy pod numerem <strong>208N</strong> (zwana dalej „Placówką” lub „Administratorem”).</p>
+            <p>2. Placówka stanowi kontynuację działalności opiekuńczej prowadzonej uprzednio w formie spółki cywilnej (Pod Chmurką s.c. Kinga Zabłocka, Anna Mikulak).</p>
+            <p>3. W sprawach związanych z ochroną danych osobowych oraz realizacją praw RODO zapraszamy do kontaktu z Administratorem:</p>
             <ul>
                 <li><strong>Telefonicznie:</strong> 530 119 251</li>
                 <li><strong>E-mailowo:</strong> <a href="mailto:zlobekpodchmurka@wp.pl">zlobekpodchmurka@wp.pl</a></li>
@@ -227,10 +287,10 @@
             <h2>§ 2. Cele i Podstawy Prawne Przetwarzania Danych</h2>
             <p>Dane osobowe przetwarzane są wyłącznie w niezbędnym zakresie, w następujących celach:</p>
             <ul>
-                <li><strong>Obsługa zapytań rekrutacyjnych i kontaktowych</strong> (odpowiedź na wiadomości e-mail, kontakt telefoniczny, pytania o wolne miejsca i adaptację) – na podstawie art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes Administratora polegający na obsłudze zgłoszeń i budowaniu relacji z rodzicami).</li>
+                <li><strong>Obsługa zapytań rekrutacyjnych i kontaktowych</strong> (odpowiedź na wiadomości e-mail, kontakt telefoniczny, pytania o wolne miejsca i adaptację) – na podstawie art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes Administratora).</li>
                 <li><strong>Zawarcie i realizacja umowy o świadczenie usług opieki nad dzieckiem</strong> – na podstawie art. 6 ust. 1 lit. b RODO.</li>
-                <li><strong>Wypełnienie obowiązków prawnych</strong> ciążących na Administratorze na podstawie Ustawy z dnia 4 lutego 2011 r. o opiece nad dziećmi w wieku do lat 3 (m.in. sprawozdawczość organom gminy, weryfikacja dofinansowań) oraz przepisów podatkowo-księgowych – art. 6 ust. 1 lit. c RODO.</li>
-                <li><strong>Publikacja wizerunku dzieci</strong> (zdjęcia i materiały z zajęć oraz spacerów w lesie publikowane na stronie WWW lub profilach społecznościowych) – <strong>wyłącznie na podstawie dobrowolnej, pisemnej zgody rodziców/opiekunów prawnych</strong> (art. 6 ust. 1 lit. a RODO). Zgoda może być wycofana w dowolnym momencie.</li>
+                <li><strong>Wypełnienie obowiązków prawnych</strong> ciążących na Administratorze na podstawie Ustawy z dnia 4 lutego 2011 r. o opiece nad dziećmi w wieku do lat 3 oraz przepisów podatkowo-księgowych – art. 6 ust. 1 lit. c RODO.</li>
+                <li><strong>Publikacja wizerunku dzieci</strong> (zdjęcia z zajęć oraz spacerów w lesie publikowane na stronie WWW lub profilach społecznościowych) – <strong>wyłącznie na podstawie dobrowolnej, pisemnej zgody rodziców/opiekunów prawnych</strong> (art. 6 ust. 1 lit. a RODO). Zgoda może być wycofana w dowolnym momencie.</li>
             </ul>
 
             <h2>§ 3. Odbiorcy Danych</h2>
@@ -243,32 +303,60 @@
 
             <h2>§ 4. Okres Przechowywania Danych</h2>
             <p>1. Dane kontaktowe przekazane podczas zapytania przechowywane są przez okres niezbędny do udzielenia odpowiedzi lub do czasu wniesienia sprzeciwu.</p>
-            <p>2. Dane związane z umową opieki przechowywane są przez okres obowiązywania umowy, a po jej zakończeniu – przez czas wymagany przepisami prawa podatkowego, księgowego oraz regulacjami oświatowo-opiekuńczymi.</p>
+            <p>2. Dane związane z umową opieki przechowywane są przez okres obowiązywania umowy, a po jej zakończeniu – przez czas wymagany przepisami prawa podatkowego i księgowego.</p>
 
             <h2>§ 5. Prawa Osoby, Której Dane Dotyczą</h2>
             <p>W związku z przetwarzaniem danych osobowych przysługuje Państwu prawo do:</p>
             <ul>
                 <li>Dostępu do treści swoich danych oraz otrzymania ich kopii,</li>
                 <li>Sprostowania (poprawiania) nieprawidłowych danych,</li>
-                <li>Usunięcia danych („prawo do bycia zapomnianym”) – w przypadkach przewidzianych prawem,</li>
-                <li>Ograniczenia przetwarzania danych,</li>
-                <li>Wniesienia sprzeciwu wobec przetwarzania danych,</li>
-                <li>Cofnięcia zgody w dowolnym momencie bez wpływu na zgodność z prawem przetwarzania dokonanego przed jej cofnięciem,</li>
+                <li>Usunięcia danych („prawo do bycia zapomnianym”),</li>
+                <li>Ograniczenia przetwarzania oraz wniesienia sprzeciwu wobec przetwarzania danych,</li>
+                <li>Cofnięcia zgody w dowolnym momencie,</li>
                 <li>Wniesienia skargi do organu nadzorczego: <strong>Prezes Urzędu Ochrony Danych Osobowych (UODO)</strong>, ul. Stawki 2, 00-193 Warszawa.</li>
             </ul>
 
             <h2>§ 6. Pliki Cookies (Ciasteczka)</h2>
-            <p>1. Strona <em>zlobekpodchmurka.pl</em> korzysta z plików cookies (tzw. ciasteczek) w celu prawidłowego wyświetlania witryny, zapewnienia jej bezpieczeństwa oraz prowadzenia anonimowych statystyk odwiedzin.</p>
-            <p>2. Pliki cookies nie służą do identyfikacji tożsamości użytkowników ani nie zmieniają konfiguracji ich urządzeń.</p>
-            <p>3. Użytkownik ma możliwość zarządzania plikami cookies w ustawieniach swojej przeglądarki internetowej (może je zablokować lub usunąć w dowolnym momencie).</p>
+            <p>1. Strona <em>zlobekpodchmurka.pl</em> korzysta z plików cookies w celu prawidłowego wyświetlania witryny, zapewnienia jej bezpieczeństwa oraz prowadzenia anonimowych statystyk odwiedzin.</p>
+            <p>2. Użytkownik ma możliwość zarządzania plikami cookies w ustawieniach swojej przeglądarki internetowej.</p>
 
         </div>
     </main>
 
+    <!-- ================= FOOTER ================= -->
     <footer>
-        <p>© 2026 Żłobek Pod Chmurką · ul. Kanarkowa 8, Warszawa-Ursynów</p>
-        <p><a href="/">Powrót do strony głównej</a></p>
+        <div class="footer-wrap">
+            <div class="footer-top">
+                <span>
+                    © <span id="year">2026</span> Żłobek Pod Chmurką · ul. Kanarkowa 8, Warszawa-Ursynów (Las Kabacki)
+                </span>
+
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/p/Pod-chmurk%C4%85-punkt-opieki-dziennej-100063548951420/?locale=pl_PL" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/zlobekpodchmurka2018/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+
+                <span>
+                    <a href="FAQ.html">FAQ</a> ·
+                    <a href="polityka-prywatnosci.html">Polityka Prywatności</a> ·
+                    <a href="tel:+48530119251">530 119 251</a> ·
+                    <a href="mailto:zlobekpodchmurka@wp.pl">zlobekpodchmurka@wp.pl</a>
+                </span>
+            </div>
+
+            <div class="footer-legal">
+                <strong>Pod Chmurką Anna Mikulak NIP 9512464368 REGON 380545140</strong> ul. Kanarkowa 8, 02-818 Warszawa · Placówka 208N prowadzona jako punkt opieki dziennej na podstawie Ustawy z dnia 4 lutego 2011 r. o opiece nad dziećmi w wieku do lat 3.
+            </div>
+        </div>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 
 </body>
 </html>
