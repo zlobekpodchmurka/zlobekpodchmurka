@@ -1,12 +1,17 @@
+
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Strona główna -->
   <url>
     <loc>https://www.zlobekpodchmurka.pl/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
+  <!-- Główne podstrony ofertowe -->
   <url>
     <loc>https://www.zlobekpodchmurka.pl/zlobek-ursynow.html</loc>
     <changefreq>monthly</changefreq>
@@ -19,11 +24,35 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Podstrony informacyjne i artykuły -->
+  <url>
+    <loc>https://www.zlobekpodchmurka.pl/adaptacja-w-zlobku.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <url>
     <loc>https://www.zlobekpodchmurka.pl/FAQ.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.zlobekpodchmurka.pl/las-kabacki-odpornosc.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Dokumenty prawne -->
+  <url>
+    <loc>https://www.zlobekpodchmurka.pl/polityka-prywatnosci.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
+
+
+
+
 
