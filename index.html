@@ -2,6 +2,10 @@
 
 
 
+
+
+
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -670,25 +674,15 @@
       padding: 12px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      width: 140px;
+      width: 180px;
       text-align: center;
     }
 
     .warszawa-logo-img {
-      width: auto;
-      height: 60px;
-      max-width: 100%;
+      width: 100%;
+      height: auto;
+      max-width: 160px;
       object-fit: contain;
-    }
-
-    .warszawa-logo-tagline {
-      font-family: 'Baloo 2', sans-serif;
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: #D32F2F;
-      margin-top: 6px;
-      line-height: 1.15;
-      text-transform: uppercase;
     }
 
     .warszawa-text-box p {
@@ -705,7 +699,8 @@
         gap: 16px;
       }
       .warszawa-logo-box {
-        width: 160px;
+        width: 180px;
+        margin: 0 auto;
       }
     }
 
@@ -714,14 +709,14 @@
     footer{
       background:var(--mountain-blue-deep);
       color:#E7EFF2;
-      padding:34px 0;
-      font-size:.92rem;
+      padding:24px 0;
+      font-size:.85rem;
     }
 
     footer .wrap{
       display:flex;
       flex-direction: column;
-      gap:16px;
+      gap:12px;
     }
 
     .footer-top {
@@ -729,40 +724,18 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 16px;
+      gap: 12px;
       width: 100%;
+      font-size: 0.82rem;
     }
 
     .footer-legal {
       border-top: 1px solid rgba(255,255,255,0.15);
-      padding-top: 14px;
-      font-size: 0.85rem;
+      padding-top: 10px;
+      font-size: 0.75rem;
       color: #CBD5DB;
       text-align: center;
-      line-height: 1.5;
-    }
-
-    .footer-funding-bar {
-      border-top: 1px solid rgba(255,255,255,0.15);
-      padding-top: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-      font-size: 0.83rem;
-      color: #E7EFF2;
-      flex-wrap: wrap;
-      text-align: center;
-    }
-
-    .footer-warszawa-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 4px 12px;
-      border-radius: 6px;
-      font-weight: 600;
+      line-height: 1.4;
     }
 
     footer a{
@@ -777,11 +750,11 @@
 
     .footer-socials{
       display:flex;
-      gap:16px;
+      gap:14px;
     }
 
     .footer-socials a{
-      font-size:1.3rem;
+      font-size:1.1rem;
       color:#fff;
       transition: color 0.2s ease, transform 0.2s ease;
     }
@@ -1226,7 +1199,7 @@
           </div>
         </div>
 
-        <!-- ==================== ZAKTUALIZOWANA MAPA ==================== -->
+        <!-- ==================== MAPA ==================== -->
         <iframe
           class="map-frame"
           loading="lazy"
@@ -1235,22 +1208,15 @@
         ></iframe>
       </div>
 
-      <!-- ================= INFORMACJA O DOFINANSOWANIU M.ST. WARSZAWY ================= -->
+      <!-- ================= INFORMACJA O DOFINANSOWANIU M.ST. WARSZAWY (Z ORYGINALNYM LOGO) ================= -->
       <div class="wrap">
         <div class="warszawa-funding-card">
           <div class="warszawa-logo-box">
-            <svg viewBox="0 0 100 120" class="warszawa-logo-img" aria-label="Herb m.st. Warszawy">
-              <!-- Syrenka Warszawska SVG -->
-              <path d="M50,5 C70,5 90,15 90,35 C90,65 50,110 50,110 C50,110 10,65 10,35 C10,15 30,5 50,5 Z" fill="#E53935" />
-              <path d="M50,12 C66,12 82,20 82,36 C82,60 50,98 50,98 C50,98 18,60 18,36 C18,20 34,12 50,12 Z" fill="#D32F2F" />
-              <circle cx="50" cy="32" r="8" fill="#FFD54F" />
-              <path d="M42,48 C42,48 50,42 58,48 C58,58 50,68 50,68 C50,68 42,58 42,48 Z" fill="#FFD54F" />
-              <path d="M35,62 C45,62 50,75 65,70 C60,82 45,85 35,78 Z" fill="#FFD54F" />
-              <path d="M60,25 L75,18 L70,28 Z" fill="#FFD54F" />
-            </svg>
-            <div class="warszawa-logo-tagline">
-              Projekt współfinansuje<br>m.st. Warszawa
-            </div>
+            <img 
+              src="logo-warszawa.png" 
+              alt="Projekt współfinansuje m.st. Warszawa" 
+              class="warszawa-logo-img"
+            >
           </div>
           <div class="warszawa-text-box">
             <p>
@@ -1286,16 +1252,6 @@
           <a href="polityka-prywatnosci.html">Polityka Prywatności</a> ·
           <a href="tel:+48530119251">530 119 251</a> ·
           <a href="mailto:zlobekpodchmurka@wp.pl">zlobekpodchmurka@wp.pl</a>
-        </span>
-      </div>
-
-      <!-- Dofinansowanie w footerze -->
-      <div class="footer-funding-bar">
-        <span class="footer-warszawa-badge">
-          <i class="fa-solid fa-city"></i> Projekt współfinansuje m.st. Warszawa
-        </span>
-        <span>
-          Zadanie polegające na organizacji opieki nad dziećmi w wieku do lat 3 jest realizowane dzięki dofinansowaniu ze środków m.st. Warszawy.
         </span>
       </div>
 
