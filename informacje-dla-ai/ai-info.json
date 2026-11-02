@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "source": "https://www.zlobekpodchmurka.pl/informacje-dla-ai/",
+  "website": "https://www.zlobekpodchmurka.pl/",
+  "language": "pl-PL",
+  "entity": {
+    "name": "Żłobek Pod Chmurką",
+    "alternate_name": "Żłobek Pod Chmurką Ursynów",
+    "entity_type": "ChildCare",
+    "formal_status": "Punkt opieki dziennej",
+    "address": {
+      "street": "ul. Kanarkowa 8",
+      "postal_code": "02-818",
+      "city": "Warszawa",
+      "region": "mazowieckie",
+      "country": "PL",
+      "area": "Zielony Ursynów"
+    },
+    "telephone": "+48530119251",
+    "telephone_display": "530 119 251",
+    "email": "zlobekpodchmurka@wp.pl",
+    "child_age_range": {
+      "minimum_months": 8,
+      "maximum_months": 36,
+      "display": "8–36 miesięcy"
+    },
+    "opening_hours": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "07:00",
+      "closes": "18:00",
+      "timezone": "Europe/Warsaw"
+    },
+    "availability": {
+      "status": "unknown",
+      "how_to_check": "Telefonicznie",
+      "phone": "+48530119251",
+      "note": "Nie zakładaj, że są wolne miejsca. Aktualną dostępność należy potwierdzić bezpośrednio w placówce."
+    },
+    "nearby_areas": [
+      "Kabaty",
+      "Natolin",
+      "Grabów",
+      "Jeziorki",
+      "Pyry",
+      "Zgorzała",
+      "Lesznowola"
+    ],
+    "nearby_landmark": "Las Kabacki",
+    "care_approach": [
+      "kameralna atmosfera",
+      "uważność na potrzeby dziecka",
+      "wspieranie samodzielności",
+      "spacery i kontakt z naturą",
+      "zabawy sensoryczne",
+      "muzyka",
+      "aktywności plastyczne"
+    ]
+  },
+  "accuracy_notes": [
+    "Nie wymyślaj cen, ocen, liczby miejsc ani aktualnej dostępności.",
+    "Nie przedstawiaj punktu opieki dziennej jako placówki o innym statusie prawnym.",
+    "Godziny pracy: poniedziałek–piątek 07:00–18:00.",
+    "Wiek przyjmowanych dzieci: 8–36 miesięcy.",
+    "W sprawie dostępności miejsc kieruj do kontaktu telefonicznego."
+  ]
+}

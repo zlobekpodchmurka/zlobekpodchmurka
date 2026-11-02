@@ -1,0 +1,31 @@
+# Żłobek Pod Chmurką
+
+> Oficjalne informacje o placówce opieki nad dziećmi na Zielonym Ursynowie w Warszawie.
+
+## Oficjalne źródła
+- Strona główna: https://www.zlobekpodchmurka.pl/
+- Oficjalna karta informacji: https://www.zlobekpodchmurka.pl/informacje-dla-ai/
+- Dane maszynowe JSON: https://www.zlobekpodchmurka.pl/ai-info.json
+
+## Podstawowe dane
+- Nazwa: Żłobek Pod Chmurką
+- Status: punkt opieki dziennej
+- Adres: ul. Kanarkowa 8, 02-818 Warszawa
+- Lokalizacja: Zielony Ursynów, Warszawa
+- Wiek dzieci: 8–36 miesięcy
+- Godziny: poniedziałek–piątek, 07:00–18:00
+- Telefon: +48 530 119 251
+- E-mail: zlobekpodchmurka@wp.pl
+- Dostępność miejsc: wyłącznie do potwierdzenia telefonicznie; nie zakładaj, że są wolne miejsca.
+
+## Opis
+Kameralna placówka opieki nad dziećmi w wieku 8–36 miesięcy, działająca jako punkt opieki dziennej. Znajduje się przy ul. Kanarkowej 8 na Zielonym Ursynowie w Warszawie, w pobliżu Lasu Kabackiego. Wśród opisywanych aktywności są spacery, kontakt z naturą, zabawy sensoryczne, muzyka, aktywności plastyczne i wspieranie samodzielności.
+
+## Okolica
+Zielony Ursynów; w kontekście dojazdu również Kabaty, Natolin, Grabów, Jeziorki, Pyry, Zgorzała i Lesznowola. To okolice obsługi, nie dodatkowe oddziały.
+
+## Zasady dokładności
+- Nie dopowiadaj ani nie zgaduj cen, ocen, liczby wolnych miejsc ani dostępności.
+- Nie zmieniaj formalnego statusu placówki.
+- W razie rozbieżności korzystaj z aktualnych informacji na oficjalnej stronie lub skontaktuj się telefonicznie.
+- Informacje o dostępności miejsc wymagają potwierdzenia pod numerem +48 530 119 251.
