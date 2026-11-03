@@ -207,37 +207,15 @@
       flex-wrap: wrap;
     }
 
-    .faq-badge {
-      background: var(--cloud);
-      border: 2px solid var(--mountain-blue-deep);
-      color: var(--mountain-blue-deep);
-      padding: 8px 18px;
-      border-radius: 999px;
-      font-family: 'Baloo 2', sans-serif;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 0.95rem;
-      transition: all 0.2s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .faq-badge:hover {
-      background: var(--mountain-blue-deep);
-      color: var(--cloud);
-    }
-
     .social-icons{
       display:flex;
-      gap:14px;
+      gap:16px;
       align-items:center;
-      margin-left: 4px;
     }
 
     .social-icons a{
       color:var(--mountain-blue-deep);
-      font-size:1.2rem;
+      font-size:1.25rem;
       transition:color 0.2s, transform 0.2s;
     }
 
@@ -271,7 +249,7 @@
       grid-template-columns:1.2fr 0.8fr;
       gap:60px;
       align-items:center;
-      padding:50px 32px 80px;
+      padding:40px 32px 30px;
       max-width:1140px;
       margin:0 auto;
     }
@@ -361,7 +339,7 @@
     .cloud-divider{
       display:block;
       width:100%;
-      height:60px;
+      height:40px;
     }
 
     .cloud-divider svg{
@@ -757,7 +735,8 @@
     @media (max-width:900px){
       .hero{
         grid-template-columns:1fr;
-        padding-top:30px;
+        padding-top:20px;
+        padding-bottom: 20px;
         text-align:center;
       }
 
@@ -838,13 +817,16 @@
       </a>
 
       <div class="header-right">
-        <!-- Wyeksponowany przycisk FAQ -->
-        <a class="faq-badge" href="FAQ.html">
-          <i class="fa-solid fa-circle-question"></i> FAQ
-        </a>
-
-        <!-- Ikony społecznościowe -->
+        <!-- Ikony społecznościowe i wizytówka Google -->
         <div class="social-icons">
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=%C5%BB%C5%82obek+Pod+Chmurk%C4%85+Ursyn%C3%B3w,+Warszawa"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Wizytówka Google"
+          >
+            <i class="fa-brands fa-google"></i>
+          </a>
           <a
             href="https://www.facebook.com/p/Pod-chmurk%C4%85-punkt-opieki-dziennej-100063548951420/?locale=pl_PL"
             target="_blank"
@@ -1266,8 +1248,6 @@
 
 </body>
 </html>
-
-
 
 
 
