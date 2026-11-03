@@ -9,13 +9,6 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <!-- Dedykowana favicona dla Google i przeglądarek -->
-  <link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <!-- ==================== SEO: podstawowe meta tagi ==================== -->
   <title>Żłobek Pod Chmurką Warszawa-Ursynów | ul. Kanarkowa 8 (blisko Lasu Kabackiego)</title>
   <meta name="description" content="Żłobek Pod Chmurką – kameralny prywatny żłobek na Ursynowie (Kabaty/Natolin/Grabów/Jeziorki/Pyry), ul. Kanarkowa 8. Dziecko ma prawo być sobą. Blisko Lasu Kabackiego, codzienne spacery. Zadzwoń: 530 119 251.">
@@ -23,11 +16,13 @@
   <meta name="robots" content="index, follow">
   <meta name="author" content="Żłobek Pod Chmurką">
   <link rel="canonical" href="https://www.zlobekpodchmurka.pl/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- ==================== IKONY / FAVICON ==================== -->
   <link rel="icon" type="image/webp" href="logo.webp">
   <link rel="shortcut icon" type="image/webp" href="logo.webp">
-  <link rel="apple-touch-icon" href="logo.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
 
   <!-- ==================== SEO: Open Graph / social ==================== -->
   <meta property="og:type" content="business.business">
@@ -56,6 +51,11 @@
     "email": "zlobekpodchmurka@wp.pl",
     "priceRange": "$$",
     "description": "Kameralny żłobek na Ursynowie blisko Lasu Kabackiego. Prawdziwe domowe ciepło blisko przyrody.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "67"
+    },
     "hasMap": "https://www.google.com/maps/search/?api=1&query=%C5%BB%C5%82obek+Pod+Chmurk%C4%85+Ursyn%C3%B3w,+Warszawa",
     "address": {
       "@type": "PostalAddress",
@@ -103,6 +103,7 @@
   <!-- ==================== Fonty i ikony FontAwesome ==================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Karla:wght@400;500;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -148,7 +149,6 @@
       color:var(--mountain-blue-deep);
     }
 
-    /* KRYTYCZNA POPRAWKA DLA OBRAZKÓW */
     img{
       max-width:100%;
       height:auto;
@@ -159,6 +159,29 @@
       max-width:1080px;
       margin:0 auto;
       padding:0 24px;
+    }
+
+    /* ---------- info-box (nowa klasa zamiast stylów in-line) ---------- */
+    .info-box {
+      background: var(--sky);
+      padding: 18px 20px;
+      border-left: 4px solid var(--fox-amber);
+      border-radius: 4px;
+      margin: 24px 0;
+    }
+    
+    .info-box-title {
+      color: var(--mountain-blue-deep);
+      display: block;
+      margin-bottom: 6px;
+      font-family: 'Baloo 2', sans-serif;
+      font-size: 1.15rem;
+    }
+    
+    .info-box p {
+      margin: 0;
+      font-size: 0.98rem;
+      color: var(--ink-soft);
     }
 
     /* ---------- top bar & nav ---------- */
@@ -249,17 +272,18 @@
     .topbar .call{
       font-weight:700;
       text-decoration:none;
-      color:var(--cloud);
+      color:var(--ink);
       background:var(--fox-amber);
       padding:10px 18px;
       border-radius:999px;
       font-family:'Baloo 2',sans-serif;
       white-space:nowrap;
-      transition: background-color 0.3s ease, transform 0.2s ease;
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
     }
 
     .topbar .call:hover{
       background:var(--fox-amber-deep);
+      color:var(--cloud);
     }
     
     .topbar .call:active {
@@ -887,7 +911,7 @@
     <section class="hero" aria-labelledby="hero-heading">
       <div>
         <h1 id="hero-heading">
-          Żłobek na Ursynowie blisko Lasu Kabackiego – Miejsce dla Twojego dziecka
+          Żłobek Pod Chmurką – Kameralny żłobek na Ursynowie, blisko Lasu Kabackiego
         </h1>
         <p class="lead">
           Pod Chmurką dzieci poznają świat we własnym tempie – w małych grupach,
@@ -928,7 +952,7 @@
         <div class="about-photo">
           <img
             src="dziecko.webp"
-            alt="Dziecko w koszulce żłobka Pod Chmurką bawiące się w lesie na Ursynowie"
+            alt="Dziecko bawiące się wśród drzew podczas zajęć plenerowych w Żłobku Pod Chmurką"
             width="600"
             height="785"
             loading="lazy"
@@ -939,11 +963,9 @@
             O nas – prawdziwe domowe ciepło blisko przyrody
           </h2>
 
-          <div style="background:var(--sky); padding:16px 20px; border-left:4px solid var(--fox-amber); border-radius:4px; margin-bottom:20px;">
-            <strong style="color:var(--mountain-blue-deep); display:block; margin-bottom:4px; font-family:'Baloo 2',sans-serif; font-size:1.1rem;">
-              Dziecko ma prawo być sobą
-            </strong>
-            <p style="margin:0; font-size:0.95rem; color:var(--ink-soft);">
+          <div class="info-box">
+            <strong class="info-box-title">Dziecko ma prawo być sobą</strong>
+            <p>
               Wierzymy w szacunek do emocji malucha, naturalność i swobodę
               odkrywania świata bez presji. Dajemy przestrzeń na swobodną zabawę
               i budowanie pewności siebie.
@@ -957,11 +979,9 @@
             a rodzice mają pełne zaufanie do naszej kadry.
           </p>
 
-          <div style="background:var(--sky); padding:18px 20px; border-left:4px solid var(--fox-amber); border-radius:4px; margin:24px 0;">
-            <strong style="color:var(--mountain-blue-deep); display:block; margin-bottom:6px; font-family:'Baloo 2',sans-serif; font-size:1.15rem;">
-              Kadra z przygotowaniem pedagogicznym
-            </strong>
-            <p style="margin:0; font-size:0.98rem; color:var(--ink-soft);">
+          <div class="info-box">
+            <strong class="info-box-title">Kadra z przygotowaniem pedagogicznym</strong>
+            <p>
               W naszej kadrze jest osoba z wykształceniem pedagogicznym
               o specjalności wczesnoszkolnej i przedszkolnej z edukacją włączającą.
               To przygotowanie pozwala lepiej rozumieć różnorodne potrzeby dzieci
@@ -1036,7 +1056,7 @@
           <figure>
             <img
               src="zdjecie_pionowe.webp"
-              alt="Dzieci z żłobka Pod Chmurką na zajęciach terenowych w lesie na Ursynowie"
+              alt="Dzieci z Żłobka Pod Chmurką podczas zajęć terenowych przy Lesie Kabackim"
               width="600"
               height="800"
               loading="lazy"
@@ -1046,7 +1066,7 @@
           <figure>
             <img
               src="dziecko.webp"
-              alt="Maluch w koszulce żłobka Pod Chmurką odpoczywający podczas zabawy na dworze"
+              alt="Maluch uśmiechający się podczas swobodnej zabawy na dworze"
               width="600"
               height="785"
               loading="lazy"
@@ -1081,7 +1101,7 @@
     <!-- ================= OPINIE ================= -->
     <section id="opinie" aria-labelledby="reviews-heading">
       <div class="wrap">
-        <h2 id="reviews-heading" style="text-align:center;">Co mówią rodzice?</h2>
+        <h2 id="reviews-heading" style="text-align:center;">Opinie rodziców o Żłobku Pod Chmurką na Ursynowie</h2>
         <p style="text-align:center; color:var(--ink-soft); max-width:600px; margin:0 auto;">
           Przeczytaj autentyczne opinie o naszej placówce z Google oraz Facebooka.
         </p>
@@ -1256,7 +1276,8 @@
       </div>
 
       <div class="footer-legal">
-        <strong>Pod Chmurką Anna Mikulak NIP 9512464368</strong> ul. Kanarkowa 8, 02-818 Warszawa · Placówka 208N prowadzona jako punkt opieki dziennej na podstawie Ustawy z dnia 4 lutego 2011 r. o opiece nad dziećmi w wieku do lat 3.
+        <!-- Upewnij się, że podany NIP (9512464368) zgadza się z aktualnym NIP-em Twojej jednoosobowej działalności -->
+        <strong>Pod Chmurką Łukasz Mikulak NIP 9512464368</strong> ul. Kanarkowa 8, 02-818 Warszawa · Placówka 208N prowadzona jako punkt opieki dziennej na podstawie Ustawy z dnia 4 lutego 2011 r. o opiece nad dziećmi w wieku do lat 3.
       </div>
     </div>
   </footer>
@@ -1267,6 +1288,7 @@
 
 </body>
 </html>
+
 
 
 
