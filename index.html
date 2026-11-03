@@ -4,7 +4,6 @@
 
 
 
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -159,17 +158,17 @@
     }
 
     .wrap{
-      max-width:1080px;
+      max-width:1140px;
       margin:0 auto;
-      padding:0 24px;
+      padding:0 32px;
     }
 
     .topbar{
       display:flex;
       align-items:center;
       justify-content:space-between;
-      padding:16px 24px;
-      max-width:1080px;
+      padding:20px 32px;
+      max-width:1140px;
       margin:0 auto;
       flex-wrap: wrap;
       gap: 16px;
@@ -181,7 +180,7 @@
       gap:12px;
       font-family:'Baloo 2', sans-serif;
       font-weight:600;
-      font-size:1.15rem;
+      font-size:1.2rem;
       color:var(--mountain-blue-deep);
       text-decoration:none;
       flex-shrink:0;
@@ -193,8 +192,8 @@
     }
 
     .brand img{
-      width:42px;
-      height:42px;
+      width:44px;
+      height:44px;
       border-radius:50%;
       object-fit:cover;
       flex-shrink:0;
@@ -204,7 +203,7 @@
     .header-right {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 18px;
       flex-wrap: wrap;
     }
 
@@ -212,7 +211,7 @@
       background: var(--cloud);
       border: 2px solid var(--mountain-blue-deep);
       color: var(--mountain-blue-deep);
-      padding: 8px 16px;
+      padding: 8px 18px;
       border-radius: 999px;
       font-family: 'Baloo 2', sans-serif;
       font-weight: 700;
@@ -233,7 +232,7 @@
       display:flex;
       gap:14px;
       align-items:center;
-      margin-left: 8px;
+      margin-left: 4px;
     }
 
     .social-icons a{
@@ -252,7 +251,7 @@
       text-decoration:none;
       color:var(--cloud);
       background:var(--fox-amber);
-      padding:10px 18px;
+      padding:11px 20px;
       border-radius:999px;
       font-family:'Baloo 2',sans-serif;
       white-space:nowrap;
@@ -269,34 +268,35 @@
 
     .hero{
       display:grid;
-      grid-template-columns:1.1fr .9fr;
-      gap:48px;
+      grid-template-columns:1.2fr 0.8fr;
+      gap:60px;
       align-items:center;
-      padding:40px 24px 70px;
-      max-width:1080px;
+      padding:50px 32px 80px;
+      max-width:1140px;
       margin:0 auto;
     }
 
     .hero h1{
-      font-size:2.5rem;
-      line-height:1.18;
+      font-size:2.8rem;
+      line-height:1.15;
     }
 
     .hero p.lead{
-      font-size:1.1rem;
+      font-size:1.15rem;
       color:var(--ink-soft);
-      max-width:46ch;
+      max-width:48ch;
     }
 
     .hero .address{
       margin-top:22px;
       font-family:'Baloo 2',sans-serif;
       font-weight:600;
+      font-size: 1.05rem;
       color:var(--mountain-blue-deep);
     }
 
     .hero .cta-row{
-      margin-top:26px;
+      margin-top:28px;
       display:flex;
       gap:14px;
       flex-wrap:wrap;
@@ -307,7 +307,7 @@
       font-family:'Baloo 2',sans-serif;
       font-weight:600;
       text-decoration:none;
-      padding:13px 24px;
+      padding:13px 26px;
       border-radius:999px;
       border:2px solid transparent;
       transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
@@ -343,13 +343,13 @@
       align-items:center;
       justify-content:center;
       width:100%;
-      max-width:320px;
+      max-width:360px;
     }
 
     .hero-logo-wrapper img{
       width:100%;
       height:auto;
-      max-width:300px;
+      max-width:320px;
       aspect-ratio:1 / 1;
       object-fit:cover;
       border-radius:50%;
@@ -371,7 +371,7 @@
     }
 
     section{
-      padding:64px 0;
+      padding:70px 0;
     }
 
     .band-white{
@@ -380,8 +380,8 @@
 
     .about-grid{
       display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:48px;
+      grid-template-columns:1fr 1.1fr;
+      gap:60px;
       align-items:center;
     }
 
@@ -400,7 +400,8 @@
         100% 100%,
         0 100%
       );
-      border-radius:8px;
+      border-radius:12px;
+      box-shadow: 0 14px 30px rgba(63,97,120,0.12);
     }
 
     .values{
@@ -436,20 +437,20 @@
       );
       color:#fff;
       text-align:center;
-      padding:50px 24px;
-      border-radius:12px;
+      padding:50px 32px;
+      border-radius:16px;
       margin:30px 0;
       box-shadow:0 14px 30px rgba(63,97,120,0.15);
     }
 
     .philosophy-banner h3{
       color:var(--fox-amber);
-      font-size:1.8rem;
+      font-size:2rem;
       margin-bottom:12px;
     }
 
     .philosophy-banner p{
-      max-width:700px;
+      max-width:720px;
       margin:0 auto;
       font-size:1.15rem;
       line-height:1.7;
@@ -459,84 +460,92 @@
     .day-grid{
       display:grid;
       grid-template-columns:repeat(3, 1fr);
-      gap:24px;
-      margin-top:36px;
+      gap:28px;
+      margin-top:40px;
     }
 
     .day-card{
       background:var(--sky);
-      padding:24px;
-      border-radius:8px;
+      padding:28px;
+      border-radius:12px;
       border:1px solid var(--line);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     
     .day-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 24px rgba(63,97,120,0.1);
+      box-shadow: 0 12px 28px rgba(63,97,120,0.12);
       border-color: transparent;
     }
 
     .day-card h3{
-      font-size:1.2rem;
-      margin-bottom:10px;
+      font-size:1.25rem;
+      margin-bottom:12px;
     }
 
     .day-card p{
       color:var(--ink-soft);
       margin:0;
-      font-size:0.95rem;
+      font-size:0.98rem;
     }
 
     .gallery-grid{
       display:grid;
-      grid-template-columns:1.3fr 1fr;
-      gap:24px;
+      grid-template-columns:1fr 1fr;
+      gap:28px;
+      align-items: stretch;
     }
 
     .gallery-grid figure{
       margin:0;
-      border-radius: 8px;
+      border-radius: 12px;
       overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background: var(--sky);
+      border: 1px solid var(--line);
+      padding: 12px;
     }
 
     .gallery-grid img{
       width:100%;
-      height:100%;
+      height: 380px;
       object-fit:cover;
       border-radius:8px;
       transition: transform 0.4s ease;
     }
 
     .gallery-grid figure:hover img {
-      transform: scale(1.03);
+      transform: scale(1.02);
     }
 
     .gallery-grid figcaption{
-      margin-top:10px;
-      font-size:.92rem;
+      margin-top:12px;
+      font-size:.95rem;
       color:var(--ink-soft);
+      font-weight: 500;
+      text-align: center;
     }
 
     .reviews-grid{
       display:grid;
       grid-template-columns:repeat(2, 1fr);
-      gap:24px;
-      margin-top:36px;
+      gap:28px;
+      margin-top:40px;
     }
 
     .review-card{
       background:var(--sky);
       border:1px solid var(--line);
-      padding:28px;
-      border-radius:10px;
+      padding:32px;
+      border-radius:12px;
       position:relative;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     
     .review-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 24px rgba(63,97,120,0.1);
+      box-shadow: 0 12px 28px rgba(63,97,120,0.12);
       border-color: transparent;
     }
 
@@ -551,13 +560,13 @@
       font-family:'Baloo 2',sans-serif;
       font-weight:700;
       color:var(--mountain-blue-deep);
-      font-size:1.1rem;
+      font-size:1.15rem;
     }
 
     .review-source{
       font-size:0.85rem;
       background:#fff;
-      padding:4px 10px;
+      padding:4px 12px;
       border-radius:20px;
       color:var(--ink-soft);
       border:1px solid var(--line);
@@ -565,43 +574,43 @@
 
     .stars{
       color:#F1A80A;
-      margin-bottom:10px;
-      font-size:0.95rem;
+      margin-bottom:12px;
+      font-size:1rem;
     }
 
     .review-card p{
       color:var(--ink-soft);
       font-style:italic;
       margin:0;
-      font-size:0.98rem;
+      font-size:1rem;
     }
 
     .contact-grid{
       display:grid;
       grid-template-columns:1fr 1fr;
-      gap:48px;
+      gap:60px;
       align-items:start;
     }
 
     .contact-list{
       list-style:none;
-      margin:22px 0 0;
+      margin:24px 0 0;
       padding:0;
       display:grid;
-      gap:18px;
+      gap:20px;
     }
 
     .contact-list dt{
       font-family:'Baloo 2',sans-serif;
       font-weight:600;
       color:var(--mountain-blue-deep);
-      font-size:.9rem;
+      font-size:.95rem;
       margin:0;
     }
 
     .contact-list dd{
-      margin:2px 0 0;
-      font-size:1.08rem;
+      margin:4px 0 0;
+      font-size:1.1rem;
     }
 
     .contact-list a{
@@ -616,23 +625,23 @@
     }
 
     .seo-contact-box{
-      margin-top:28px;
-      padding-top:20px;
+      margin-top:32px;
+      padding-top:24px;
       border-top:1px solid var(--line);
-      font-size:0.92rem;
+      font-size:0.95rem;
       color:var(--ink-soft);
     }
 
     .seo-contact-box p{
-      margin:0 0 10px 0;
+      margin:0 0 12px 0;
     }
 
     .map-frame{
       border:0;
       width:100%;
-      height:360px;
-      border-radius:10px;
-      box-shadow:0 18px 40px -18px rgba(63,97,120,.35);
+      height:450px;
+      border-radius:12px;
+      box-shadow:0 18px 40px -18px rgba(63,97,120,.3);
     }
 
     .warszawa-funding-card {
@@ -643,7 +652,7 @@
       display: flex;
       align-items: center;
       gap: 24px;
-      margin: 40px 0 10px;
+      margin: 50px 0 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.03);
     }
 
@@ -675,7 +684,7 @@
       line-height: 1.5;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       .warszawa-funding-card {
         flex-direction: column;
         text-align: center;
@@ -690,14 +699,14 @@
     footer{
       background:var(--mountain-blue-deep);
       color:#E7EFF2;
-      padding:24px 0;
-      font-size:.85rem;
+      padding:32px 0;
+      font-size:.9rem;
     }
 
     footer .wrap{
       display:flex;
       flex-direction: column;
-      gap:12px;
+      gap:16px;
     }
 
     .footer-top {
@@ -705,18 +714,18 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 16px;
       width: 100%;
-      font-size: 0.82rem;
+      font-size: 0.85rem;
     }
 
     .footer-legal {
       border-top: 1px solid rgba(255,255,255,0.15);
-      padding-top: 10px;
-      font-size: 0.75rem;
+      padding-top: 14px;
+      font-size: 0.8rem;
       color: #CBD5DB;
       text-align: center;
-      line-height: 1.4;
+      line-height: 1.5;
     }
 
     footer a{
@@ -731,11 +740,11 @@
 
     .footer-socials{
       display:flex;
-      gap:14px;
+      gap:16px;
     }
 
     .footer-socials a{
-      font-size:1.1rem;
+      font-size:1.15rem;
       color:#fff;
       transition: color 0.2s ease, transform 0.2s ease;
     }
@@ -745,10 +754,10 @@
       transform: translateY(-3px);
     }
 
-    @media (max-width:760px){
+    @media (max-width:900px){
       .hero{
         grid-template-columns:1fr;
-        padding-top:20px;
+        padding-top:30px;
         text-align:center;
       }
 
@@ -781,7 +790,7 @@
       }
 
       h1{
-        font-size:2.1rem !important;
+        font-size:2.2rem !important;
       }
     }
 
@@ -822,8 +831,8 @@
         <img
           src="logo.webp"
           alt="Logo żłobka Pod Chmurką – lisek na tle gór i chmur"
-          width="42"
-          height="42"
+          width="44"
+          height="44"
         >
         Żłobek Pod Chmurką
       </a>
@@ -891,8 +900,8 @@
         <img
           src="logo.webp"
           alt="Logo Żłobka Pod Chmurką – lisek wśród gór pod chmurami"
-          width="300"
-          height="300"
+          width="320"
+          height="320"
         >
       </div>
     </section>
@@ -1014,15 +1023,25 @@
           Zobacz, jak spędzamy czas – autentyczne chwile radości naszych podopiecznych na Ursynowie.
         </p>
         
-        <!-- ====== FILM Z ŻYCIA ŻŁOBKA ====== -->
+        <!-- ====== FILM Z ŻYCIA ŻŁOBKA (ZMNIEJSZONY) ====== -->
         <div style="text-align:center; margin-bottom: 40px;">
-          <video controls playsinline preload="metadata" style="width:100%; max-width:600px; height:auto; border-radius:12px; background:#000; box-shadow:0 14px 30px rgba(63,97,120,0.15);">
+          <video controls playsinline preload="metadata" style="width:100%; max-width:420px; height:auto; border-radius:12px; background:#000; box-shadow:0 14px 30px rgba(63,97,120,0.15);">
             <source src="612ec0dc-6ce3-4a24-a3d2-1f2ae8176783.mp4" type="video/mp4">
             Twoja przeglądarka nie obsługuje odtwarzacza wideo.
           </video>
         </div>
         
         <div class="gallery-grid">
+          <figure>
+            <img
+              src="att.-t90F2rV2i5doz4WdXaEzAeIXqRs19KbPjFalaFpjC0.jpeg"
+              alt="Dziecko trzymające gwiazdkę z dyni w żłobku Pod Chmurką"
+              width="600"
+              height="800"
+              loading="lazy"
+            >
+            <figcaption>Twórcze zabawy i naturalne skarby jesieni</figcaption>
+          </figure>
           <figure>
             <img
               src="zdjecie_pionowe.webp"
@@ -1032,16 +1051,6 @@
               loading="lazy"
             >
             <figcaption>Zajęcia terenowe w pobliżu Lasu Kabackiego</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="dziecko.webp"
-              alt="Maluch w koszulce żłobka Pod Chmurką odpoczywający podczas zabawy na dworze"
-              width="600"
-              height="785"
-              loading="lazy"
-            >
-            <figcaption>Codzienny uśmiech na świeżym powietrzu</figcaption>
           </figure>
         </div>
 
@@ -1257,6 +1266,8 @@
 
 </body>
 </html>
+
+
 
 
 
