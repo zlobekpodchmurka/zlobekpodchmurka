@@ -467,42 +467,45 @@
       font-size:0.98rem;
     }
 
-    .gallery-grid{
+    /* ====== NOWA SIATKA MEDIA (FILM + ZDJĘCIA) ====== */
+    .media-grid{
       display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:28px;
-      align-items: stretch;
+      grid-template-columns:repeat(3, 1fr);
+      gap:24px;
+      align-items:stretch;
     }
 
-    .gallery-grid figure{
+    .media-card{
       margin:0;
-      border-radius: 12px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      background: var(--sky);
-      border: 1px solid var(--line);
-      padding: 12px;
+      border-radius:12px;
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      background:var(--sky);
+      border:1px solid var(--line);
+      padding:12px;
     }
 
-    .gallery-grid img{
+    .media-card img,
+    .media-card video{
       width:100%;
-      height: 380px;
+      height:380px;
       object-fit:cover;
       border-radius:8px;
-      transition: transform 0.4s ease;
+      background:#000;
+      transition:transform 0.4s ease;
     }
 
-    .gallery-grid figure:hover img {
-      transform: scale(1.02);
+    .media-card:hover img{
+      transform:scale(1.02);
     }
 
-    .gallery-grid figcaption{
+    .media-card figcaption{
       margin-top:12px;
       font-size:.95rem;
       color:var(--ink-soft);
-      font-weight: 500;
-      text-align: center;
+      font-weight:500;
+      text-align:center;
     }
 
     .reviews-grid{
@@ -756,7 +759,7 @@
       }
 
       .about-grid,
-      .gallery-grid,
+      .media-grid,
       .contact-grid,
       .day-grid,
       .reviews-grid{
@@ -997,7 +1000,7 @@
       </svg>
     </div>
 
-    <!-- ================= GALERIA ================= -->
+    <!-- ================= GALERIA (SIATKA 3 ELEMENTS: FILM + ZDJĘCIA) ================= -->
     <section class="band-white" id="galeria" aria-labelledby="gallery-heading">
       <div class="wrap">
         <h2 id="gallery-heading">Z życia żłobka</h2>
@@ -1005,16 +1008,18 @@
           Zobacz, jak spędzamy czas – autentyczne chwile radości naszych podopiecznych na Ursynowie.
         </p>
         
-        <!-- ====== FILM Z ŻYCIA ŻŁOBKA (ZMNIEJSZONY) ====== -->
-        <div style="text-align:center; margin-bottom: 40px;">
-          <video controls playsinline preload="metadata" style="width:100%; max-width:420px; height:auto; border-radius:12px; background:#000; box-shadow:0 14px 30px rgba(63,97,120,0.15);">
-            <source src="612ec0dc-6ce3-4a24-a3d2-1f2ae8176783.mp4" type="video/mp4">
-            Twoja przeglądarka nie obsługuje odtwarzacza wideo.
-          </video>
-        </div>
-        
-        <div class="gallery-grid">
-          <figure>
+        <div class="media-grid">
+          <!-- FILM -->
+          <figure class="media-card">
+            <video controls playsinline preload="metadata">
+              <source src="612ec0dc-6ce3-4a24-a3d2-1f2ae8176783.mp4" type="video/mp4">
+              Twoja przeglądarka nie obsługuje odtwarzacza wideo.
+            </video>
+            <figcaption>Codzienne radości i zabawa w żłobku</figcaption>
+          </figure>
+
+          <!-- ZDJĘCIE 1 -->
+          <figure class="media-card">
             <img
               src="att.-t90F2rV2i5doz4WdXaEzAeIXqRs19KbPjFalaFpjC0.jpeg"
               alt="Dziecko trzymające gwiazdkę z dyni w żłobku Pod Chmurką"
@@ -1024,7 +1029,9 @@
             >
             <figcaption>Twórcze zabawy i naturalne skarby jesieni</figcaption>
           </figure>
-          <figure>
+
+          <!-- ZDJĘCIE 2 -->
+          <figure class="media-card">
             <img
               src="zdjecie_pionowe.webp"
               alt="Dzieci z żłobka Pod Chmurką na zajęciach terenowych w lesie na Ursynowie"
@@ -1210,7 +1217,7 @@
 
   </main>
 
-<!-- ================= FOOTER ================= -->
+  <!-- ================= FOOTER ================= -->
   <footer>
     <div class="wrap">
       <div class="footer-top">
@@ -1248,6 +1255,5 @@
 
 </body>
 </html>
-
 
 
