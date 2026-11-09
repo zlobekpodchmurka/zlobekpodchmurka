@@ -1,0 +1,309 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Dedykowana favicona dla Google i przeglądarek -->
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ==================== SEO: podstawowe meta tagi ==================== -->
+  <title>Dzień Otwarty – Zapisy | Żłobek Pod Chmurką Ursynów</title>
+  <meta name="description" content="Zapraszamy na Dzień Otwarty w Żłobku Pod Chmurką na Ursynowie. Zobacz naszą placówkę, poznaj ciocie i porozmawiaj o adaptacji. Spotkania po wcześniejszym umówieniu.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.zlobekpodchmurka.pl/dzien-otwarty.html">
+
+  <!-- ==================== IKONY / FAVICON ==================== -->
+  <link rel="icon" type="image/webp" href="logo.webp">
+  <link rel="shortcut icon" type="image/webp" href="logo.webp">
+  <link rel="apple-touch-icon" href="logo.webp">
+
+  <!-- ==================== Fonty i ikony FontAwesome ==================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root{
+      --sky:#EEF5F8;
+      --cloud:#FFFFFF;
+      --mountain-blue:#5E86A0;
+      --mountain-blue-deep:#3F6178;
+      --mountain-gray:#A9AFB3;
+      --fox-amber:#E2A23D;
+      --fox-amber-deep:#C6842A;
+      --ink:#26333B;
+      --ink-soft:#5B6B74;
+      --line:#D8E3E8;
+    }
+
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{ margin:0; background:var(--sky); color:var(--ink); font-family:'Karla', sans-serif; font-size:17px; line-height:1.6; padding-bottom: 0; }
+    h1,h2,h3{ font-family:'Baloo 2', sans-serif; font-weight:700; color:var(--mountain-blue-deep); margin:0 0 .4em 0; }
+    a{ color:var(--mountain-blue-deep); }
+    img{ max-width:100%; height:auto; display:block; }
+    .wrap{ max-width:1140px; margin:0 auto; padding:0 32px; }
+
+    /* ---------- TOPBAR ---------- */
+    .topbar{ display:flex; align-items:center; justify-content:space-between; padding:20px 32px; max-width:1140px; margin:0 auto; flex-wrap: wrap; gap: 16px; }
+    .brand{ display:flex; align-items:center; gap:12px; font-family:'Baloo 2', sans-serif; font-weight:600; font-size:1.2rem; color:var(--mountain-blue-deep); text-decoration:none; flex-shrink:0; transition: opacity 0.2s ease; }
+    .brand:hover { opacity: 0.85; }
+    .brand img{ width:44px; height:44px; border-radius:50%; object-fit:cover; flex-shrink:0; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    
+    .header-right { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+    .nav-badge { background: var(--cloud); border: 2px solid var(--mountain-blue-deep); color: var(--mountain-blue-deep); padding: 8px 16px; border-radius: 999px; font-family: 'Baloo 2', sans-serif; font-weight: 700; text-decoration: none; font-size: 0.95rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+    .nav-badge:hover { background: var(--sky); }
+
+    .social-icons{ display:flex; gap:16px; align-items:center; }
+    .social-icons a{ color:var(--mountain-blue-deep); font-size:1.25rem; transition:color 0.2s, transform 0.2s; }
+    .social-icons a:hover{ color:var(--fox-amber-deep); transform: scale(1.1); }
+
+    /* ---------- HERO ---------- */
+    .hero{ text-align:center; padding:50px 32px 40px; max-width:850px; margin:0 auto; }
+    .hero h1{ font-size:2.8rem; line-height:1.15; }
+    .hero p.lead{ font-size:1.15rem; color:var(--ink-soft); margin: 16px auto 0; }
+
+    /* ---------- CLOUD DIVIDER ---------- */
+    .cloud-divider{ display:block; width:100%; height:40px; }
+    .cloud-divider svg{ width:100%; height:100%; display:block; }
+    .band-white{ background:var(--cloud); }
+
+    /* ---------- MAIN CONTENT GRID ---------- */
+    section{ padding:70px 0; }
+    .open-day-grid{ display:grid; grid-template-columns:1.2fr 1fr; gap:60px; align-items:start; }
+    
+    .open-day-info h2 { font-size: 2rem; margin-bottom: 20px; }
+    .open-day-info p { color: var(--ink-soft); margin-bottom: 20px; }
+    
+    .info-box { background: var(--sky); padding: 24px; border-left: 4px solid var(--fox-amber); border-radius: 8px; margin-bottom: 30px; }
+    .info-box h3 { font-size: 1.25rem; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; color: var(--mountain-blue-deep); }
+    .info-box p { margin: 0; color: var(--ink); font-size: 1rem; }
+
+    .checklist { list-style: none; padding: 0; margin: 0 0 30px 0; }
+    .checklist li { position: relative; padding-left: 32px; margin-bottom: 12px; color: var(--ink-soft); }
+    .checklist li::before { content: "\f00c"; font-family: "Font Awesome 6 Free"; font-weight: 900; position: absolute; left: 0; top: 2px; color: var(--fox-amber); font-size: 1.1rem; }
+
+    /* ---------- FORM & CTA BOX ---------- */
+    .action-box { background: linear-gradient(135deg, var(--mountain-blue-deep), var(--mountain-blue)); border-radius: 16px; padding: 36px; color: #fff; box-shadow: 0 14px 30px rgba(63,97,120,0.15); }
+    .action-box h3 { color: var(--fox-amber); font-size: 1.6rem; margin-bottom: 10px; }
+    .action-box p { color: #F0F4F7; font-size: 1rem; margin-bottom: 24px; line-height: 1.5; }
+
+    .btn{ display:inline-flex; align-items: center; justify-content: center; gap: 8px; font-family:'Baloo 2',sans-serif; font-weight:600; text-decoration:none; padding:13px 26px; border-radius:999px; border:2px solid transparent; transition: background-color 0.3s ease, transform 0.2s ease; cursor: pointer; font-size: 1.1rem; width: 100%; margin-bottom: 16px; }
+    .btn:active { transform: scale(0.97); }
+    .btn-primary{ background:var(--fox-amber); color:#fff; }
+    .btn-primary:hover{ background:var(--fox-amber-deep); }
+    .btn-secondary{ background: var(--cloud); border-color:var(--mountain-blue-deep); color:var(--mountain-blue-deep); }
+    .btn-secondary:hover{ background:var(--sky); }
+
+    .divider-text { text-align: center; color: #A9AFB3; font-size: 0.9rem; margin: 10px 0 20px; position: relative; }
+    .divider-text::before, .divider-text::after { content: ""; position: absolute; top: 50%; width: 30%; height: 1px; background: rgba(255,255,255,0.2); }
+    .divider-text::before { left: 0; }
+    .divider-text::after { right: 0; }
+
+    .form-group { margin-bottom: 16px; text-align: left; }
+    .form-group label { display: block; font-family: 'Baloo 2', sans-serif; font-weight: 600; font-size: 0.95rem; color: #FFF; margin-bottom: 4px; }
+    .form-group input, .form-group textarea { width: 100%; padding: 12px 14px; border: 1px solid transparent; border-radius: 8px; font-family: 'Karla', sans-serif; font-size: 0.98rem; color: var(--ink); background: var(--cloud); transition: box-shadow 0.2s ease; }
+    .form-group input:focus, .form-group textarea:focus { outline: none; box-shadow: 0 0 0 3px rgba(226,162,61,0.4); }
+
+    /* ---------- MOBILE STICKY BUTTON ---------- */
+    .mobile-sticky-call { display: none; position: fixed; bottom: 16px; left: 16px; right: 16px; z-index: 999; }
+    .btn-sticky { display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--fox-amber); color: #fff !important; text-decoration: none; padding: 14px 20px; border-radius: 999px; font-family: 'Baloo 2', sans-serif; font-weight: 700; font-size: 1.1rem; box-shadow: 0 8px 24px rgba(198,132,42,0.4); transition: transform 0.2s ease; }
+    .btn-sticky:active { transform: scale(0.97); background: var(--fox-amber-deep); }
+
+    /* ---------- FOOTER ---------- */
+    footer{ background:var(--mountain-blue-deep); color:#E7EFF2; padding:32px 0; font-size:.9rem; }
+    footer .wrap{ display:flex; flex-direction: column; gap:16px; }
+    .footer-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; width: 100%; font-size: 0.85rem; }
+    .footer-legal { border-top: 1px solid rgba(255,255,255,0.15); padding-top: 14px; font-size: 0.8rem; color: #CBD5DB; text-align: center; line-height: 1.5; }
+    footer a{ color:#fff; text-decoration:none; transition: color 0.2s ease; }
+    footer a:hover { color: var(--fox-amber); }
+    .footer-socials{ display:flex; gap:16px; }
+    .footer-socials a{ font-size:1.15rem; color:#fff; }
+    .footer-socials a:hover{ color:var(--fox-amber); transform: translateY(-3px); }
+
+    @media (max-width:900px){
+      .hero{ padding-top:20px; padding-bottom: 20px; }
+      .hero h1{ font-size:2.2rem; }
+      .open-day-grid { grid-template-columns: 1fr; gap: 40px; }
+    }
+    @media (max-width: 768px) {
+      body { padding-bottom: 76px; }
+      .mobile-sticky-call { display: block; }
+    }
+    :focus-visible{ outline:3px solid var(--fox-amber); outline-offset:2px; }
+  </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BG459L0V90"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BG459L0V90');
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <div class="topbar">
+      <a class="brand" href="index.html">
+        <img src="logo.webp" alt="Logo żłobka Pod Chmurką" width="44" height="44">
+        Żłobek Pod Chmurką
+      </a>
+
+      <div class="header-right">
+        <a class="nav-badge" href="index.html">
+          <i class="fa-solid fa-house"></i> Strona główna
+        </a>
+        <div class="social-icons">
+          <a href="https://www.google.com/maps/search/?api=1&query=%C5%BB%C5%82obek+Pod+Chmurk%C4%85+Ursyn%C3%B3w,+Warszawa" target="_blank" rel="noopener noreferrer" aria-label="Wizytówka Google"><i class="fa-brands fa-google"></i></a>
+          <a href="https://www.facebook.com/p/Pod-chmurk%C4%85-punkt-opieki-dziennej-100063548951420/?locale=pl_PL" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <h1>Zapraszamy na Dzień Otwarty!</h1>
+      <p class="lead">
+        Zobacz na żywo, jak wygląda Żłobek Pod Chmurką. Poznaj nasze ciocie, obejrzyj sale i przekonaj się, dlaczego dzieci czują się u nas jak w domu.
+      </p>
+    </section>
+
+    <div class="cloud-divider" aria-hidden="true">
+      <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,40 C150,10 300,60 450,35 C600,10 750,55 900,30 C1050,10 1150,45 1200,30 L1200,60 L0,60 Z" fill="#FFFFFF"></path>
+      </svg>
+    </div>
+
+    <!-- ================= SZCZEGÓŁY I ZAPISY ================= -->
+    <section class="band-white">
+      <div class="wrap open-day-grid">
+        
+        <!-- LEWA KOLUMNA: Informacje -->
+        <div class="open-day-info">
+          <h2>Jak wygląda spotkanie?</h2>
+          <p>
+            Wierzymy, że wybór żłobka to jedna z najważniejszych decyzji dla rodziców. Dlatego nie organizujemy masowych spędów – stawiamy na spokój i indywidualne podejście, tak samo jak w naszej codziennej opiece nad dziećmi.
+          </p>
+
+          <div class="info-box">
+            <h3><i class="fa-regular fa-clock"></i> Wyłącznie po wcześniejszym umówieniu</h3>
+            <p>
+              Spotkania podczas Dnia Otwartego mają charakter indywidualny. Chcemy poświęcić Wam 100% naszej uwagi, dlatego prosimy o wcześniejszą rezerwację konkretnej godziny spotkania telefonicznie lub przez e-mail.
+            </p>
+          </div>
+
+          <h3>Co zaplanowaliśmy na spotkanie?</h3>
+          <ul class="checklist">
+            <li><strong>Oprowadzenie po placówce:</strong> Zobaczysz nasze przytulne sale, kąciki zabaw oraz miejsce odpoczynku maluchów.</li>
+            <li><strong>Rozmowa o adaptacji:</strong> Odpowiemy na wszystkie obawy i opowiemy, jak łagodnie wprowadzić dziecko w nowy rytm dnia.</li>
+            <li><strong>Poznanie cioć:</strong> Będziesz mieć okazję osobiście porozmawiać z naszą wykwalifikowaną kadrą pedagogiczną.</li>
+            <li><strong>Odpowiedzi na pytania:</strong> Omówimy kwestie żywienia (w tym alergii), spacerów do Lasu Kabackiego, dofinansowań oraz procedury zapisu.</li>
+          </ul>
+        </div>
+
+        <!-- PRAWA KOLUMNA: Kontakt i formularz -->
+        <div>
+          <div class="action-box">
+            <h3>Zarezerwuj termin</h3>
+            <p>Wybierz najwygodniejszą dla siebie formę kontaktu i umów się na indywidualne spotkanie.</p>
+
+            <a class="btn btn-primary" href="tel:+48530119251">
+              <i class="fa-solid fa-phone"></i> Zadzwoń: 530 119 251
+            </a>
+
+            <div class="divider-text">LUB WYŚLIJ WIADOMOŚĆ</div>
+
+            <form action="mailto:zlobekpodchmurka@wp.pl?subject=Zapis%20na%20Dzie%C5%84%20Otwarty" method="post" enctype="text/text">
+              <div class="form-group">
+                <label for="fname">Imię i nazwisko</label>
+                <input type="text" id="fname" name="Imię_i_nazwisko" placeholder="np. Anna Kowalska" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="fcontact">Numer telefonu</label>
+                <input type="text" id="fcontact" name="Telefon" placeholder="np. 500 000 000" required>
+              </div>
+
+              <div class="form-group">
+                <label for="fage">Wiek dziecka</label>
+                <input type="text" id="fage" name="Wiek_dziecka" placeholder="np. 1.5 roku">
+              </div>
+              
+              <div class="form-group">
+                <label for="fmsg">Wiadomość / preferowana pora spotkania</label>
+                <textarea id="fmsg" name="Wiadomosc" rows="3" placeholder="Chcielibyśmy odwiedzić żłobek w godzinach popołudniowych..."></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-secondary" style="margin-bottom: 0;">
+                <i class="fa-regular fa-paper-plane"></i> Wyślij e-mail zgłoszeniowy
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div class="cloud-divider" aria-hidden="true" style="transform:scaleY(-1); background:var(--cloud);">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+      <path d="M0,40 C150,10 300,60 450,35 C600,10 750,55 900,30 C1050,10 1150,45 1200,30 L1200,60 L0,60 Z" fill="#3F6178"></path>
+    </svg>
+  </div>
+
+  <!-- ================= PŁYWAJĄCY PRZYCISK DLA SMARTFONÓW ================= -->
+  <div class="mobile-sticky-call">
+    <a href="tel:+48530119251" class="btn-sticky">
+      <i class="fa-solid fa-phone"></i> Umów się: 530 119 251
+    </a>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <span>
+          © <span id="year">2026</span>
+          Żłobek Pod Chmurką · ul. Kanarkowa 8, Warszawa-Ursynów (Las Kabacki)
+        </span>
+
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/p/Pod-chmurk%C4%85-punkt-opieki-dziennej-100063548951420/?locale=pl_PL" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/zlobekpodchmurka2018/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+
+        <span>
+          <a href="FAQ.html">FAQ</a> ·
+          <a href="polityka-prywatnosci.html">Polityka Prywatności</a> ·
+          <a href="tel:+48530119251">530 119 251</a> ·
+          <a href="mailto:zlobekpodchmurka@wp.pl">zlobekpodchmurka@wp.pl</a>
+        </span>
+      </div>
+
+      <div class="footer-legal">
+        <strong>Pod Chmurką Anna Mikulak NIP 9512464368</strong> ul. Kanarkowa 8, 02-818 Warszawa · Placówka 208N prowadzona jako punkt opieki dziennej na podstawie Ustawy z dnia 4 lutego 2011 r. o opiece nad dziećmi w wieku do lat 3.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
