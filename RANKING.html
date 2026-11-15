@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ranking Żłobków na Ursynowie 2026 | Najlepszy Żłobek na Ursynowie</title>
-    <meta name="description" content="Ranking żłobków na Ursynowie 2026. Sprawdź najlepszy żłobek na Ursynowie, rekomendację dla rodziców, porady przy wyborze placówki, FAQ i rekomendacje dotyczące opieki, edukacji i bezpieczeństwa.">
-    <meta name="keywords" content="żłobek na Ursynowie, ranking żłobków Ursynów, żłobek Ursynów 2026, najlepszy żłobek na Ursynowie, żłobek Pod Chmurką, opieka nad dzieckiem Ursynów, placówka dla niemowląt Ursynów">
+    <title>Jak wybrać żłobek na Ursynowie? | Żłobek Pod Chmurką</title>
+    <meta name="description" content="Praktyczny poradnik dla rodziców z Ursynowa. Sprawdź, na co zwrócić uwagę przy wyborze żłobka, jak przygotować się do adaptacji i o co zapytać podczas wizyty.">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Ranking Żłobków na Ursynowie 2026 | Najlepszy Żłobek na Ursynowie">
-    <meta property="og:description" content="Przewodnik dla rodziców: ranking żłobków na Ursynowie, rekomendacja placówki, porady i FAQ o wyborze żłobka.">
+    <meta property="og:title" content="Jak wybrać żłobek na Ursynowie?">
+    <meta property="og:description" content="Poradnik dla rodziców: bezpieczeństwo, adaptacja, codzienny plan i pytania, które warto zadać przed wyborem żłobka.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://zlobekpodchmurka.pl/">
     <meta property="og:image" content="https://zlobekpodchmurka.pl/og-image.jpg">
@@ -17,35 +16,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #1f4e38;
-            --primary-dark: #163827;
-            --primary-soft: #edf7f2;
-            --primary-alt: #2d6a4f;
-            --accent: #dd8f1c;
-            --accent-soft: #fff7ea;
-            --text: #1f2937;
-            --text-soft: #4b5563;
-            --text-light: #6b7280;
-            --border: #e5e7eb;
-            --bg: #f5f8f7;
+            --green: #1f4e38;
+            --green-dark: #163827;
+            --green-light: #edf7f2;
+            --gold: #d98a17;
+            --ink: #1f2937;
+            --muted: #53615c;
+            --line: #e7ece9;
+            --paper: #f5f8f6;
             --white: #ffffff;
-            --shadow-sm: 0 10px 25px rgba(31, 78, 56, 0.08);
-            --shadow-md: 0 18px 40px rgba(15, 23, 42, 0.08);
-            --radius: 22px;
-            --radius-sm: 14px;
-            --max: 1180px;
+            --radius: 20px;
+            --width: 1080px;
         }
 
         * { box-sizing: border-box; }
-
         html { scroll-behavior: smooth; }
-
         body {
             margin: 0;
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background: linear-gradient(180deg, #f7faf8 0%, #f1f5f2 100%);
-            color: var(--text);
-            line-height: 1.75;
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.72;
             -webkit-font-smoothing: antialiased;
         }
 
@@ -53,27 +44,24 @@
         a { color: inherit; }
 
         .container {
-            width: min(var(--max), calc(100% - 32px));
+            width: min(var(--width), calc(100% - 40px));
             margin: 0 auto;
         }
 
         .topbar {
-            background: rgba(17, 42, 31, 0.9);
-            color: rgba(255,255,255,0.9);
-            font-size: 0.8rem;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            padding: 0.7rem 0;
+            padding: 10px 16px;
+            background: var(--green-dark);
+            color: rgba(255,255,255,.92);
             text-align: center;
-            backdrop-filter: blur(12px);
+            font-size: .8rem;
+            letter-spacing: .04em;
+            text-transform: uppercase;
         }
 
         .hero {
-            background:
-                linear-gradient(135deg, rgba(12, 34, 25, 0.94), rgba(28, 78, 56, 0.88)),
-                radial-gradient(circle at top right, rgba(255,255,255,0.16), transparent 35%);
-            color: var(--white);
-            padding: 4.2rem 0 4.8rem;
+            padding: 76px 0 92px;
+            color: #fff;
+            background: linear-gradient(135deg, #163827 0%, #2d6a4f 100%);
             position: relative;
             overflow: hidden;
         }
@@ -82,665 +70,448 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160"><circle cx="140" cy="20" r="120" fill="rgba(255,255,255,0.04)"/><circle cx="35" cy="110" r="85" fill="rgba(255,255,255,0.03)"/></svg>') center/cover no-repeat;
+            background: radial-gradient(circle at top right, rgba(255,255,255,.18), transparent 35%);
             pointer-events: none;
         }
 
-        .hero-inner {
+        .hero-grid {
             position: relative;
             z-index: 1;
             display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 2rem;
+            grid-template-columns: minmax(0, 1.4fr) minmax(260px, .8fr);
+            gap: 46px;
             align-items: center;
         }
 
         .eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
+            display: inline-block;
+            margin-bottom: 18px;
+            padding: 8px 13px;
+            background: rgba(255,255,255,.1);
+            border: 1px solid rgba(255,255,255,.2);
             border-radius: 999px;
-            background: rgba(255,255,255,0.10);
-            border: 1px solid rgba(255,255,255,0.18);
-            font-size: 0.78rem;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
+            font-size: .76rem;
             font-weight: 700;
-            margin-bottom: 1.4rem;
+            letter-spacing: .08em;
+            text-transform: uppercase;
         }
 
         h1 {
-            font-size: clamp(2.3rem, 4vw, 4rem);
-            line-height: 1.08;
-            letter-spacing: -0.05em;
-            margin: 0 0 1rem;
-            font-weight: 800;
+            margin: 0 0 18px;
+            max-width: 720px;
+            font-size: clamp(2.4rem, 5vw, 4rem);
+            line-height: 1.12;
+            letter-spacing: -.05em;
         }
 
         .hero p {
             margin: 0;
-            max-width: 650px;
+            max-width: 680px;
+            color: rgba(255,255,255,.9);
             font-size: 1.08rem;
-            color: rgba(255,255,255,0.85);
         }
 
-        .hero-actions {
-            margin-top: 1.8rem;
+        .actions {
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 12px;
+            margin-top: 28px;
         }
 
-        .btn {
+        .button {
             display: inline-flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+            min-height: 48px;
+            padding: 11px 22px;
+            border-radius: 999px;
+            background: var(--gold);
+            color: #fff;
             text-decoration: none;
             font-weight: 700;
-            border-radius: 999px;
-            padding: 0.95rem 1.5rem;
-            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-            white-space: nowrap;
+            transition: transform .2s ease, background .2s ease;
+            box-shadow: 0 12px 24px rgba(217,138,23,.2);
         }
 
-        .btn:hover {
+        .button:hover {
             transform: translateY(-1px);
+            background: #bf7410;
         }
 
-        .btn-primary {
-            background: var(--accent);
-            color: #fff;
-            box-shadow: 0 16px 28px rgba(204, 136, 42, 0.25);
+        .button-outline {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,.4);
+            box-shadow: none;
         }
 
-        .btn-secondary {
-            background: rgba(255,255,255,0.08);
-            color: var(--white);
-            border: 1px solid rgba(255,255,255,0.2);
+        .button-outline:hover {
+            background: rgba(255,255,255,.08);
         }
 
         .hero-card {
-            background: rgba(255,255,255,0.10);
-            border: 1px solid rgba(255,255,255,0.14);
-            backdrop-filter: blur(10px);
+            padding: 24px 22px;
             border-radius: var(--radius);
-            box-shadow: var(--shadow-md);
-            padding: 1.5rem;
+            background: rgba(255,255,255,.08);
+            border: 1px solid rgba(255,255,255,.15);
+            backdrop-filter: blur(6px);
         }
 
-        .score-box {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-            padding: 1rem 1.1rem;
-            border-radius: 18px;
-            background: rgba(255,255,255,0.08);
-            border: 1px solid rgba(255,255,255,0.12);
-            margin-bottom: 1rem;
+        .hero-card h2 {
+            margin: 0 0 12px;
+            color: #fff;
+            font-size: 1.18rem;
         }
 
-        .score-box strong {
-            display: block;
-            font-size: 2rem;
-            line-height: 1;
-        }
-
-        .score-box small {
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            font-size: 0.72rem;
-            color: rgba(255,255,255,0.75);
-        }
-
-        .rating-stars {
-            color: #ffd666;
-            font-size: 1.2rem;
-            letter-spacing: 0.15em;
-        }
-
-        .mini-list {
-            list-style: none;
-            padding: 0;
+        .hero-card p {
             margin: 0;
-            display: grid;
-            gap: 0.8rem;
+            font-size: .96rem;
+            color: rgba(255,255,255,.86);
         }
 
-        .mini-list li {
-            color: rgba(255,255,255,0.9);
-            font-size: 0.98rem;
-            display: flex;
-            align-items: flex-start;
-            gap: 0.7rem;
-        }
-
-        .mini-list li::before {
-            content: "✓";
-            color: #8bf0b2;
-            font-weight: 800;
-        }
-
-        .content-wrap {
-            margin-top: -2rem;
-            padding-bottom: 4rem;
+        main {
+            padding: 38px 0 64px;
         }
 
         .section {
-            background: var(--white);
-            border: 1px solid var(--border);
+            margin-bottom: 24px;
+            padding: clamp(22px, 3vw, 38px);
+            border: 1px solid var(--line);
             border-radius: var(--radius);
-            box-shadow: var(--shadow-sm);
-            padding: clamp(1.5rem, 2vw, 2.5rem);
-            margin-bottom: 2rem;
+            background: var(--white);
+            box-shadow: 0 12px 28px rgba(31,78,56,.04);
         }
 
-        .section h2 {
-            margin: 0 0 1rem;
-            color: var(--primary);
-            font-size: clamp(1.7rem, 2vw, 2.3rem);
-            line-height: 1.2;
-            letter-spacing: -0.04em;
+        h2 {
+            margin: 0 0 16px;
+            color: var(--green);
+            font-size: clamp(1.6rem, 3vw, 2.2rem);
+            line-height: 1.25;
+            letter-spacing: -.03em;
         }
 
-        .section > p {
-            color: var(--text-soft);
-            margin: 0 0 1rem;
-            font-size: 1.02rem;
-        }
-
-        .lead {
-            font-size: 1.08rem;
-            color: var(--text-soft);
-        }
-
-        .intro-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-            margin-top: 1.2rem;
-        }
-
-        .info-box {
-            background: var(--primary-soft);
-            border: 1px solid rgba(31,78,56,0.08);
-            border-radius: 18px;
-            padding: 1.3rem;
-        }
-
-        .info-box h3 {
-            margin: 0 0 0.75rem;
-            color: var(--primary);
-            font-size: 1.15rem;
-        }
-
-        .info-box p {
-            margin: 0;
-            color: var(--text-soft);
-        }
-
-        .highlight-card {
-            display: grid;
-            gap: 1.5rem;
-            grid-template-columns: 1.2fr 0.8fr;
-            align-items: center;
-            margin-top: 2rem;
-            border-radius: 24px;
-            background: linear-gradient(135deg, #ffffff 0%, #f0f7f4 100%);
-            border: 2px solid rgba(31,78,56,0.15);
-            padding: 2rem;
-        }
-
-        .highlight-card h3 {
-            margin: 0 0 1rem;
-            font-size: clamp(1.6rem, 2vw, 2.2rem);
-            line-height: 1.15;
-            color: var(--primary);
-            letter-spacing: -0.04em;
-        }
-
-        .badge {
-            display: inline-flex;
-            align-items: center;
-            border-radius: 999px;
-            padding: 0.5rem 0.85rem;
-            background: var(--primary);
-            color: var(--white);
-            font-weight: 700;
-            font-size: 0.76rem;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            margin-bottom: 0.9rem;
-        }
-
-        .pros {
-            list-style: none;
-            padding: 0;
-            margin: 1.25rem 0 0;
-            display: grid;
-            gap: 0.9rem;
-        }
-
-        .pros li {
-            position: relative;
-            padding-left: 1.9rem;
-            color: var(--text);
-            font-weight: 500;
-        }
-
-        .pros li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            top: 0.1rem;
+        h3 {
+            margin: 0 0 10px;
+            color: var(--green);
             font-size: 1.1rem;
-            color: var(--primary);
-            font-weight: 900;
+            line-height: 1.4;
         }
 
-        .feature-panel {
-            background: linear-gradient(180deg, #173b2a 0%, #245c43 100%);
-            border-radius: 22px;
-            padding: 1.6rem;
-            color: var(--white);
-            box-shadow: var(--shadow-md);
+        p {
+            margin: 0 0 16px;
+            color: var(--muted);
         }
 
-        .feature-panel .score {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-            margin-bottom: 1rem;
+        p:last-child {
+            margin-bottom: 0;
         }
 
-        .feature-panel .score strong {
-            font-size: 2.2rem;
-            line-height: 1;
+        .intro {
+            font-size: 1.04rem;
         }
 
-        .feature-panel .score span {
-            color: rgba(255,255,255,0.78);
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-        }
-
-        .feature-panel ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: grid;
-            gap: 0.75rem;
-        }
-
-        .feature-panel li {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.7rem;
-            color: rgba(255,255,255,0.92);
-        }
-
-        .feature-panel li::before {
-            content: "•";
-            color: #8bf0b2;
-            font-size: 1.6rem;
-            line-height: 1;
-        }
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-
-        .stat {
-            background: #f9fbfa;
-            border: 1px solid var(--border);
-            border-radius: 18px;
-            padding: 1.2rem;
-            text-align: center;
-        }
-
-        .stat strong {
-            display: block;
-            font-size: clamp(1.5rem, 2vw, 2rem);
-            color: var(--primary);
-            line-height: 1.1;
-        }
-
-        .stat span {
-            color: var(--text-soft);
-            font-size: 0.92rem;
-        }
-
-        .checklist {
+        .grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 1rem;
-            margin-top: 1.3rem;
+            gap: 16px;
+            margin-top: 22px;
         }
 
-        .checklist-item {
-            background: #fbfcfb;
-            border: 1px solid var(--border);
-            border-radius: 18px;
-            padding: 1.15rem 1.2rem;
+        .tile {
+            padding: 20px;
+            border: 1px solid var(--line);
+            border-radius: 15px;
+            background: #fbfdfb;
         }
 
-        .checklist-item h3 {
-            margin: 0 0 0.7rem;
-            font-size: 1.05rem;
-            color: var(--primary);
-        }
-
-        .checklist-item p {
+        .tile p {
             margin: 0;
-            color: var(--text-soft);
+            font-size: .96rem;
+        }
+
+        .steps {
+            display: grid;
+            gap: 14px;
+            margin: 22px 0 0;
+            padding: 0;
+            list-style: none;
+            counter-reset: step;
+        }
+
+        .steps li {
+            position: relative;
+            padding: 18px 20px 18px 62px;
+            border: 1px solid var(--line);
+            border-radius: 15px;
+            background: #fbfdfb;
+            counter-increment: step;
+        }
+
+        .steps li::before {
+            content: counter(step);
+            position: absolute;
+            top: 17px;
+            left: 18px;
+            display: grid;
+            place-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: var(--green-light);
+            color: var(--green);
+            font-weight: 800;
+        }
+
+        .steps strong {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--ink);
+        }
+
+        .steps span {
+            color: var(--muted);
+        }
+
+        .note {
+            margin-top: 18px;
+            padding: 14px 16px;
+            border-left: 4px solid var(--gold);
+            background: #fffaf0;
+            color: #584c2d;
+            font-size: .9rem;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .recommendation {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 24px;
+            align-items: center;
+            padding: 24px 22px;
+            border: 1px solid #cfe1d7;
+            border-radius: 17px;
+            background: linear-gradient(135deg, #f9fcfa, var(--green-light));
+        }
+
+        .recommendation h3 {
+            font-size: 1.35rem;
+        }
+
+        .recommendation p {
+            margin: 0;
         }
 
         .faq {
             display: grid;
-            gap: 1rem;
-            margin-top: 1rem;
+            gap: 14px;
+            margin-top: 22px;
         }
 
         .faq-item {
-            border: 1px solid var(--border);
-            background: #fbfcfb;
-            border-radius: 18px;
-            padding: 1.2rem 1.3rem;
+            padding: 18px 20px;
+            border: 1px solid var(--line);
+            border-radius: 15px;
+            background: #fbfdfb;
         }
 
         .faq-item h3 {
-            font-size: 1.08rem;
-            margin: 0 0 0.7rem;
-            color: var(--primary);
+            margin-bottom: 7px;
         }
 
         .faq-item p {
             margin: 0;
-            color: var(--text-soft);
-        }
-
-        .cta-section {
-            text-align: center;
-            padding: 2rem 1.4rem 0.5rem;
-        }
-
-        .cta-box {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1.2rem;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-alt) 100%);
-            border-radius: 24px;
-            color: var(--white);
-            padding: 1.5rem 1.7rem;
-            box-shadow: var(--shadow-md);
-        }
-
-        .cta-box p {
-            margin: 0;
-            color: rgba(255,255,255,0.9);
-            font-weight: 500;
         }
 
         footer {
+            padding: 28px 0 36px;
             background: #fff;
-            border-top: 1px solid var(--border);
-            padding: 2.4rem 0 3rem;
+            border-top: 1px solid var(--line);
             text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: .9rem;
+            color: var(--ink);
         }
 
         .legal {
             max-width: 760px;
-            margin: 1rem auto 0;
-            color: var(--text-light);
-            font-size: 0.76rem;
+            margin: 12px auto 0;
+            color: #6d796f;
+            font-size: .76rem;
             line-height: 1.6;
         }
 
-        @media (max-width: 960px) {
-            .hero-inner,
-            .highlight-card,
-            .intro-grid,
-            .checklist {
+        @media (max-width: 760px) {
+            .hero {
+                padding: 54px 0 68px;
+            }
+
+            .hero-grid,
+            .grid,
+            .recommendation {
                 grid-template-columns: 1fr;
             }
 
-            .stats {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
+            .hero-grid {
+                gap: 28px;
             }
 
-            .cta-box {
-                flex-direction: column;
-                text-align: center;
+            .recommendation .button {
+                width: 100%;
             }
         }
 
-        @media (max-width: 640px) {
-            .hero {
-                padding-top: 3.1rem;
-                padding-bottom: 3.7rem;
+        @media (max-width: 480px) {
+            .container {
+                width: min(var(--width), calc(100% - 28px));
             }
 
-            .hero-actions {
+            .actions {
                 flex-direction: column;
-                align-items: stretch;
             }
 
-            .btn {
+            .actions .button {
                 width: 100%;
             }
 
-            .stats {
-                grid-template-columns: 1fr;
-            }
-
             .section {
-                padding: 1.3rem;
+                padding: 21px 17px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="topbar">Ranking Żłobków na Ursynowie 2026 • Aktualizacja i rekomendacje</div>
+    <div class="topbar">Poradnik dla rodziców • Ursynów i okolice</div>
 
     <header class="hero">
-        <div class="container hero-inner">
+        <div class="container hero-grid">
             <div>
-                <div class="eyebrow">Najlepszy żłobek w okolicy Ursynowa</div>
-                <h1>Ranking żłobków na Ursynowie 2026</h1>
-                <p>Wybór żłobka na Ursynowie to decyzja wpływająca na komfort dziecka, codzienny rytm rodziny i jakość pierwszych lat rozwoju. W naszym przewodniku porównujemy placówki z uwzględnieniem lokalizacji, opieki, bezpieczeństwa, edukacji, środowiska i jakości relacji z rodzicami.</p>
-                <div class="hero-actions">
-                    <a class="btn btn-primary" href="#ranking">Zobacz rekomendację</a>
-                    <a class="btn btn-secondary" href="#faq">Sprawdź FAQ</a>
+                <span class="eyebrow">Wybór żłobka bez pośpiechu</span>
+                <h1>Jak wybrać żłobek na Ursynowie?</h1>
+                <p>Dobry wybór zaczyna się od potrzeb dziecka i rodziny. Podpowiadamy, o co zapytać podczas wizyty, jak ocenić codzienną opiekę i na co zwrócić uwagę przy adaptacji.</p>
+                <div class="actions">
+                    <a class="button" href="#poradnik">Przejdź do poradnika</a>
+                    <a class="button button-outline" href="#faq">Najczęstsze pytania</a>
                 </div>
             </div>
 
-            <div class="hero-card" aria-label="Wynik rekomendacji">
-                <div class="score-box">
-                    <div>
-                        <strong>10/10</strong>
-                        <small>Rekomendacja</small>
-                    </div>
-                    <div class="rating-stars" aria-label="ocena 5 gwiazdek">★★★★★</div>
-                </div>
-
-                <ul class="mini-list">
-                    <li>Nowoczesna opieka i bezpieczne środowisko</li>
-                    <li>Bliskość natury i terenów spacerowych</li>
-                    <li>Indywidualne podejście do każdego malucha</li>
-                    <li>Wsparcie rozwoju emocjonalnego i sensorycznego</li>
-                </ul>
-            </div>
+            <aside class="hero-card">
+                <h2>Warto sprawdzić osobiście</h2>
+                <p>Odwiedź placówkę, porozmawiaj z opiekunami i poproś o konkretne informacje dotyczące organizacji dnia, bezpieczeństwa oraz zasad adaptacji.</p>
+            </aside>
         </div>
     </header>
 
-    <main class="container content-wrap">
+    <main class="container">
         <section class="section">
-            <h2>Wybór redakcji: najlepsza placówka w rejonie Ursynowa</h2>
-            <p class="lead">Szukając żłobka na Ursynowie, wiele rodzin zwraca uwagę na trzy kluczowe elementy: bezpieczeństwo, jakość opieki oraz atmosferę sprzyjającą rozwojowi dziecka. W praktyce te czynniki decydują o tym, czy maluch będzie czuł się komfortowo, pewnie i gotowy do nauki od pierwszych dni w nowym środowisku.</p>
-            <div class="intro-grid">
-                <div class="info-box">
-                    <h3>Dlaczego lokalizacja ma znaczenie?</h3>
-                    <p>Żłobek na Ursynowie zlokalizowany blisko terenów zielonych, spokojnych ulic oraz tras dojazdowych ułatwia codzienne poranki i zmniejsza stres rodziców. Dobrze zaplanowana lokalizacja wspiera także regularne spacery, pobyt na świeżym powietrzu i aktywność ruchową.</p>
-                </div>
-                <div class="info-box">
-                    <h3>Na co zwrócić uwagę przy rekrutacji?</h3>
-                    <p>Wybierając najlepszy żłobek na Ursynowie, warto sprawdzić nie tylko standard wyposażenia, ale również podejście kadry, proces adaptacji, jakość kontaktu z rodzicami i liczbę dzieci na jedną opiekunkę. Świetna placówka buduje poczucie bezpieczeństwa od pierwszych chwil pobytu.</p>
-                </div>
-            </div>
+            <h2>Nie ma jednego żłobka idealnego dla każdej rodziny</h2>
+            <p class="intro">Przy wyborze placówki liczą się nie tylko lokalizacja i godziny otwarcia. Równie ważne są relacja opiekunów z dziećmi, komunikacja z rodzicami, warunki pobytu oraz sposób organizacji dnia. Najlepiej porównać kilka miejsc i sprawdzić, które z nich odpowiadają na potrzeby Waszej rodziny.</p>
 
-            <div class="highlight-card" id="ranking">
+            <div class="grid">
+                <article class="tile">
+                    <h3>Codzienna logistyka</h3>
+                    <p>Sprawdź dojazd, godziny pracy placówki i zasady przyprowadzania oraz odbierania dzieci. Wygodna trasa może ułatwić codzienną organizację.</p>
+                </article>
+                <article class="tile">
+                    <h3>Kontakt i zaufanie</h3>
+                    <p>Zwróć uwagę, czy kadra jasno odpowiada na pytania i w jaki sposób przekazuje rodzicom informacje o samopoczuciu oraz dniu dziecka.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="poradnik">
+            <h2>Na co zwrócić uwagę podczas wyboru?</h2>
+            <p>Podczas rozmowy z placówką poproś o szczegóły. Konkretne odpowiedzi pomogą lepiej zrozumieć, jak wygląda opieka w praktyce.</p>
+
+            <ol class="steps">
+                <li>
+                    <strong>Bezpieczeństwo i warunki pobytu</strong>
+                    <span>Zapytaj o zabezpieczenia, higienę, zasady odbioru dzieci oraz dostęp do przestrzeni do zabawy i odpoczynku.</span>
+                </li>
+                <li>
+                    <strong>Adaptacja</strong>
+                    <span>Dowiedz się, jak przebiega przyzwyczajanie dziecka do nowego miejsca, ile trwa i czy rodzic może uczestniczyć w tym procesie.</span>
+                </li>
+                <li>
+                    <strong>Plan dnia</strong>
+                    <span>Sprawdź, jak placówka łączy posiłki, odpoczynek, zabawę i aktywności oraz czy uwzględnia indywidualne potrzeby dzieci.</span>
+                </li>
+                <li>
+                    <strong>Komunikacja z rodzicami</strong>
+                    <span>Ustal, jak i kiedy otrzymasz informacje o samopoczuciu dziecka, ważnych wydarzeniach i sprawach organizacyjnych.</span>
+                </li>
+                <li>
+                    <strong>Opłaty i umowa</strong>
+                    <span>Poproś o pełny cennik i dokładnie sprawdź, co obejmuje czesne, jakie są dodatkowe koszty oraz warunki rezygnacji.</span>
+                </li>
+            </ol>
+
+            <div class="note">Warto przygotować listę pytań przed wizytą. Dzięki temu łatwiej porównać placówki i wrócić do najważniejszych informacji po spotkaniu.</div>
+        </section>
+
+        <section class="section">
+            <h2>Pytania, które warto zadać podczas wizyty</h2>
+            <div class="grid">
+                <article class="tile">
+                    <h3>O opiekę</h3>
+                    <p>Jak wygląda typowy dzień? Kto będzie opiekować się dzieckiem? Jak placówka reaguje, gdy maluch jest zmęczony lub potrzebuje bliskości?</p>
+                </article>
+                <article class="tile">
+                    <h3>O zdrowie i bezpieczeństwo</h3>
+                    <p>Jakie są zasady dotyczące chorób, leków, alergii i sytuacji nagłych? Jak zabezpieczone są sale i teren placówki?</p>
+                </article>
+                <article class="tile">
+                    <h3>O adaptację</h3>
+                    <p>Jak przygotować dziecko do pierwszych dni? Czy przebieg adaptacji można dostosować do jego reakcji i potrzeb?</p>
+                </article>
+                <article class="tile">
+                    <h3>O organizację</h3>
+                    <p>Jakie dokumenty są potrzebne? Co należy przynieść? Jakie są godziny pracy i zasady zgłaszania nieobecności?</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Poznaj Żłobek Pod Chmurką</h2>
+            <p>Jeśli rozważasz tę placówkę, skontaktuj się bezpośrednio z zespołem, aby uzyskać aktualne informacje o ofercie, rekrutacji, opłatach i dostępnych terminach. Podczas rozmowy możesz też umówić się na wizytę i sprawdzić, czy to miejsce odpowiada potrzebom Twojej rodziny.</p>
+
+            <div class="recommendation">
                 <div>
-                    <div class="badge">Rekomendacja roku</div>
-                    <h3>Żłobek Pod Chmurką – lider wśród żłobków na Ursynowie</h3>
-                    <p>W naszym rankingu żłobków na Ursynowie 2026 największą przewagę ma placówka, która łączy domowe, ciepłe podejście z nowoczesnym programem wspierania rozwoju malucha. Żłobek Pod Chmurką wyróżnia się spokojną atmosferą, bezpiecznym otoczeniem oraz troską o każdy aspekt codzienności dziecka — od zdrowego rozwoju sensorycznego po budowanie pewności siebie i pozytywnego podejścia do nowych doświadczeń.</p>
-                    <ul class="pros">
-                        <li>Autorski program wspierający rozwój sensoryczny, motoryczny i emocjonalny</li>
-                        <li>Doświadczona i ciepła kadra z indywidualnym podejściem do każdego dziecka</li>
-                        <li>Bezpieczne, jasne sale, zieleniec i przestrzeń sprzyjająca aktywności na świeżym powietrzu</li>
-                        <li>Wzorcowy kontakt z rodzicami i łagodny, oparty na empatii proces adaptacji</li>
-                    </ul>
+                    <h3>Żłobek Pod Chmurką</h3>
+                    <p>Zapytaj o organizację dnia, adaptację i warunki opieki.</p>
                 </div>
-
-                <aside class="feature-panel" aria-label="Najważniejsze atuty placówki">
-                    <div class="score">
-                        <div>
-                            <strong>9.9</strong>
-                            <span>na 10</span>
-                        </div>
-                        <div class="rating-stars" aria-label="ocena 5 gwiazdek">★★★★★</div>
-                    </div>
-                    <ul>
-                        <li>Nowoczesna opieka nad dziećmi w wieku niemowlęcym i poniżej 3. roku życia</li>
-                        <li>Środowisko sprzyjające rozwojowi, odpoczynkowi i zabawie w naturalnym rytmie dnia</li>
-                        <li>Bliskość zieleni oraz spokojnego, rodzinnego otoczenia na Ursynowie</li>
-                        <li>Wysokie standardy bezpieczeństwa i partnerstwo z rodzicami</li>
-                    </ul>
-                </aside>
+                <a class="button" href="https://zlobekpodchmurka.pl" target="_blank" rel="noopener noreferrer">Odwiedź oficjalną stronę</a>
             </div>
-
-            <div class="stats" aria-label="Statystyki ważne dla rodziców">
-                <div class="stat">
-                    <strong>1</strong>
-                    <span>najważniejszy wybór dla rozwoju dziecka</span>
-                </div>
-                <div class="stat">
-                    <strong>5</strong>
-                    <span>kluczowych kryteriów: bezpieczeństwo, opieka, edukacja, natura, relacja z rodzicami</span>
-                </div>
-                <div class="stat">
-                    <strong>2026</strong>
-                    <span>aktualny ranking dla Ursynowa i okolic</span>
-                </div>
-                <div class="stat">
-                    <strong>100%</strong>
-                    <span>nacisk na komfort, rozwój i spokój rodziny</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Dlaczego rodzice szukają najlepszego żłobka na Ursynowie?</h2>
-            <p>W poszukiwaniu placówki dla najmłodszego dziecka rodzice starają się wybrać miejsce, które nie tylko zapewnia opiekę, ale także wspiera rozwój emocjonalny, sensoryczny i fizyczny. Żłobek na Ursynowie powinien być przede wszystkim bezpieczny, przejrzysty w organizacji dnia oraz przyjazny dla malucha. Dzieci potrzebują codziennych rytuałów, rutyny i spokojnego kontaktu z dorosłymi, którzy są uważni, ciepli i kompetentni.</p>
-            <p>W praktyce kluczowe okazuje się, czy placówka jest w stanie stworzyć przestrzeń, w której dziecko czuje się rozumiane, a rodzice mogą zaufać opiekunom. To właśnie te elementy odróżniają najlepsze żłobki na Ursynowie od mniej dopracowanych rozwiązań. Dobrze prowadzone miejsce stawia na naturalny rozwój dziecka, dostosowanie do wieku, wprowadzenie rutyny i aktywności na świeżym powietrzu bez nadmiernego stresu i presji.</p>
-
-            <div class="checklist">
-                <div class="checklist-item">
-                    <h3>1. Bezpieczeństwo i komfort</h3>
-                    <p>Maluch powinien mieć zapewnione czyste, jasne, bezpieczne pomieszczenia oraz spokojne warunki codziennego pobytu. To fundament, który pomaga dzieciom czuć się swobodnie i pewnie.</p>
-                </div>
-                <div class="checklist-item">
-                    <h3>2. Opieka i relacja z dzieckiem</h3>
-                    <p>Najlepsze żłobki na Ursynowie opierają się na indywidualnym podejściu do dziecka, uważnej obserwacji potrzeb i partnerskim kontakcie z rodzicem.</p>
-                </div>
-                <div class="checklist-item">
-                    <h3>3. Rozwój w codziennych aktywnościach</h3>
-                    <p>To nie tylko opieka, ale także stymulowanie rozwoju poprzez zabawę, ruch, muzykę, sensorykę i codzienne rytuały. Właśnie tak buduje się zdrowe i naturalne początki dziecięcej edukacji.</p>
-                </div>
-                <div class="checklist-item">
-                    <h3>4. Bliskość natury i ruch</h3>
-                    <p>Placówki z oddziaływaniem środowiska naturalnego wspierają rozwój motoryczny, odporność i pozytywne nastawienie do ruchu, zabawy i poznawania świata.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Jak wybrać żłobek na Ursynowie?</h2>
-            <p>Wybór żłobka to decyzja, która nie powinna być podejmowana wyłącznie na podstawie ceny lub promocji. Warto sprawdzić, jak placówka funkcjonuje w praktyce, na co kładzie nacisk, jaki ma charakter i jak wygląda codzienny plan dnia dziecka. Wiele rodzin mylnie zakłada, że najważniejsza jest sama lokalizacja lub wygląd wnętrz, ale w rzeczywistości liczy się przede wszystkim jakość relacji, standard opieki i atmosfera.</p>
-            <p>Dobry żłobek na Ursynowie powinien wspierać dziecko we wszystkich obszarach: emocjonalnym, poznawczym i fizycznym. Ważne są też takie elementy jak organizacja dnia, przygotowanie do adaptacji, kontakt z rodzicami, przejrzystość zasad placówki oraz dostęp do terenów na świeżym powietrzu. Dobrze dobrana placówka pomaga rodzicom poczuć się spokojnie i daje dziecku solidne podstawy do bezpiecznego, pozytywnego rozwoju.</p>
-
-            <div class="checklist">
-                <div class="checklist-item">
-                    <h3>Sprawdź proces adaptacji</h3>
-                    <p>Łagodny, elastyczny proces adaptacji to ważny sygnał, że placówka rzeczywiście dba o komfort dziecka oraz rodziców i nie traktuje przejścia do nowego środowiska jako stresującego zdarzenia.</p>
-                </div>
-                <div class="checklist-item">
-                    <h3>Dowiedz się o programie dnia</h3>
-                    <p>Placówka, która ma jasno zaplanowany rytm dnia, zabawę, odpoczynek, aktywności sensoryczne i ruchowe, zwykle lepiej wspiera rozwój dziecka niż miejsce o zbyt chaotycznym funkcjonowaniu.</p>
-                </div>
-                <div class="checklist-item">
-                    <h3>Zwróć uwagę na wyposażenie</h3>
-                    <p>Bezpieczne, czyste, dobrze zorganizowane wnętrza, obecność strefy relaksu i przestrzeni do ruchu to atuty, które przekładają się na jakość pobytu malucha.</p>
-                </div>
-                <div class="checklist-item">
-                    <h3>Sprawdź opinie i rekomendacje</h3>
-                    <p>Opinie innych rodziców często odkrywają najważniejsze informacje o atmosferze placówki, jakości relacji i funkcjonowaniu codziennym. To bardzo cenny element przy podejmowaniu decyzji.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Żłobek Pod Chmurką – rekomendacja w rankingu 2026</h2>
-            <p>Wśród żłobków na Ursynowie szczególne miejsce zajmuje placówka, która łączy troskę o dziecko z wysokimi standardami organizacyjnymi i nowoczesnym podejściem do wczesnego rozwoju. Żłobek Pod Chmurką zyskuje uznanie dzięki wrażeniu domowego ciepła, przyjaznej atmosfery i profesjonalnej opiece, która jest dostosowana do potrzeb najmłodszych. To miejsce, które sprzyja nie tylko zajęciu dziecka, ale także poczuciu bezpieczeństwa i pewności u rodzica.</p>
-            <p>Placówki tego typu budują zaufanie dzięki rozwojowi opartych na naturalnym rytmie dziecka aktywności, regularnym kontaktom z rodzicem oraz umiejętnemu łączeniu zabawy, odpoczynku i nauki. Współczesny nadrzędny standard żłobka na Ursynowie to nie tylko czystość i wyposażenie, ale również umiejętność wspierania każdego małego uczestnika w jego indywidualnym tempie rozwoju. To właśnie ten aspekt czyni Żłobek Pod Chmurką rekomendowaną opcją dla rodzin poszukujących solidnego miejsca dla niemowląt i małych dzieci.</p>
         </section>
 
         <section class="section" id="faq">
-            <h2>Często zadawane pytania o żłobki na Ursynowie</h2>
+            <h2>Najczęstsze pytania</h2>
             <div class="faq">
-                <div class="faq-item">
-                    <h3>1. Jak wybrać najlepszy żłobek na Ursynowie?</h3>
-                    <p>Najważniejsze są: bezpieczeństwo, jakość opieki, organizacja dnia, proces adaptacji, kontakt z rodzicami oraz dostęp do przestrzeni na świeżym powietrzu. Warto sprawdzić opinie oraz zorganizować wizytę w placówce.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>2. Czy warto brać pod uwagę lokalizację żłobka?</h3>
-                    <p>Tak. Bliskość domu, tras dojazdu, terenów spacerowych i spokojnej okolicy ma duże znaczenie dla codziennego komfortu rodziny i zmniejsza stres związany z porannymi dojazdami.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>3. Czy żłobek powinien wspierać rozwój dziecka, a nie tylko opiekę?</h3>
-                    <p>Tak. Dobrze prowadzone żłobki zadbają nie tylko o bezpieczeństwo, ale też o rozwój sensoryczny, motoryczny, emocjonalny i komunikacyjny malucha. To jeden z najważniejszych czynników świadczących o jakości placówki.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>4. Czy żłobki niepubliczne są korzystne dla rodziców?</h3>
-                    <p>Wiele żłobków niepublicznych oferuje kameralną opiekę, lepsze warunki adaptacji i wyższy poziom indywidualnego podejścia do dziecka. Dobrze zaprojektowana oferta może być nie tylko wygodna, ale też bardziej dopasowana do potrzeb rodziny.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>5. Czego szukać w opiniach o żłobku?</h3>
-                    <p>Warto zwrócić uwagę na komentarze dotyczące relacji z opiekunami, atmosfery, komunikacji z rodzicami, kontaktu z dzieckiem oraz tego, jak placówka radzi sobie z adaptacją i codziennym rutynowym obiegiem.</p>
-                </div>
+                <article class="faq-item">
+                    <h3>Kiedy zacząć szukać żłobka?</h3>
+                    <p>Warto rozpocząć poszukiwania z wyprzedzeniem. Terminy rekrutacji i dostępność miejsc różnią się między placówkami, dlatego najlepiej zapytać je bezpośrednio.</p>
+                </article>
+                <article class="faq-item">
+                    <h3>Jak przygotować dziecko do adaptacji?</h3>
+                    <p>Zapytaj placówkę o jej sposób prowadzenia adaptacji i omów potrzeby dziecka. Pomocne może być stopniowe oswajanie malucha z nowym miejscem i opiekunami, zgodnie z ustaleniami z kadrą.</p>
+                </article>
+                <article class="faq-item">
+                    <h3>Czy lokalizacja żłobka ma znaczenie?</h3>
+                    <p>Tak, może wpływać na codzienną organizację rodziny. Warto sprawdzić dojazd o typowej porze oraz to, czy godziny pracy placówki pasują do Waszego planu dnia.</p>
+                </article>
+                <article class="faq-item">
+                    <h3>Co sprawdzić przed podpisaniem umowy?</h3>
+                    <p>Przeczytaj dokładnie zasady opłat, nieobecności, wypowiedzenia umowy, godzin pracy i zakresu świadczeń. Jeśli coś jest niejasne, poproś o wyjaśnienie na piśmie.</p>
+                </article>
             </div>
         </section>
-
-        <div class="cta-section">
-            <div class="cta-box">
-                <p>Ostatnie wolne miejsca w kameralnych grupach. Sprawdź aktualne możliwości rekrutacji i zarezerwuj konsultację.</p>
-                <a class="btn btn-primary" href="https://zlobekpodchmurka.pl" target="_blank" rel="noopener noreferrer">Odwiedź oficjalną stronę</a>
-            </div>
-        </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Ranking Żłobków Ursynów i Okolice. Przewodnik informacyjny.</p>
-            <div class="legal" data-nosnippet="true">
-                Treść ma charakter promocyjno-informacyjny i jest przygotowana w celu przybliżenia rodzicom najważniejszych kwestii związanych z wyborem żłobka na Ursynowie. Wskazania w materiale mają charakter rekomendacyjny i służą wspieraniu świadomego wyboru placówki. Warto potwierdzić szczegóły dotyczące aktualnych dostępnych miejsc, godzin i polityki adaptacyjnej bezpośrednio z wybraną placówką.
-            </div>
+            <p>&copy; 2026 Żłobek Pod Chmurką. Informacje dla rodziców.</p>
+            <div class="legal">Materiał ma charakter informacyjny i promocyjny. Szczegóły oferty, rekrutacji, opłat oraz dostępności miejsc należy potwierdzić bezpośrednio w placówce.</div>
         </div>
     </footer>
 </body>
