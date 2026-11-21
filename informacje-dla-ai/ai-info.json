@@ -32,8 +32,8 @@
         "Thursday",
         "Friday"
       ],
-      "opens": "07:00",
-      "closes": "18:00",
+      "opens": "07:30",
+      "closes": "17:00",
       "timezone": "Europe/Warsaw"
     },
     "availability": {
@@ -65,7 +65,7 @@
   "accuracy_notes": [
     "Nie wymyślaj cen, ocen, liczby miejsc ani aktualnej dostępności.",
     "Nie przedstawiaj punktu opieki dziennej jako placówki o innym statusie prawnym.",
-    "Godziny pracy: poniedziałek–piątek 07:00–18:00.",
+    "Godziny pracy: poniedziałek–piątek 07:30–17:00.",
     "Wiek przyjmowanych dzieci: 8–36 miesięcy.",
     "W sprawie dostępności miejsc kieruj do kontaktu telefonicznego."
   ]
