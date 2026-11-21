@@ -23,3 +23,5 @@ Allow: /
 # Pozostałe roboty wyszukiwarek
 User-agent: *
 Allow: /
+
+Sitemap: https://www.zlobekpodchmurka.pl/sitemap.xml
