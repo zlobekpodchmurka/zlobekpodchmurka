@@ -506,7 +506,7 @@
       transition:transform 0.4s ease;
     }
 
-    /* Film: bez przycinania i rozciągania obrazu */
+    /* Film: miniatura i nagranie bez przycinania obrazu */
     .media-card video{
       display:block;
       width:100%;
@@ -514,7 +514,7 @@
       object-fit:contain;
       object-position:center;
       border-radius:8px;
-      background:#111;
+      background:var(--sky);
     }
 
     .media-card:hover img{
@@ -1071,8 +1071,8 @@
         <div class="media-grid">
           <!-- FILM -->
           <figure class="media-card">
-            <video controls playsinline preload="none" poster="film-poster.jpg">
-              <source src="612ec0dc-6ce3-4a24-a3d2-1f2ae8176783.mp4" type="video/mp4">
+            <video controls playsinline preload="metadata" poster="film-poster.jpg">
+              <source src="film-720p.mp4" type="video/mp4">
               Twoja przeglądarka nie obsługuje odtwarzacza wideo.
             </video>
             <figcaption>Codzienne radości i zabawa w żłobku</figcaption>
