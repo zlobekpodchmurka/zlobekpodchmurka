@@ -507,96 +507,109 @@
       transition:transform 0.4s ease;
     }
 
-    /* Podgląd filmu: zdjęcie zamiast czarnego ekranu */
-    .video-preview{
+    /* Film i miniatura zajmują dokładnie to samo miejsce w karcie */
+    .video-stage{
       position:relative;
       width:100%;
       height:380px;
       overflow:hidden;
       border-radius:8px;
       background:var(--sky);
+      isolation:isolate;
+    }
+
+    .video-preview{
+      position:absolute;
+      inset:0;
+      z-index:2;
       display:flex;
       align-items:center;
       justify-content:center;
-      isolation:isolate;
+      overflow:hidden;
+      cursor:pointer;
+      background:var(--sky);
+    }
+
+    .video-preview[hidden],
+    .video-stage video[hidden]{
+      display:none !important;
     }
 
     .video-preview-bg{
       position:absolute;
-      inset:0;
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      filter:blur(18px);
+      inset:-12px;
+      width:calc(100% + 24px) !important;
+      height:calc(100% + 24px) !important;
+      object-fit:cover !important;
+      filter:blur(16px);
       opacity:.55;
-      transform:scale(1.12);
+      transform:scale(1.08);
     }
 
     .video-preview-image{
       position:relative;
       z-index:1;
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      border-radius:8px;
+      width:100% !important;
+      height:100% !important;
+      object-fit:contain !important;
+      border-radius:0 !important;
     }
 
     .video-play-button{
       position:absolute;
-      z-index:2;
+      z-index:3;
       top:50%;
       left:50%;
       transform:translate(-50%,-50%);
-      width:72px;
-      height:72px;
+      width:76px;
+      height:76px;
+      border:3px solid #fff;
+      border-radius:50%;
       display:flex;
       align-items:center;
       justify-content:center;
-      border:3px solid #fff;
-      border-radius:50%;
-      background:rgba(63,97,120,.88);
       color:#fff;
-      font-size:29px;
-      line-height:1;
+      background:rgba(48,83,105,.88);
+      font-size:30px;
       cursor:pointer;
-      box-shadow:0 4px 20px rgba(0,0,0,.25);
-      transition:transform .2s,background .2s;
+      box-shadow:0 4px 18px rgba(0,0,0,.25);
     }
 
     .video-play-button:hover{
-      transform:translate(-50%,-50%) scale(1.08);
       background:var(--fox-amber-deep);
+      transform:translate(-50%,-50%) scale(1.06);
     }
 
     .video-preview-label{
       position:absolute;
-      z-index:2;
+      z-index:3;
       left:12px;
       right:12px;
-      bottom:14px;
-      padding:8px 10px;
-      border-radius:6px;
+      bottom:12px;
+      padding:9px 12px;
+      border-radius:8px;
+      background:rgba(28,43,52,.68);
       color:#fff;
-      background:rgba(25,43,55,.58);
       text-align:center;
+      font-weight:700;
       font-size:.9rem;
-      font-weight:600;
-      text-shadow:0 1px 3px rgba(0,0,0,.6);
+      text-shadow:0 1px 3px rgba(0,0,0,.4);
     }
 
-    .media-card video{
+    .video-stage video{
+      position:absolute;
+      inset:0;
+      z-index:1;
       display:block;
       width:100%;
-      height:380px;
+      height:100%;
       object-fit:contain;
       object-position:center;
       border-radius:8px;
       background:#111;
     }
 
-    .media-card video[hidden]{display:none;}
-
-    .media-card:hover img{
+    .media-card:hover > img{
       transform:scale(1.02);
     }
 
@@ -1148,30 +1161,45 @@
         </p>
         
         <div class="media-grid">
-          <!-- FILM: zdjęcie startowe i własny przycisk odtwarzania -->
+          <!-- FILM: miniatura jest zastępowana filmem w tym samym miejscu -->
           <figure class="media-card">
-            <div class="video-preview" id="videoPreview">
-              <img class="video-preview-bg" src="film-poster.webp" alt="" aria-hidden="true">
-              <img
-                class="video-preview-image"
-                src="film-poster.webp"
-                alt="Dziecko podczas kreatywnej zabawy w żłobku Pod Chmurką"
-                width="720"
-                height="1280"
-              >
-              <button
-                class="video-play-button"
-                type="button"
-                aria-label="Odtwórz film"
-                onclick="playNurseryVideo()"
-              >▶</button>
-              <div class="video-preview-label">Zobacz, jak spędzamy czas w naszym żłobku</div>
-            </div>
+            <div class="video-stage">
+              <div class="video-preview" id="videoPreview">
+                <img
+                  class="video-preview-bg"
+                  src="film-poster.webp"
+                  alt=""
+                  aria-hidden="true"
+                >
+                <img
+                  class="video-preview-image"
+                  src="film-poster.webp"
+                  alt="Zabawy plastyczne dzieci w Żłobku Pod Chmurką"
+                  width="720"
+                  height="1280"
+                >
+                <button
+                  class="video-play-button"
+                  type="button"
+                  aria-label="Odtwórz film"
+                  onclick="playNurseryVideo()"
+                >▶</button>
+                <div class="video-preview-label">
+                  Zobacz, jak spędzamy czas w naszym żłobku
+                </div>
+              </div>
 
-            <video id="nurseryVideo" controls playsinline preload="none" hidden>
-              <source src="film-720p.mp4" type="video/mp4">
-              Twoja przeglądarka nie obsługuje odtwarzacza wideo.
-            </video>
+              <video
+                id="nurseryVideo"
+                controls
+                playsinline
+                preload="none"
+                hidden
+              >
+                <source src="film-720p.mp4" type="video/mp4">
+                Twoja przeglądarka nie obsługuje odtwarzacza wideo.
+              </video>
+            </div>
             <figcaption>Codzienne radości i zabawa w żłobku</figcaption>
           </figure>
 
@@ -1419,23 +1447,35 @@
     function playNurseryVideo() {
       const preview = document.getElementById('videoPreview');
       const video = document.getElementById('nurseryVideo');
+
       if (!preview || !video) return;
 
       preview.hidden = true;
       video.hidden = false;
       video.currentTime = 0;
-      video.play().catch((error) => {
-        console.error('Nie udało się uruchomić filmu:', error);
-        video.hidden = true;
-        preview.hidden = false;
-      });
+
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(function(error) {
+          console.error('Nie udało się uruchomić filmu:', error);
+          video.pause();
+          video.hidden = true;
+          preview.hidden = false;
+        });
+      }
     }
 
     const nurseryVideo = document.getElementById('nurseryVideo');
     if (nurseryVideo) {
-      nurseryVideo.addEventListener('ended', () => {
+      nurseryVideo.addEventListener('ended', function() {
         nurseryVideo.pause();
         nurseryVideo.currentTime = 0;
+        nurseryVideo.hidden = true;
+        document.getElementById('videoPreview').hidden = false;
+      });
+
+      nurseryVideo.addEventListener('error', function() {
+        console.error('Błąd odtwarzania. Sprawdź, czy plik film-720p.mp4 znajduje się w głównym folderze strony.');
         nurseryVideo.hidden = true;
         document.getElementById('videoPreview').hidden = false;
       });
